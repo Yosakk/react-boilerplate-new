@@ -1,64 +1,65 @@
 export default {
-  "title": "Payment Method",
-  "virtualAccountLabel": "Virtual Account",
-  "eWalletLabel": "E-Wallet",
-  "creditCardLabel": "Credit / Debit Card",
-  "ccLabel": "Credit Card",
-  "button": "Pay",
-  "WalletForm": {
-    "title": "Enter {{wallet}} Number",
-    "phoneLabel": "{{wallet}} Number",
-    "phonePlaceholder": "8xxxxxxxx",
-    "paymentDeadline": "Pay before {{date}}",
-    "admissionFeeLabel": "Play Membership",
-    "adminFeeLabel": "Admin Fee",
-    "serviceFeeLabel": "Service Fee",
-    "adminFeeDiscountLabel": "Admin Fee Discount ",
-    "promoCodeDiscountLabel": "Promo Code Discount",
-    "button": "Pay",
-    "seedsCoin": "Seeds Coin Redeemed",
-    "teamBattleFee": "Team Battle Fee"
+  title: "Payment Method",
+  virtualAccountLabel: "Virtual Account",
+  eWalletLabel: "E-Wallet",
+  creditCardLabel: "Credit / Debit Card",
+  ccLabel: "Credit Card",
+  button: "Pay",
+  WalletForm: {
+    title: "Enter {{wallet}} Number",
+    phoneLabel: "{{wallet}} Number",
+    phonePlaceholder: "8xxxxxxxx",
+    paymentDeadline: "Pay before {{date}}",
+    admissionFeeLabel: "Play Membership",
+    adminFeeLabel: "Admin Fee",
+    serviceFeeLabel: "Service Fee",
+    adminFeeDiscountLabel: "Admin Fee Discount ",
+    promoCodeDiscountLabel: "Promo Code Discount",
+    button: "Pay",
+    seedsCoin: "Seeds Coin Redeemed",
+    teamBattleFee: "Team Battle Fee",
   },
-  "VirtualAccountGuide": {
-    "title": "{{bank}} Virtual Account",
-    "bankName": "Bank {{bank}}",
-    "accountNumberLabel": "No. rekening",
-    "promoCodeDiscountLabel": "Promo Code Discount",
-    "copy": "Copy",
-    "accountNameLabel": "Virtual Account Name",
-    "admissionFeeLabel": "Play Membership",
-    "adminFeeLabel": "Admin",
-    "note": "Please complete your payment in 24 hours. Your order will be cancelled automatically if you do not make any payments in 24 hours",
-    "instructionLabel": "mBanking Transfer Instructions",
-    "step1": {
+  VirtualAccountGuide: {
+    title: "{{bank}} Virtual Account",
+    bankName: "Bank {{bank}}",
+    accountNumberLabel: "No. rekening",
+    promoCodeDiscountLabel: "Promo Code Discount",
+    copy: "Copy",
+    accountNameLabel: "Virtual Account Name",
+    admissionFeeLabel: "Play Membership",
+    adminFeeLabel: "Admin",
+    note: "Please complete your payment in 24 hours. Your order will be cancelled automatically if you do not make any payments in 24 hours",
+    instructionLabel: "mBanking Transfer Instructions",
+    step1: {
       "1": "Choose",
-      "2": "m-Transfer > {{provider}} Virtual Account."
+      "2": "m-Transfer > {{provider}} Virtual Account.",
     },
-    "step2": {
+    step2: {
       "1": "Enter",
       "2": "Virtual Account number",
       "3": "and choose",
-      "4": "Send"
+      "4": "Send",
     },
-    "step3": {
+    step3: {
       "1": "Check the information shown on the screen. Make sure the Merchant is",
       "2": "Seeds and total bill",
       "3": "and your username are correct.",
       "4": "If true, Select",
-      "5": "Ya"
+      "5": "Ya",
     },
-    "step4": {
+    step4: {
       "1": "Enter your m-{{provider}} PIN and select",
-      "2": "OK"
+      "2": "OK",
     },
-    "button": "Pay",
-    "seedsCoin": "Seeds Coin Redeemed",
-    "howToPay": "How to Pay",
-    "choosePayment": "Choose Payment Method:",
-    "warningCompletion": "Complete payment in",
-    "minuteWarning": "Less than 1 minute",
-    "expired": "Payment expired",
-    "minimumPaymentError": "The minimum transaction amount for Virtual Account payments is IDR 10,000.",
-    "teamBattleFee": "Team Battle Fee"
-  }
+    button: "Pay",
+    seedsCoin: "Seeds Coin Redeemed",
+    howToPay: "How to Pay",
+    choosePayment: "Choose Payment Method:",
+    warningCompletion: "Complete payment in",
+    minuteWarning: "Less than 1 minute",
+    expired: "Payment expired",
+    minimumPaymentError:
+      "The minimum transaction amount for Virtual Account payments is IDR 10,000.",
+    teamBattleFee: "Team Battle Fee",
+  },
 } as const;

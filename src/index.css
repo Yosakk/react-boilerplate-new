@@ -121,8 +121,12 @@ input[type="number"] {
 }
 
 @keyframes loadingBar {
-  0%   { width: 0%; }
-  100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes splashFadeOut {
@@ -136,7 +140,6 @@ input[type="number"] {
   animation: splashFadeOut 0.35s ease-in forwards;
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -147,8 +150,8 @@ input[type="number"] {
 }
 
 @theme {
-  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-               "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-sans:
+    "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-poppins: "Poppins", sans-serif;
 }

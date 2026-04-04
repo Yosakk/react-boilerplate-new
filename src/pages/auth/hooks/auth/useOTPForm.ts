@@ -8,7 +8,8 @@ export type OtpMethod = "sms" | "whatsapp";
 
 export function useOtpFlow() {
   const { methods } = useSignupForm();
-  const [resendOTP, { isLoading: resendLoading, error: resendError, reset }] = useResendOTPMutation();
+  const [resendOTP, { isLoading: resendLoading, error: resendError, reset }] =
+    useResendOTPMutation();
   const [verifyOTP, { isLoading: verifyLoading, error: verifyError }] = useVerifyOTPMutation();
 
   const [pinId, setpinId] = useState<string>("");
@@ -57,8 +58,7 @@ export function useOtpFlow() {
     async (code: string) => {
       if (!method) throw new Error("OTP method not selected");
       if (!phoneNumber) throw new Error("Phone number empty");
-      if (!pinId)
-        throw new Error("pinId missing. Please resend/start first.");
+      if (!pinId) throw new Error("pinId missing. Please resend/start first.");
 
       return await verifyOTP({
         method,
@@ -76,10 +76,7 @@ export function useOtpFlow() {
     reset();
   }, [reset]);
 
-  const loading = useMemo(
-    () => resendLoading || verifyLoading,
-    [resendLoading, verifyLoading]
-  );
+  const loading = useMemo(() => resendLoading || verifyLoading, [resendLoading, verifyLoading]);
   const error = resendError ?? verifyError;
 
   return {

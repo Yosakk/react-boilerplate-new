@@ -1,5 +1,4 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { deleteTokenAuth } from "../auth";
 
 export type UserStateI = {
   name: string;
@@ -7,7 +6,7 @@ export type UserStateI = {
   phoneNumber: string | null;
 };
 
-export const initialUserExistingState: UserStateI = { 
+export const initialUserExistingState: UserStateI = {
   name: "",
   email: null,
   phoneNumber: null,
@@ -23,7 +22,7 @@ const userExisting = createSlice({
       state.phoneNumber = payload.phoneNumber ?? null;
     },
     clearUserExisting: () => initialUserExistingState,
-  }
+  },
 });
 
 export const { setUserExisting, clearUserExisting } = userExisting.actions;

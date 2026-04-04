@@ -1,6 +1,4 @@
-export const rupiahFormatter: (
-  rp: number | string | undefined | null,
-) => string = (rp) => {
+export const rupiahFormatter: (rp: number | string | undefined | null) => string = (rp) => {
   if (rp === undefined || rp === null) {
     return "0";
   }

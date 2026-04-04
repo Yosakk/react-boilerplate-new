@@ -1,3 +1,3 @@
 export default {
-  "join": "Join Us"
+  join: "Join Us",
 } as const;

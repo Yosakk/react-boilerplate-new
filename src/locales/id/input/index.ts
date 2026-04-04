@@ -1,35 +1,35 @@
 export default {
-  "label": {
-    "name": "Nama",
-    "dateOfBirth": "Tanggal Lahir",
-    "email": "Email Baru Anda",
-    "phone": "Nomor Telepon Baru Kamu"
+  label: {
+    name: "Nama",
+    dateOfBirth: "Tanggal Lahir",
+    email: "Email Baru Anda",
+    phone: "Nomor Telepon Baru Kamu",
   },
-  "placeholder": {
-    "name": "Masukan Nama Anda",
-    "dateOfBirth": "Masukan Tanggal Lahir Anda",
-    "email": "contoh@mail.com",
-    "phoneNumber": "Mohon ketikkan nomor telepon anda",
-    "seedsTag": "@seedstag",
-    "referralCode": "Kode Referal"
+  placeholder: {
+    name: "Masukan Nama Anda",
+    dateOfBirth: "Masukan Tanggal Lahir Anda",
+    email: "contoh@mail.com",
+    phoneNumber: "Mohon ketikkan nomor telepon anda",
+    seedsTag: "@seedstag",
+    referralCode: "Kode Referal",
   },
-  "phone": "Nomor Handphone",
-  "email": "Email",
-  "birthDate": "Tanggal Lahir",
-  "type": {
-    "email": "Email",
-    "password": "Kata Sandi",
-    "rePassword": "",
-    "phoneNumber": "Nomor Telepon",
-    "name": "Nama",
-    "seedsTag": "Tag Seeds",
-    "referralCode": "Kode Referal",
-    "optional": "(tidak wajib)"
+  phone: "Nomor Handphone",
+  email: "Email",
+  birthDate: "Tanggal Lahir",
+  type: {
+    email: "Email",
+    password: "Kata Sandi",
+    rePassword: "",
+    phoneNumber: "Nomor Telepon",
+    name: "Nama",
+    seedsTag: "Tag Seeds",
+    referralCode: "Kode Referal",
+    optional: "(tidak wajib)",
   },
-  "poll": {
-    "optionPlaceholder": "{{index}}. Masukkan opsi",
-    "endDateLabel": "Tentukan tanggal akhir",
-    "multivoteLabel": "Multivote",
-    "allowNewOptionLabel": "Izinkan opsi baru"
-  }
+  poll: {
+    optionPlaceholder: "{{index}}. Masukkan opsi",
+    endDateLabel: "Tentukan tanggal akhir",
+    multivoteLabel: "Multivote",
+    allowNewOptionLabel: "Izinkan opsi baru",
+  },
 } as const;

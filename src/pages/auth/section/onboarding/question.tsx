@@ -13,8 +13,7 @@ type Props = {
 };
 
 export default function OnboardingQuestions({ setStep, params, onComplete }: Props) {
-  const { viewProps, handlers, methods } =
-    useOnboardingQuestionsForm({ params, setStep });
+  const { viewProps, handlers, methods } = useOnboardingQuestionsForm({ params, setStep });
 
   const reset = () => {
     methods.reset({ answers: {} });

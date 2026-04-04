@@ -15,7 +15,7 @@ type CarouselProps = {
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
   autoPlay?: boolean;
-  autoPlayDelay?: number;  // ms
+  autoPlayDelay?: number; // ms
   pauseOnHover?: boolean;
 };
 
@@ -81,11 +81,23 @@ const Carousel = React.forwardRef<
   const handleKeyDown = React.useCallback(
     (e: React.KeyboardEvent<HTMLDivElement>) => {
       if (orientation === "horizontal") {
-        if (e.key === "ArrowLeft") { e.preventDefault(); scrollPrev(); }
-        if (e.key === "ArrowRight") { e.preventDefault(); scrollNext(); }
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          scrollPrev();
+        }
+        if (e.key === "ArrowRight") {
+          e.preventDefault();
+          scrollNext();
+        }
       } else {
-        if (e.key === "ArrowUp") { e.preventDefault(); scrollPrev(); }
-        if (e.key === "ArrowDown") { e.preventDefault(); scrollNext(); }
+        if (e.key === "ArrowUp") {
+          e.preventDefault();
+          scrollPrev();
+        }
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          scrollNext();
+        }
       }
     },
     [orientation, scrollPrev, scrollNext]
@@ -119,7 +131,9 @@ const Carousel = React.forwardRef<
       timer = window.setTimeout(tick, autoPlayDelay);
     };
     timer = window.setTimeout(tick, autoPlayDelay);
-    return () => { if (timer) window.clearTimeout(timer); };
+    return () => {
+      if (timer) window.clearTimeout(timer);
+    };
   }, [api, autoPlay, autoPlayDelay, isHovering, plugins]);
 
   return (
@@ -161,7 +175,11 @@ const CarouselContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HT
       <div ref={carouselRef} className="overflow-hidden">
         <div
           ref={ref}
-          className={cn("flex", orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col", className)}
+          className={cn(
+            "flex",
+            orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+            className
+          )}
           {...props}
         />
       </div>

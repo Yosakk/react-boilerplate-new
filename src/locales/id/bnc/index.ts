@@ -1,30 +1,30 @@
 export default {
-  "payment": "Pembayaran",
-  "scanDescription": "Pindai dengan Aplikasi Bank atau Aplikasi Pembayaran Anda",
-  "instructions": {
-    "text1": "Ambil gambar tangkapan layar dari Kode QR Anda",
-    "text2": "Buka aplikasi bank atau pembayaran anda",
-    "text3": "Selesaikan pembayaran",
-    "text4": "Klik tombol 'Selesai' dibawah"
+  payment: "Pembayaran",
+  scanDescription: "Pindai dengan Aplikasi Bank atau Aplikasi Pembayaran Anda",
+  instructions: {
+    text1: "Ambil gambar tangkapan layar dari Kode QR Anda",
+    text2: "Buka aplikasi bank atau pembayaran anda",
+    text3: "Selesaikan pembayaran",
+    text4: "Klik tombol 'Selesai' dibawah",
   },
-  "done": "Selesai",
-  "seeQRCode": "Lihat Kode QR",
-  "expired": {
-    "text1": "Kode QR Anda telah kadaluarsa",
-    "text2": "Lakukan pembelian ulang dan pastikan pembayaran anda selesai tepat waktu",
-    "text3": "Pembayaran telah kadaluarsa"
+  done: "Selesai",
+  seeQRCode: "Lihat Kode QR",
+  expired: {
+    text1: "Kode QR Anda telah kadaluarsa",
+    text2: "Lakukan pembelian ulang dan pastikan pembayaran anda selesai tepat waktu",
+    text3: "Pembayaran telah kadaluarsa",
   },
-  "repeat": "Ulangi Pembelian",
-  "completePayment": "Selesaikan pembayaran dalam",
-  "clock": {
-    "day": "hari",
-    "days": "hari",
-    "hour": "jam",
-    "hours": "jam",
-    "minute": "menit",
-    "minutes": "menit",
-    "second": "detik",
-    "seconds": "detik",
-    "and": "dan"
-  }
+  repeat: "Ulangi Pembelian",
+  completePayment: "Selesaikan pembayaran dalam",
+  clock: {
+    day: "hari",
+    days: "hari",
+    hour: "jam",
+    hours: "jam",
+    minute: "menit",
+    minutes: "menit",
+    second: "detik",
+    seconds: "detik",
+    and: "dan",
+  },
 } as const;

@@ -14,10 +14,7 @@ export const onboardingApi = Api.injectEndpoints({
     onboarding: build.query<OnboardingResI, OnboardingReqI>({
       query: (params) => ({ url: `${prefix}/question`, method: "GET", params }),
     }),
-    submitOnboarding: build.mutation<
-      OnboardingAnswerResI,
-      OnboardingAnswerReqI
-    >({
+    submitOnboarding: build.mutation<OnboardingAnswerResI, OnboardingAnswerReqI>({
       query: (body) => ({ url: `${prefix}/submit`, method: "POST", body }),
       async onQueryStarted(_arg, { dispatch, queryFulfilled }) {
         try {
@@ -30,8 +27,5 @@ export const onboardingApi = Api.injectEndpoints({
     }),
   }),
 });
-export const {
-  useOnboardingQuery,
-  useSubmitOnboardingMutation,
-  useLazyOnboardingQuery,
-} = onboardingApi;
+export const { useOnboardingQuery, useSubmitOnboardingMutation, useLazyOnboardingQuery } =
+  onboardingApi;

@@ -1,11 +1,6 @@
 import type { RootState } from "@/store";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import type {
-  FetchBaseQueryError,
-  BaseQueryFn,
-  FetchArgs,
-} from "@reduxjs/toolkit/query/react";
-import { toast } from "react-toastify";
+import type { FetchBaseQueryError, BaseQueryFn, FetchArgs } from "@reduxjs/toolkit/query/react";
 import { deleteTokenAuth } from "@/store/auth";
 
 export interface ApiResponseI<T> {
@@ -17,8 +12,7 @@ export interface ApiErrorResponseI {
   statusCode: number;
 }
 
-const API_BASE_URL =
-  import.meta.env?.VITE_API_URL || window?.location?.origin || "/";
+const API_BASE_URL = import.meta.env?.VITE_API_URL || window?.location?.origin || "/";
 
 export const baseQuery = fetchBaseQuery({
   baseUrl: API_BASE_URL,
@@ -41,7 +35,7 @@ const baseQueryWithInterceptor: BaseQueryFn<
   if (import.meta.env.DEV) {
     console.info("[RTK Api fetch]:", args);
   }
-  let result = await baseQuery(args, api, extraOptions);
+  const result = await baseQuery(args, api, extraOptions);
   if (result.error) {
     if (result.error.status === 401) {
       // toast("Please re-login for continue process");

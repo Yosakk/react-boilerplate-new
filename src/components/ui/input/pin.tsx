@@ -1,10 +1,4 @@
-import React, {
-  forwardRef,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useRef,
-} from "react";
+import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
 
 export type PinInputRef = {
   focus: () => void;
@@ -147,7 +141,7 @@ const PinInput = forwardRef<PinInputRef, Props>(function PinInput(
         {Array.from({ length: MAX }).map((_, i) => {
           const filled = i < value.length;
           const char = value[i] ?? "";
-          const show = filled ? maskedChar ?? char : placeholderChar;
+          const show = filled ? (maskedChar ?? char) : placeholderChar;
 
           const base =
             "h-9 w-9 md:h-11 md:w-11 rounded-full border transition-all duration-200 shadow-sm flex items-center justify-center text-base";
@@ -157,8 +151,8 @@ const PinInput = forwardRef<PinInputRef, Props>(function PinInput(
               ? "border-red-400 bg-red-500 text-white"
               : "border-red-300 bg-red-50 text-red-600"
             : filled
-            ? "border-[#3AC4A0]/60 bg-[#3AC4A0] text-white"
-            : "border-neutral-300 bg-neutral-100 text-neutral-700";
+              ? "border-[#3AC4A0]/60 bg-[#3AC4A0] text-white"
+              : "border-neutral-300 bg-neutral-100 text-neutral-700";
 
           return (
             <div key={i} className={[base, color, boxClassName].join(" ")}>
@@ -173,9 +167,7 @@ const PinInput = forwardRef<PinInputRef, Props>(function PinInput(
           {typeof error === "string" ? error : "Invalid PIN"}
         </p>
       ) : helperText ? (
-        <p className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400">
-          {helperText}
-        </p>
+        <p className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400">{helperText}</p>
       ) : null}
     </div>
   );

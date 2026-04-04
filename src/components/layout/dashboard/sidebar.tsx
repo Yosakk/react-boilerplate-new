@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { NavLink as RouterNavLink, useLocation } from "react-router-dom";
 import {
   NavLink,
@@ -6,7 +6,6 @@ import {
   ScrollArea,
   Text,
   Divider,
-  UnstyledButton,
   Group,
   Modal,
   Button,
@@ -29,9 +28,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   const [logoutOpened, { open: openLogout, close: closeLogout }] = useDisclosure(false);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(() =>
-    Object.fromEntries(
-      MenuData.map((item, i) => [i, item.expand ?? false])
-    )
+    Object.fromEntries(MenuData.map((item, i) => [i, item.expand ?? false]))
   );
 
   const isParentActive = useCallback(
@@ -41,9 +38,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
         if (here === item.path || here.startsWith(item.path + "/")) return true;
       }
       if (Array.isArray(item.child)) {
-        return item.child.some(
-          (c: any) => here === c.path || here.startsWith(c.path + "/")
-        );
+        return item.child.some((c: any) => here === c.path || here.startsWith(c.path + "/"));
       }
       return false;
     },
@@ -58,13 +53,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   return (
     <>
       {/* Logout Confirm Modal */}
-      <Modal
-        opened={logoutOpened}
-        onClose={closeLogout}
-        title="Log out"
-        centered
-        size="sm"
-      >
+      <Modal opened={logoutOpened} onClose={closeLogout} title="Log out" centered size="sm">
         <Text size="sm" c="dimmed" mb="lg">
           Are you sure you want to log out?
         </Text>
@@ -114,9 +103,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
                     active={active}
                     defaultOpened={active}
                     opened={expanded[index]}
-                    onChange={(val) =>
-                      setExpanded((prev) => ({ ...prev, [index]: val }))
-                    }
+                    onChange={(val) => setExpanded((prev) => ({ ...prev, [index]: val }))}
                     styles={{
                       root: { borderRadius: rem(10), fontWeight: 500 },
                     }}

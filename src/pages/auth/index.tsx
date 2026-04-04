@@ -11,9 +11,11 @@ export default function AuthPage(): JSX.Element {
 
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-[37%_minmax(0,1fr)] h-screen">
-      <AuthLeftSection className="h-screen"/>
+      <AuthLeftSection className="h-screen" />
       <AuthRightSection className="bg-white">
-        <Outlet context={{ basePath: isOnboarding ? onboardingPageRouteName : authPageRouteName }} />
+        <Outlet
+          context={{ basePath: isOnboarding ? onboardingPageRouteName : authPageRouteName }}
+        />
       </AuthRightSection>
     </div>
   );

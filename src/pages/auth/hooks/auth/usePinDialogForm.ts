@@ -49,10 +49,13 @@ export function usePinDialogController({
     }
   }, [externalError]);
 
-  const handleChange = useCallback((next: string) => {
-    setPin(next);
-    if (localErr) setLocalErr(null);
-  }, [localErr]);
+  const handleChange = useCallback(
+    (next: string) => {
+      setPin(next);
+      if (localErr) setLocalErr(null);
+    },
+    [localErr]
+  );
 
   const handleComplete = useCallback((val: string) => {
     setPin(val);
@@ -77,14 +80,8 @@ export function usePinDialogController({
     }
   }, [pin, max, loading, onSubmit, t]);
 
-  const headerTitle = useMemo(
-    () => titleNode ?? t("loginRevamp.text15"),
-    [titleNode, t]
-  );
-  const headerSubtitle = useMemo(
-    () => subtitleNode ?? t("loginRevamp.text16"),
-    [subtitleNode, t]
-  );
+  const headerTitle = useMemo(() => titleNode ?? t("loginRevamp.text15"), [titleNode, t]);
+  const headerSubtitle = useMemo(() => subtitleNode ?? t("loginRevamp.text16"), [subtitleNode, t]);
 
   return {
     pin,

@@ -78,7 +78,6 @@ export default function AuthOTP({
     setOtp("");
     requestAnimationFrame(() => otpInputRef.current?.focus());
   };
-    
 
   const otherMethodLabel = method === "whatsapp" ? "SMS" : "Whatsapp";
 
@@ -86,18 +85,14 @@ export default function AuthOTP({
     <section className={`w-full flex items-center justify-center py-10 ${className}`}>
       <form onSubmit={submit} className="w-full text-center px-6 sm:px-8" noValidate>
         <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
-          {t("authRegisterAccount.page4.text1")}{" "}
-          {t("authRegisterAccount.page4.text2")}{" "}
-          {method === "whatsapp" ? "Whatsapp" : "SMS"}{" "}
-          {t("authRegisterAccount.page4.text11")}
+          {t("authRegisterAccount.page4.text1")} {t("authRegisterAccount.page4.text2")}{" "}
+          {method === "whatsapp" ? "Whatsapp" : "SMS"} {t("authRegisterAccount.page4.text11")}
         </h1>
 
         <p className="mt-2 text-neutral-500">
-          {
-            method === 'whatsapp'
-              ? t('authRegisterAccount.page4.text3')
-              : t('authRegisterAccount.page4.text4')
-          }
+          {method === "whatsapp"
+            ? t("authRegisterAccount.page4.text3")
+            : t("authRegisterAccount.page4.text4")}
           <br />
           <span className="font-semibold text-[#2B4CCD]">+{phoneLabel}</span>
         </p>
@@ -114,7 +109,10 @@ export default function AuthOTP({
 
         <p className="mt-6 text-sm text-neutral-500">
           {t("authRegisterAccount.page4.text5")}{" "}
-          <span className="text-emerald-600 font-semibold">{cooldown}{t('authRegisterAccount.page4.text12')}</span>
+          <span className="text-emerald-600 font-semibold">
+            {cooldown}
+            {t("authRegisterAccount.page4.text12")}
+          </span>
         </p>
 
         <p className="mt-3 text-sm text-neutral-500">
@@ -123,8 +121,11 @@ export default function AuthOTP({
             type="button"
             onClick={resendSame}
             disabled={!canResend}
-            className={`font-semibold cursor-pointer ${canResend ? "text-emerald-700 hover:opacity-80" : "text-neutral-400 cursor-not-allowed"
-              }`}
+            className={`font-semibold cursor-pointer ${
+              canResend
+                ? "text-emerald-700 hover:opacity-80"
+                : "text-neutral-400 cursor-not-allowed"
+            }`}
           >
             {t("authRegisterAccount.page4.text7")}
           </button>
@@ -135,13 +136,14 @@ export default function AuthOTP({
             type="button"
             onClick={resendAlt}
             disabled={!canResend}
-            className={`font-semibold cursor-pointer  ${canResend ? "text-emerald-700 hover:opacity-80" : "text-neutral-400 cursor-not-allowed"
-              }`}
+            className={`font-semibold cursor-pointer  ${
+              canResend
+                ? "text-emerald-700 hover:opacity-80"
+                : "text-neutral-400 cursor-not-allowed"
+            }`}
           >
-            {t('authRegisterAccount.page4.text8')} 
-            <span className="lowercase mr-1">
-              {t('authRegisterAccount.page4.text9') } 
-            </span> 
+            {t("authRegisterAccount.page4.text8")}
+            <span className="lowercase mr-1">{t("authRegisterAccount.page4.text9")}</span>
             {otherMethodLabel}
           </button>
         </p>

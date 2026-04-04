@@ -63,7 +63,6 @@ export default function AuthAvatar({ onBack, onContinue, defaultSelectedId = "" 
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4">
-
         <div className="w-full md:w-[60%] flex justify-center items-center bg-[#7EFFA8] relative rounded-2xl p-2 gap-2 mb-12">
           <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
           <div className="w-full flex flex-col justify-start items-start">
@@ -79,7 +78,11 @@ export default function AuthAvatar({ onBack, onContinue, defaultSelectedId = "" 
         </div>
 
         <div>
-          <img src={SeedyBirthdate} alt="Seedy Illustration" className="w-[200px] h-auto shrink-0" />
+          <img
+            src={SeedyBirthdate}
+            alt="Seedy Illustration"
+            className="w-[200px] h-auto shrink-0"
+          />
         </div>
 
         <div className="flex gap-4 justify-center items-center mt-4">

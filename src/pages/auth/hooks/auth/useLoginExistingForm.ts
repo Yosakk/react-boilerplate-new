@@ -69,7 +69,18 @@ export function useExistingLoginForm(options: UseExistingLoginFormOptions = {}) 
         return false;
       }
     },
-    [autoNavigate, dispatch, existing?.email, existing?.phoneNumber, login, navigate, os_name, platform, onSuccess, t]
+    [
+      autoNavigate,
+      dispatch,
+      existing?.email,
+      existing?.phoneNumber,
+      login,
+      navigate,
+      os_name,
+      platform,
+      onSuccess,
+      t,
+    ]
   );
 
   return {

@@ -31,16 +31,20 @@ export function useCreateSeedsPin({
   const [error, setError] = useState<string | null>(null);
 
   const canContinue =
-    (step === "create" ? pin.length : confirmPin.length) === max &&
-    !loading &&
-    !disabled;
+    (step === "create" ? pin.length : confirmPin.length) === max && !loading && !disabled;
 
   const currentTitle = useMemo(
-    () => (step === "create" ? t("authRegisterAccount.page6.text1") : t("authRegisterAccount.page6.text3")),
+    () =>
+      step === "create"
+        ? t("authRegisterAccount.page6.text1")
+        : t("authRegisterAccount.page6.text3"),
     [step, t]
   );
   const currentSubtitle = useMemo(
-    () => (step === "create" ? t("authRegisterAccount.page6.text2") : t("authRegisterAccount.page6.text4")),
+    () =>
+      step === "create"
+        ? t("authRegisterAccount.page6.text2")
+        : t("authRegisterAccount.page6.text4"),
     [step, t]
   );
   const ctaLabel = useMemo(() => t("authRegisterAccount.page6.text7"), [t]);
@@ -81,18 +85,7 @@ export function useCreateSeedsPin({
       methods.setValue("pin", pin, { shouldDirty: true });
       onSubmit?.(pin);
     },
-    [
-      canContinue,
-      withConfirm,
-      methods,
-      onSubmit,
-      pin,
-      step,
-      confirmPin,
-      t,
-      focus,
-      resetAndFocus,
-    ]
+    [canContinue, withConfirm, methods, onSubmit, pin, step, confirmPin, t, focus, resetAndFocus]
   );
 
   const goEdit = useCallback(() => {
@@ -102,15 +95,21 @@ export function useCreateSeedsPin({
     focus();
   }, [focus]);
 
-  const onChangePin = useCallback((v: string) => {
-    setPin(v);
-    if (error) setError(null);
-  }, [error]);
+  const onChangePin = useCallback(
+    (v: string) => {
+      setPin(v);
+      if (error) setError(null);
+    },
+    [error]
+  );
 
-  const onChangeConfirm = useCallback((v: string) => {
-    setConfirmPin(v);
-    if (error) setError(null);
-  }, [error]);
+  const onChangeConfirm = useCallback(
+    (v: string) => {
+      setConfirmPin(v);
+      if (error) setError(null);
+    },
+    [error]
+  );
 
   return {
     currentTitle,

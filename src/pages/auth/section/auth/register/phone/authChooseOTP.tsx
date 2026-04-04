@@ -45,11 +45,7 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
   return (
     <div className={`${className ?? ""} flex flex-col items-center mt-8 mb-16 md:mb-0`}>
       <div className="w-full flex justify-start">
-        <img
-          src={Backward}
-          alt="Backward"
-          onClick={() => !disabled && onBack?.()}
-        />
+        <img src={Backward} alt="Backward" onClick={() => !disabled && onBack?.()} />
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4 md:mt-0">
@@ -80,7 +76,9 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
                 </p>
                 <p className="font-poppins text-neutral-soft font-light text-sm text-left">
                   {t("authRegisterAccount.page3.text5")}{" "}
-                  <span className="font-semibold text-neutral-medium">{phoneLabel ?? "+62xxxxxxxxxx"}</span>{" "}
+                  <span className="font-semibold text-neutral-medium">
+                    {phoneLabel ?? "+62xxxxxxxxxx"}
+                  </span>{" "}
                   {t("authRegisterAccount.page3.text7")}
                 </p>
               </div>
@@ -106,7 +104,9 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
                 </p>
                 <p className="font-poppins text-neutral-soft font-light text-sm text-left">
                   {t("authRegisterAccount.page3.text5")}{" "}
-                  <span className="font-semibold text-neutral-medium">{phoneLabel ?? "+62xxxxxxxxxx"}</span>{" "}
+                  <span className="font-semibold text-neutral-medium">
+                    {phoneLabel ?? "+62xxxxxxxxxx"}
+                  </span>{" "}
                   {t("authRegisterAccount.page3.text6")}
                 </p>
               </div>

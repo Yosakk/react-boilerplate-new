@@ -1,3 +1,3 @@
 export default {
-  "title": "Ubah Alamat Email"
+  title: "Ubah Alamat Email",
 } as const;

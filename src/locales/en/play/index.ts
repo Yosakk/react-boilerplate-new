@@ -1,3 +1,3 @@
 export default {
-  "keystat": "Key Stats"
+  keystat: "Key Stats",
 } as const;

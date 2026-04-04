@@ -15,9 +15,7 @@ export function useGoogleSSO() {
   const onboardingId = useAppSelector((s) => s.onboarding?.submissionId) || "";
   const [login, loginState] = useLoginMutation();
 
-  const [googleProfile, setGoogleProfile] = useState<GoogleUserInfo | null>(
-    null
-  );
+  const [googleProfile, setGoogleProfile] = useState<GoogleUserInfo | null>(null);
 
   const start = useGoogleLogin({
     scope: "openid email profile",

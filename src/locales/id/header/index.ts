@@ -1,3 +1,3 @@
 export default {
-  "join": "Gabung"
+  join: "Gabung",
 } as const;

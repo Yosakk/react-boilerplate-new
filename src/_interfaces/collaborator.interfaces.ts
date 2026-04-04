@@ -1,6 +1,5 @@
 import type { Meta } from "./pagination.interface";
 
-
 export type ManagementType = "Admin" | "Collaborator";
 
 export interface GetCollaboratorResI {
@@ -21,8 +20,7 @@ export interface CollaboratorI {
 }
 
 export interface CollaboratorPayloadI {
-  name: string
-  email: string
-  password: string
+  name: string;
+  email: string;
+  password: string;
 }
-

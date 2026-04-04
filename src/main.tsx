@@ -1,37 +1,46 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 import "@mantine/dates/styles.css";
-import AppRoutes from "./routes";
-import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
-import { store } from "./store";
-import "@/locales/i18n";
+import "./index.css";
 import "./fonts/poppins";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import { HelmetProvider } from "react-helmet-async";
+import "@/locales/i18n";
 import { MantineProvider } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import { ModalsProvider } from "@mantine/modals";
 import { mantineTheme } from "./theme/mantine";
+import { Provider } from "react-redux";
+import { store } from "./store";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { HelmetProvider } from "react-helmet-async";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
+import ErrorBoundary from "./ErrorBoundary";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <Provider store={store}>
-      <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
-        <HelmetProvider>
-          <MantineProvider theme={mantineTheme} defaultColorScheme="light">
-            <ModalsProvider>
-              <Notifications position="top-right" zIndex={1000} />
-              <BrowserRouter>
-                <AppRoutes />
-              </BrowserRouter>
-            </ModalsProvider>
-          </MantineProvider>
-        </HelmetProvider>
-      </GoogleOAuthProvider>
-    </Provider>
-  </StrictMode>
-);
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
+
+function App() {
+  return (
+    <StrictMode>
+      <ErrorBoundary>
+        <MantineProvider theme={mantineTheme} defaultColorScheme="light">
+          <Provider store={store}>
+            <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+              <HelmetProvider>
+                <ModalsProvider>
+                  <Notifications position="top-right" zIndex={1000} />
+                  <BrowserRouter>
+                    <AppRoutes />
+                  </BrowserRouter>
+                </ModalsProvider>
+              </HelmetProvider>
+            </GoogleOAuthProvider>
+          </Provider>
+        </MantineProvider>
+      </ErrorBoundary>
+    </StrictMode>
+  );
+}
+
+createRoot(document.getElementById("root")!).render(<App />);

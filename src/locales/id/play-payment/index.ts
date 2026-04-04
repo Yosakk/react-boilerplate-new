@@ -1,64 +1,65 @@
 export default {
-  "title": "Payment Method",
-  "virtualAccountLabel": "Virtual Account",
-  "eWalletLabel": "E-Wallet",
-  "creditCardLabel": "Kartu Kredit / Debit",
-  "ccLabel": "Credit Card",
-  "button": "Pay",
-  "WalletForm": {
-    "title": "Masukkan nomor {{wallet}}",
-    "phoneLabel": "Nomor {{wallet}}",
-    "phonePlaceholder": "8xxxxxxxx",
-    "paymentDeadline": "Bayar sebelum {{date}}",
-    "admissionFeeLabel": "Play Membership",
-    "adminFeeLabel": "Biaya Admin",
-    "serviceFeeLabel": "Biaya Layanan",
-    "adminFeeDiscountLabel": "Diskon Biaya Admin ",
-    "promoCodeDiscountLabel": "Diskon Kode Promo",
-    "button": "Pay",
-    "seedsCoin": "Seeds Coin Digunakan",
-    "teamBattleFee": "Biaya Team Battle"
+  title: "Payment Method",
+  virtualAccountLabel: "Virtual Account",
+  eWalletLabel: "E-Wallet",
+  creditCardLabel: "Kartu Kredit / Debit",
+  ccLabel: "Credit Card",
+  button: "Pay",
+  WalletForm: {
+    title: "Masukkan nomor {{wallet}}",
+    phoneLabel: "Nomor {{wallet}}",
+    phonePlaceholder: "8xxxxxxxx",
+    paymentDeadline: "Bayar sebelum {{date}}",
+    admissionFeeLabel: "Play Membership",
+    adminFeeLabel: "Biaya Admin",
+    serviceFeeLabel: "Biaya Layanan",
+    adminFeeDiscountLabel: "Diskon Biaya Admin ",
+    promoCodeDiscountLabel: "Diskon Kode Promo",
+    button: "Pay",
+    seedsCoin: "Seeds Coin Digunakan",
+    teamBattleFee: "Biaya Team Battle",
   },
-  "VirtualAccountGuide": {
-    "title": "{{bank}} Virtual Account",
-    "bankName": "Bank {{bank}}",
-    "accountNumberLabel": "No. rekening",
-    "copy": "Copy",
-    "accountNameLabel": "Virtual Account Name",
-    "admissionFeeLabel": "Play Membership",
-    "promoCodeDiscountLabel": "Diskon Kode Promo",
-    "adminFeeLabel": "Admin",
-    "note": "Selesaikan pembayaran Anda dalam 24 jam. Pesanan Anda akan dibatalkan secara otomatis jika pembayaran tidak dilakukan dalam 24 jam.",
-    "instructionLabel": "Instruksi Transfer mBanking",
-    "step1": {
+  VirtualAccountGuide: {
+    title: "{{bank}} Virtual Account",
+    bankName: "Bank {{bank}}",
+    accountNumberLabel: "No. rekening",
+    copy: "Copy",
+    accountNameLabel: "Virtual Account Name",
+    admissionFeeLabel: "Play Membership",
+    promoCodeDiscountLabel: "Diskon Kode Promo",
+    adminFeeLabel: "Admin",
+    note: "Selesaikan pembayaran Anda dalam 24 jam. Pesanan Anda akan dibatalkan secara otomatis jika pembayaran tidak dilakukan dalam 24 jam.",
+    instructionLabel: "Instruksi Transfer mBanking",
+    step1: {
       "1": "Pilih",
-      "2": "m-Transfer > {{provider}} Virtual Account."
+      "2": "m-Transfer > {{provider}} Virtual Account.",
     },
-    "step2": {
+    step2: {
       "1": "Masukan",
       "2": "nomor Virtual Account",
       "3": "dan pilih",
-      "4": "Send"
+      "4": "Send",
     },
-    "step3": {
+    step3: {
       "1": "Periksa Informasi yang tertera. Pastikan Merchant tertulis adalah",
       "2": "Seeds dan total bill",
       "3": "dan username telah benar.",
       "4": "Jika benar, Pilih",
-      "5": "Ya"
+      "5": "Ya",
     },
-    "step4": {
+    step4: {
       "1": "Masukan m-{{provider}} PIN kamu dan pilih",
-      "2": "OK"
+      "2": "OK",
     },
-    "button": "Bayar",
-    "seedsCoin": "Seeds Coin Digunakan",
-    "howToPay": "Cara Pembayaran",
-    "choosePayment": "Pilih Metode Pembayaran:",
-    "warningCompletion": "Selesaikan pembayaran dalam",
-    "minuteWarning": "Kurang dari 1 menit",
-    "expired": "Pembayaran kadaluarsa",
-    "minimumPaymentError": "Jumlah transaksi minimum untuk pembayaran Virtual Account adalah Rp 10.000.",
-    "teamBattleFee": "Biaya Team Battle"
-  }
+    button: "Bayar",
+    seedsCoin: "Seeds Coin Digunakan",
+    howToPay: "Cara Pembayaran",
+    choosePayment: "Pilih Metode Pembayaran:",
+    warningCompletion: "Selesaikan pembayaran dalam",
+    minuteWarning: "Kurang dari 1 menit",
+    expired: "Pembayaran kadaluarsa",
+    minimumPaymentError:
+      "Jumlah transaksi minimum untuk pembayaran Virtual Account adalah Rp 10.000.",
+    teamBattleFee: "Biaya Team Battle",
+  },
 } as const;

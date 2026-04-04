@@ -1,8 +1,5 @@
 import * as React from "react";
-import {
-  Button as MantineButton,
-  type ButtonProps as MantineButtonProps,
-} from "@mantine/core";
+import { Button as MantineButton, type ButtonProps as MantineButtonProps } from "@mantine/core";
 import { cn } from "@/_helper/twMerge";
 
 export type ButtonVariant =
@@ -32,24 +29,16 @@ export type ButtonProps = MantineButtonProps & {
  * Sizes: xs | sm | md | lg | xl
  * Radius is preset to "xl" via Mantine theme.
  */
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  function Button(
-    { className, children, variant = "filled", size = "sm", ...props },
-    ref
-  ) {
-    return (
-      <MantineButton
-        ref={ref}
-        variant={variant}
-        size={size}
-        className={cn(className)}
-        {...props}
-      >
-        {children}
-      </MantineButton>
-    );
-  }
-);
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
+  { className, children, variant = "filled", size = "sm", ...props },
+  ref
+) {
+  return (
+    <MantineButton ref={ref} variant={variant} size={size} className={cn(className)} {...props}>
+      {children}
+    </MantineButton>
+  );
+});
 
 Button.displayName = "Button";
 

@@ -11,14 +11,18 @@ type Props = { className?: string };
 export default function LanguageSwitcher({ className }: Props) {
   const { i18n } = useTranslation();
   const current = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
-  const activeIndex = Math.max(0, LANGS.findIndex(l => l.code === current));
+  const activeIndex = Math.max(
+    0,
+    LANGS.findIndex((l) => l.code === current)
+  );
 
   return (
     <div
       className={[
         "relative inline-flex items-center gap-1 rounded-full",
         "bg-[#9A76FE] p-1",
-        "shadow-sm", className || ""
+        "shadow-sm",
+        className || "",
       ].join(" ")}
       role="radiogroup"
       aria-label="Language"
@@ -40,7 +44,7 @@ export default function LanguageSwitcher({ className }: Props) {
             className={[
               "relative z-10 px-3 py-1.5 rounded-full text-sm font-semibold cursor-pointer",
               "inline-flex items-center gap-2 transition-colors",
-              isActive ? "text-white" : "text-white/80 hover:text-white"
+              isActive ? "text-white" : "text-white/80 hover:text-white",
             ].join(" ")}
           >
             <img

@@ -1,15 +1,17 @@
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import type { RouteObject } from "react-router-dom";
 import AuthPage, { authPageRouteName } from "../pages/auth";
 import Example from "@/pages/example";
 import DashboardLayout from "@/components/layout/dashboard";
-import AuthSignUp, { authSignUpPageRouteName } from "@/pages/auth/section/auth/authSignup";
-import LoginExisting, { authLoginExistingPageRouteName } from "@/pages/auth/section/auth/authLoginExisting";
+import AuthSignUp from "@/pages/auth/section/auth/authSignup";
+import LoginExisting, {
+  authLoginExistingPageRouteName,
+} from "@/pages/auth/section/auth/authLoginExisting";
 import AuthLogin, { authLoginPageRouteName } from "@/pages/auth/section/auth/authLogin";
 import SignupPersonalPage from "@/pages/auth/section/auth/register/signupPersonalData";
 import OnboardingPage, { onboardingCarouselPageRouteName } from "@/pages/auth/section/onboarding";
 import { ExistingLoginGuard } from ".";
-import  LegalPage, { tncPageRouteName } from "@/pages/terms-condition";
+import LegalPage, { tncPageRouteName } from "@/pages/terms-condition";
 
 const publicRoutes: Array<RouteObject> = [
   {
@@ -27,19 +29,17 @@ const publicRoutes: Array<RouteObject> = [
         ),
       },
       { path: authLoginPageRouteName, element: <AuthLogin /> },
-      { path: tncPageRouteName, element: < LegalPage/> },
-    ]
+      { path: tncPageRouteName, element: <LegalPage /> },
+    ],
   },
   {
     path: onboardingCarouselPageRouteName,
     element: <AuthPage />,
-    children: [
-      { index: true, element: <OnboardingPage /> },
-    ]
+    children: [{ index: true, element: <OnboardingPage /> }],
   },
   { path: "*", element: <Navigate to="/auth" /> },
 
-  { path: "/", element: <AuthPage /> }
+  { path: "/", element: <AuthPage /> },
 ];
 
 const protectedRoutesAdmin: RouteObject[] = [

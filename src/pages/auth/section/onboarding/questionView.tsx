@@ -49,7 +49,9 @@ export default function OnboardingQuestionsView({
 
   const bubbleMessage = isMultiSelect
     ? [{ text: questionText }]
-    : (typingMessage.length ? typingMessage : [{ text: questionText }]);
+    : typingMessage.length
+      ? typingMessage
+      : [{ text: questionText }];
 
   const typingKey = isMultiSelect
     ? String(qNum)
@@ -154,8 +156,7 @@ export default function OnboardingQuestionsView({
                   >
                     {opt.header}
                   </p>
-                ) : (opt.header === "Friends/ Family" ||
-                    opt.header === "Teman/ Keluarga") ? (
+                ) : opt.header === "Friends/ Family" || opt.header === "Teman/ Keluarga" ? (
                   <p className="text-xs md:text-sm text-center font-medium bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
                     {opt.header}
                   </p>
@@ -196,7 +197,7 @@ export default function OnboardingQuestionsView({
                 "font-poppins text-sm w-full p-2 rounded-xl capitalize text-white",
                 "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
                 "disabled:opacity-60 disabled:cursor-not-allowed",
-                "transition-all duration-200 hover:shadow-lg active:scale-[0.98] cursor-pointer"
+                "transition-all duration-200 hover:shadow-lg active:scale-[0.98] cursor-pointer",
               ].join(" ")}
             >
               {t("onboarding.question.text4")}
@@ -212,7 +213,7 @@ export default function OnboardingQuestionsView({
                 "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
                 "disabled:opacity-60 disabled:cursor-not-allowed",
                 "transition-all duration-200 hover:shadow-lg active:scale-[0.98]",
-                submitting ? "cursor-wait" : "cursor-pointer"
+                submitting ? "cursor-wait" : "cursor-pointer",
               ].join(" ")}
             >
               {submitting ? (

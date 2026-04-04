@@ -9,12 +9,7 @@ import {
   rem,
   useMantineColorScheme,
 } from "@mantine/core";
-import {
-  Bell,
-  MessageCircle,
-  Sun,
-  Moon,
-} from "lucide-react";
+import { Bell, MessageCircle, Sun, Moon } from "lucide-react";
 import { useAppSelector } from "@/store";
 
 type HeaderProps = {
@@ -76,13 +71,7 @@ export default function Header({
           </ActionIcon>
 
           {/* Notifications */}
-          <Indicator
-            color="violet"
-            size={8}
-            offset={4}
-            disabled={!hasNotification}
-            processing
-          >
+          <Indicator color="violet" size={8} offset={4} disabled={!hasNotification} processing>
             <ActionIcon
               variant="subtle"
               color="gray"

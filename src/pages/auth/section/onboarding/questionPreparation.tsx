@@ -33,7 +33,9 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
           <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
             <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
             <div className="flex flex-col justify-start items-start">
-              <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">Seedy</p>
+              <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">
+                Seedy
+              </p>
               <div className="w-full md:w-[280px] font-poppins text-neutral-medium font-medium text-sm md:text-md">
                 <TypingBubble message={[{ text: t("onboarding.welcomeButton.text1") }]} />
               </div>
@@ -44,7 +46,11 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
               />
             </div>
           </div>
-          <img src={SeedyMoneyBuddy} alt="SeedyMoneyBuddy" className="w-[250px] h-auto fade-in-onboard" />
+          <img
+            src={SeedyMoneyBuddy}
+            alt="SeedyMoneyBuddy"
+            className="w-[250px] h-auto fade-in-onboard"
+          />
         </div>
       ) : (
         <div className="w-full flex flex-col justify-center items-center">
@@ -52,7 +58,9 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
             <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
               <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
               <div className="w-full flex flex-col justify-start items-start">
-                <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">Seedy</p>
+                <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">
+                  Seedy
+                </p>
                 <div className="w-full md:w-[280px] font-poppins text-neutral-medium font-medium text-sm md:text-md">
                   <TypingBubble message={[{ text: t("onboarding.welcomeButton.text2") }]} />
                 </div>
@@ -63,7 +71,11 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
                 />
               </div>
             </div>
-            <img src={SeedyQuestion} alt="SeedyQuestion" className="w-[250px] h-auto fade-in-onboard" />
+            <img
+              src={SeedyQuestion}
+              alt="SeedyQuestion"
+              className="w-[250px] h-auto fade-in-onboard"
+            />
           </div>
           <button
             onClick={handleStart}

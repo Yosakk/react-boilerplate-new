@@ -18,12 +18,7 @@ type Options = {
 };
 
 export function useTypingBubble(message: MessageSpan[], speed = 40, opts: Options = {}) {
-  const {
-    typeOnceKey,
-    granularity = "word",
-    allowSkip = true,
-    respectReducedMotion = true,
-  } = opts;
+  const { typeOnceKey, granularity = "word", allowSkip = true, respectReducedMotion = true } = opts;
 
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -39,8 +34,7 @@ export function useTypingBubble(message: MessageSpan[], speed = 40, opts: Option
     return window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
   }, [respectReducedMotion]);
 
-  const tokenize = (s: string) =>
-    granularity === "word" ? s.split(/(\s+)/) : s.split("");
+  const tokenize = (s: string) => (granularity === "word" ? s.split(/(\s+)/) : s.split(""));
 
   const completeAll = () => {
     const all: MessageSpan[] = [];

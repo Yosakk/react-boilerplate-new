@@ -16,7 +16,7 @@ export async function fetchGoogleUserInfo(accessToken: string): Promise<GoogleUs
       headers: { Authorization: `Bearer ${accessToken}` },
     });
     if (!resp.ok) return null;
-    return (await resp.json());
+    return await resp.json();
   } catch {
     return null;
   }

@@ -26,7 +26,6 @@ export default function LoginPinDialog({
   title,
   subtitle,
 }: LoginPinDialogProps) {
-
   const {
     pin,
     pinRef,
@@ -87,7 +86,7 @@ export default function LoginPinDialog({
               length={max}
             />
           </div>
-          <p className="text-gray-400 my-2">{t('authRegisterAccount.page6.text5')}</p>
+          <p className="text-gray-400 my-2">{t("authRegisterAccount.page6.text5")}</p>
 
           <button
             type="button"

@@ -7,17 +7,16 @@ export function getDeviceMeta() {
   const dd = new DeviceDetector();
   const parsed = dd.parse(navigator.userAgent);
 
-  const os_name = (parsed.os?.name ?? "Unknown");
-  const type = (parsed.device?.type ?? "desktop");
+  const os_name = parsed.os?.name ?? "Unknown";
+  const type = parsed.device?.type ?? "desktop";
   const platform = `${type}_web`;
 
   return { os_name, platform };
 }
 
 export function getOrCreateVisitorId(domain?: string): string {
-  const m = typeof document !== "undefined"
-    ? document.cookie.match(/(?:^|; )visitor_id=([^;]*)/)
-    : null;
+  const m =
+    typeof document !== "undefined" ? document.cookie.match(/(?:^|; )visitor_id=([^;]*)/) : null;
   if (m?.[1]) return decodeURIComponent(m[1]);
 
   const id = (crypto?.randomUUID?.() ?? Math.random().toString(36).slice(2, 10)).toUpperCase();

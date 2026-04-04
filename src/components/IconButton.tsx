@@ -26,10 +26,7 @@ export default function IconButton({
 }: IconButtonProps) {
   const shape = rounded === "full" ? "rounded-full" : "rounded-lg";
 
-  const sizing =
-    size === "sm"
-      ? "py-2 md:py-2"
-      : "py-2.5 md:py-3";
+  const sizing = size === "sm" ? "py-2 md:py-2" : "py-2.5 md:py-3";
   const width = widthClassName ?? "w-full md:w-auto";
 
   const variantCls =

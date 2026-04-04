@@ -33,7 +33,7 @@ export default function CreateSeedsPinSection({
     onChangeConfirm,
     max,
   } = useCreateSeedsPin({ withConfirm, onSubmit, loading, disabled, max: 6 });
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="w-full flex items-center justify-center py-10">
@@ -75,7 +75,7 @@ export default function CreateSeedsPinSection({
             />
           )}
         </div>
-        <p className="text-gray-400 my-2">{t('authRegisterAccount.page6.text5')}</p>
+        <p className="text-gray-400 my-2">{t("authRegisterAccount.page6.text5")}</p>
 
         {withConfirm && step === "confirm" && (
           <button

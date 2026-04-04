@@ -1,19 +1,14 @@
-import { Backward, SeedyAuthLogin } from '@/assets/auth';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import LoginPinDialog from './DialogPIN';
-import { useExistingLoginForm } from '../../hooks/auth/useLoginExistingForm';
+import { Backward, SeedyAuthLogin } from "@/assets/auth";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import LoginPinDialog from "./DialogPIN";
+import { useExistingLoginForm } from "../../hooks/auth/useLoginExistingForm";
 
 export const authLoginExistingPageRouteName = "/auth/login/existing";
 
 const LoginExisting: React.FC = () => {
   const { t } = useTranslation();
-  const {
-    userNameExisting,
-    openPin,
-    setOpenPin,
-    dialogBindings,
-  } = useExistingLoginForm({
+  const { userNameExisting, openPin, setOpenPin, dialogBindings } = useExistingLoginForm({
     autoNavigate: true,
     onSuccess: undefined,
   });
@@ -36,7 +31,8 @@ const LoginExisting: React.FC = () => {
       </div>
 
       <p className="font-poppins font-semibold bg-gradient-to-b text-center w-full from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-2xl md:text-3xl mt-4">
-        {t("loginRevamp.text1") + " " + userNameExisting + "!"} <span className='text-white'>👋</span>
+        {t("loginRevamp.text1") + " " + userNameExisting + "!"}{" "}
+        <span className="text-white">👋</span>
       </p>
 
       <p className="font-poppins text-neutral-medium font-medium text-sm md:text-lg text-center mt-2">
@@ -68,11 +64,7 @@ const LoginExisting: React.FC = () => {
         </Link>
       </div>
 
-      <LoginPinDialog
-        {...dialogBindings}
-        imageSrc={SeedyAuthLogin}
-      />
-
+      <LoginPinDialog {...dialogBindings} imageSrc={SeedyAuthLogin} />
     </div>
   );
 };

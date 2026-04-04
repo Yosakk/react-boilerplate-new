@@ -54,7 +54,7 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
     [question]
   );
 
-  const replacerNo1 = Array.isArray(answers?.[1]) ? answers[1][0]?.header ?? "" : "";
+  const replacerNo1 = Array.isArray(answers?.[1]) ? (answers[1][0]?.header ?? "") : "";
   const questionText = (question?.question ?? "").replace(/\[no_1_answer\]/g, replacerNo1);
 
   const helpNoteText =
@@ -65,12 +65,15 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
   const isMultiSelect = qNum === 4 || qNum === 5;
 
   const answeredResponse = (): MessageSpan[] => {
-    const answer1 = Array.isArray(answers?.[1]) ? answers[1][0]?.header ?? "" : "";
-    const answer2 = Array.isArray(answers?.[2]) ? answers[2][0]?.header ?? "" : "";
-    const answer3 = Array.isArray(answers?.[3]) ? answers[3][0]?.header ?? "" : "";
+    const answer1 = Array.isArray(answers?.[1]) ? (answers[1][0]?.header ?? "") : "";
+    const answer2 = Array.isArray(answers?.[2]) ? (answers[2][0]?.header ?? "") : "";
+    const answer3 = Array.isArray(answers?.[3]) ? (answers[3][0]?.header ?? "") : "";
 
     if (qNum === 1) {
-      return [{ text: t("onboarding.question.answers.text1") + " " }, { text: answer1, isBold: true }];
+      return [
+        { text: t("onboarding.question.answers.text1") + " " },
+        { text: answer1, isBold: true },
+      ];
     }
     if (qNum === 2) {
       return [

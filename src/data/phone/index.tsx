@@ -101,4 +101,4 @@ export const COUNTRIES = [
   { code: "GE", name: "Georgia", dial: "+995", flag: "🇬🇪" },
   { code: "AM", name: "Armenia", dial: "+374", flag: "🇦🇲" },
   { code: "AZ", name: "Azerbaijan", dial: "+994", flag: "🇦🇿" },
-]
+];

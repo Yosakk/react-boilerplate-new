@@ -113,7 +113,6 @@ export default function AuthAgeStep({ onSubmit, loading = false, onBack, onSkip 
             {t("authRegisterAccount.page7.text7")}
           </button>
         </div>
-
       </div>
     </div>
   );

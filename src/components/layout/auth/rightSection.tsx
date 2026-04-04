@@ -19,12 +19,7 @@ export default function AuthRightSection({
   showTopbar = true,
 }: Props): JSX.Element {
   return (
-    <section
-      className={cn(
-        "flex items-start justify-center  overflow-y-auto",
-        className
-      )}
-    >
+    <section className={cn("flex items-start justify-center  overflow-y-auto", className)}>
       <img
         src={Ornament}
         alt=""

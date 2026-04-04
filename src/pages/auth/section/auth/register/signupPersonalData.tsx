@@ -80,7 +80,6 @@ function SignupWrapper() {
     );
   }
 
-
   if (step === "pin") {
     return (
       <CreateSeedsPinSection
@@ -143,7 +142,7 @@ export default function SignupPersonalPage() {
 
   const submissionId = useAppSelector((s: RootState) => s.onboarding.submissionId);
   const location = useLocation();
-  const navState = (location.state) || null;
+  const navState = location.state || null;
   const mode = navState?.mode === "sso" ? "sso" : "normal";
 
   return (

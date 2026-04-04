@@ -1,4 +1,4 @@
 export default {
-  "title": "Pilih Lencana",
-  "description": "Silahkan pilih lencanamu"
+  title: "Pilih Lencana",
+  description: "Silahkan pilih lencanamu",
 } as const;

@@ -2,7 +2,14 @@ import * as React from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
 import { cn } from "@/_helper/twMerge";
 import countriesRaw from "@/data/phone/countries.json";
 import { useTranslation } from "react-i18next";
@@ -11,7 +18,6 @@ import type { FieldError } from "react-hook-form";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 import { FormatNationalForDisplay, NormalizeLocalPart } from "@/_helper/normalizePhoneNumber";
 import ValidationError from "../validation/error";
-
 
 type RawCountry = { name: string; flag: string; code: string; dial_code: string };
 export type Country = { name: string; flag: string; code: string; dial: string };
@@ -102,9 +108,7 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
       const q = searchQuery.toLowerCase();
       return COUNTRIES.filter(
         (c) =>
-          c.name.toLowerCase().includes(q) ||
-          c.code.toLowerCase().includes(q) ||
-          c.dial.includes(q)
+          c.name.toLowerCase().includes(q) || c.code.toLowerCase().includes(q) || c.dial.includes(q)
       );
     }, [searchQuery]);
 
@@ -145,7 +149,11 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
 
     const handlePhoneChange = React.useCallback(
       (e: React.ChangeEvent<HTMLInputElement>) => {
-        const local = NormalizeLocalPart(e.target.value, selectedCountry.code, selectedCountry.dial);
+        const local = NormalizeLocalPart(
+          e.target.value,
+          selectedCountry.code,
+          selectedCountry.dial
+        );
         setLocalNumber(local);
         emit(selectedCountry, local);
       },
@@ -155,9 +163,17 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
     return (
       <div className={cn("w-full", className)}>
         {label && (
-          <label htmlFor={id} data-slot="label" className={cn("block mb-1 text-sm font-medium text-foreground", labelClassName)}>
+          <label
+            htmlFor={id}
+            data-slot="label"
+            className={cn("block mb-1 text-sm font-medium text-foreground", labelClassName)}
+          >
             <span>{label}</span>
-            {required && <span className="ml-1 text-destructive" aria-hidden="true">*</span>}
+            {required && (
+              <span className="ml-1 text-destructive" aria-hidden="true">
+                *
+              </span>
+            )}
           </label>
         )}
 
@@ -190,7 +206,11 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
             </PopoverTrigger>
             <PopoverContent className="w-[300px] p-0" align="start">
               <Command>
-                <CommandInput placeholder="Search countries..." value={searchQuery} onValueChange={setSearchQuery} />
+                <CommandInput
+                  placeholder="Search countries..."
+                  value={searchQuery}
+                  onValueChange={setSearchQuery}
+                />
                 <CommandList className="max-h-[220px]">
                   <CommandEmpty>No country found.</CommandEmpty>
                   <CommandGroup>
@@ -203,7 +223,9 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
                       >
                         <span className="text-lg">{country.flag}</span>
                         <span className="flex-1">{country.name}</span>
-                        <span className="text-sm font-mono text-muted-foreground">{country.dial}</span>
+                        <span className="text-sm font-mono text-muted-foreground">
+                          {country.dial}
+                        </span>
                       </CommandItem>
                     ))}
                   </CommandGroup>

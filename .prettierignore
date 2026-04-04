@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-dev
+dist-staging
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+*.min.js
+*.min.css

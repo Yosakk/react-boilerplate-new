@@ -16,7 +16,6 @@ type SSOIntent = {
   profile?: { name?: string; email?: string; picture?: string };
 };
 
-
 export default function QuestionDoneContainer({ onRestart, answers }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();

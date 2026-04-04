@@ -13,7 +13,7 @@ import {
 import Cookies from "cookies-js";
 import CookieStorage from "./cookie";
 import auth from "./auth";
-import onboarding from "./onboarding"
+import onboarding from "./onboarding";
 import userExistingReducer from "./user";
 import { Api } from "@/_services/api";
 import { setupListeners } from "@reduxjs/toolkit/query";

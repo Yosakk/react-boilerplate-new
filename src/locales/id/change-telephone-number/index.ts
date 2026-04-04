@@ -1,3 +1,3 @@
 export default {
-  "title": "Ubah Nomor Telepon"
+  title: "Ubah Nomor Telepon",
 } as const;

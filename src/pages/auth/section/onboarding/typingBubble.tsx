@@ -6,18 +6,12 @@ interface Props {
 }
 
 export default function TypingBubble({ message }: Props): JSX.Element {
-  const {
-    displayedText,
-    finalSpans,
-    currentSpan,
-    currentIsNewLine,
-    currentIsBold,
-    skip,
-  } = useTypingBubble(message, 30, {
-    granularity: "char",
-    allowSkip: true,
-    respectReducedMotion: true,
-  });
+  const { displayedText, finalSpans, currentSpan, currentIsNewLine, currentIsBold, skip } =
+    useTypingBubble(message, 30, {
+      granularity: "char",
+      allowSkip: true,
+      respectReducedMotion: true,
+    });
 
   const onClick = useCallback(() => {
     skip?.();
@@ -36,7 +30,10 @@ export default function TypingBubble({ message }: Props): JSX.Element {
             span.newLine ? (
               <br key={`final-br-${i}`} />
             ) : (
-              <span key={`final-span-${i}`} className={span.isBold ? "font-semibold" : "font-normal"}>
+              <span
+                key={`final-span-${i}`}
+                className={span.isBold ? "font-semibold" : "font-normal"}
+              >
                 {span.text}
               </span>
             )
