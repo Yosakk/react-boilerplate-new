@@ -1,0 +1,19 @@
+export default {
+  "text1": "My Latest Play",
+  "text2": "Leaderboards",
+  "text3": "Let’s check your detailed score!",
+  "text4": "Duration",
+  "text5": "days",
+  "text6": "Search",
+  "text7": "List Quiz",
+  "text8": "Top Quiz",
+  "text9": "Last Update : ",
+  "text10": "Your Current Rank",
+  "text11": "Scoring System",
+  "text12": "1st winner getting 500 points",
+  "text13": "2nd winner getting 300 points",
+  "text14": "3rd winner getting 100 points",
+  "text15": "Participant 50 points",
+  "text16": "Season",
+  "text17": "All Time"
+} as const;

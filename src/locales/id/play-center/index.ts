@@ -1,0 +1,19 @@
+export default {
+  "text1": "Permainan Terakhir Saya",
+  "text2": "Papan Peringkat",
+  "text3": "Yuk, cek detail skormu di sini!",
+  "text4": "Durasi",
+  "text5": "hari",
+  "text6": "Cari",
+  "text7": "Daftar Quiz",
+  "text8": "Quiz Teratas",
+  "text9": "Terakhir diupdate : ",
+  "text10": "Peringkatmu saat ini",
+  "text11": "Sistem Penilaian",
+  "text12": "Juara pertama mendapat 500 poin",
+  "text13": "Juara kedua mendapat 300 poin",
+  "text14": "Juara ketiga mendapat 100 poin",
+  "text15": "Peserta 50 poin",
+  "text16": "Musim",
+  "text17": "Kapan saja"
+} as const;

@@ -1,0 +1,1271 @@
+export default {
+  "login": {
+    "welcome": "Selamat Datang 🙌",
+    "welcomeDescription": "Silakan masuk menggunakan akun kamu",
+    "email": "Email",
+    "password": "Password",
+    "passwordPlaceholder": "Yuk, masukan kata sandi kamu",
+    "emailPlaceholder": "Yuk, masukan email kamu",
+    "validation": {
+      "login": "Nomor telepon atau kata sandimu salah",
+      "blank": "Kamu harus mengisi kolom ini",
+      "error": "Terjadi kesalahan. Cek kata sandi Anda atau koneksi Anda!",
+      "serverError": "Terjadi kesalahan pada server. Mohon coba sesaat lagi.",
+      "limitEntry": "Anda telah salah memasukan password tiga kali. Fitur login anda akan dibekukan 5 menit demi keamanan.",
+      "password": "Kata sandi harus terdiri dari 8 karakter dan terdiri dari huruf besar dan huruf kecil.",
+      "wrongPassword": "Password salah. Cek password Anda sebelum mengisi form!",
+      "recaptcha": "ReCAPTCHA tidak tersedia! Pastikan Anda telah mengisi ReCAPTCHA."
+    },
+    "loginButton": "Masuk",
+    "disconnectAccount": "Putuskan Akun",
+    "disconnectAccountConfirm1": "Apakah anda yakin ingin memutuskan koneksi akun Danamart dengan akun Seeds anda?",
+    "disconnectAccountConfirm2": "Jika anda ingin menghubungkan kembali, pastikan email Seeds anda telah sama dan sesuai dengan email baru yang anda gunakan pada platform Danamart.",
+    "cancel": "Batalkan",
+    "process": "Putuskan Akun",
+    "disconnectSucceed": "Akun berhasil diputuskan",
+    "tooManyAttempts": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit ya."
+  },
+  "forgotPassword": {
+    "forgotPasswordTitle": "Lupa Kata Sandi 🔑",
+    "forgotPasswordDescription": "Masukkan email kamu dan kami akan mengirimkan link untuk mengatur ulang password kamu.",
+    "forgotPasswordText": "Lupa Kata Sandi?",
+    "sendLink": "Kirim Link",
+    "backLogin": "Masuk Kembali",
+    "next": "Selanjutnya",
+    "authOTP": {
+      "title1": "Yuk, Masukan Kode OTP",
+      "title2": "Kode-nya kami kirim ke ",
+      "title3": "",
+      "resend": "Kirim ulang kode OTP",
+      "otherMethod1": "Belum dapet kodenya? ",
+      "otherMethod3": "Coba",
+      "otherMethod4": " lewat",
+      "validation": "Yah, OTPmu salah, yuk coba lagi",
+      "blank": "Kamu haru mengisi kolom ini!"
+    },
+    "createNewPassword": {
+      "title1": "Buat Kata Sandi Baru",
+      "title2": "Yuk, buat kata sandi yang baru!"
+    },
+    "authForgotPass": {
+      "title1": "Masukkan Nomor Telepon",
+      "title2": "Untuk dapat kode OTP",
+      "title3": "Buat Kata Sandi Baru",
+      "title4": "Yuk, buat kata sandi yang aman",
+      "validation": {
+        "number": "Ups, nomor telepon kamu tidak terdaftar",
+        "password": "Ups, kata sandi harus terdiri dari 8 karakter dan terdiri dari huruf besar dan huruf kecil.",
+        "match": "Ups, kata sandi tidak cocok",
+        "blank": "Kamu haru mengisi kolom ini!"
+      },
+      "newPassword": {
+        "label": "Buat Kata Sandi Baru",
+        "placeholder": "Tolong buat kata sandimu"
+      },
+      "matchPassword": {
+        "label": "Konfirmasi Kata Sandi Baru",
+        "placeholder": "Tolong konfirmasi kata sandimu"
+      },
+      "information": "Kata sandi harus terdiri dari 8 karakter, terdiri dari huruf besar dan huruf kecil, dan karakter khusus.",
+      "modal": {
+        "title1": "Berhasil",
+        "title2": "Kata sandi yang baru berhasil dibuat",
+        "title3": "Tolong cek emailmu",
+        "close": "Tutup"
+      }
+    }
+  },
+  "register": {
+    "connectSeeds": "Hubungkan Seeds dengan Danamart",
+    "connectDanamart": "Hubungkan Danamart ke Seeds",
+    "automate": "Optimalkan perjalanan investasi anda secara mudah dengan menghubungkan Seeds ke Danamart.",
+    "notLinked": "Tidak Terhubung",
+    "linked": "Terhubung",
+    "linkAccount": "Hubungkan Nomor Telepon dan Email",
+    "connectExisting": "Hubungkan dengan Akun Danamart yang Sudah Ada",
+    "back": "Kembali",
+    "connectAccount": "Hubungkan Akun",
+    "completeData": "Lengkapi Email dan Nomor Telepon",
+    "changeData": "Ubah Email atau Nomor Telepon",
+    "makeSure": "Pastikan email dan nomor telepon akun Seeds Anda sama dengan email dan nomor telepon akun Danamart Anda",
+    "notRegistered": "Akun tidak terdaftar. Pastikan email dan nomor telepon akun Seeds dan Danamart anda sama!",
+    "connectSucceed": "Akun berhasil terhubung",
+    "email": "Email",
+    "phoneNumber": "Nomor Telepon",
+    "createAccountButton": "Buat Akun Danamart",
+    "createDanamartAccount": "Buat Akun Danamart",
+    "createDesc": "Buat akun Danamart baru dan buka potensi investasi anda.",
+    "no": "Tidak",
+    "yes": "Ya",
+    "createPasswordTitle": "Buat Kata Sandi Untuk Akun Danamart",
+    "createPassword": "Buat Kata Sandi",
+    "pleaseCreatePassword": "Silakan buat kata sandi",
+    "confirmPassword": "Konfirmasi kata sandi",
+    "pleaseConfirmPassword": "Silahkan konfirmasi kata sandi",
+    "passwordContain": "Password harus mengandung:",
+    "numbers": "Angka",
+    "lowercase": "Huruf Kecil",
+    "specialCharacters": "Karakter Khusus",
+    "characters": "8 Karakter",
+    "capitalLetters": "Huruf Kapital",
+    "passNotMatch": "Kata sandi tidak cocok",
+    "createAccount": "Buat Akun"
+  },
+  "dashboard": {
+    "title": "Beranda",
+    "description": "Pintu gerbang anda untuk memantau dan mengembangkan investasi.",
+    "verifyPhone": "Jangan lupa untuk memverifikasi nomor telepon Anda",
+    "verifyForm": "Jangan lupa lengkapi data diri kamu",
+    "here": "di sini",
+    "topUp": "Isi Ulang",
+    "cashInHand": "Uang Tunai",
+    "cashInHandDesc": "Dana yang tersedia untuk ditarik atau di investasikan",
+    "danaReward": "Imbalan Dana",
+    "danaRewardDesc": "Dana promosi yang hanya dapat diinvestasikan",
+    "danaInterim": "Dana Sementara",
+    "danaInterimDesc": "Dana hasil dividen interim atau komisi referral",
+    "investableFunds": "Dana Dapat Diinvestasikan",
+    "investableFundsDesc": "Uang Tunai + Imbalan Dana + Dana Sementara",
+    "fundsSecurities": "Dana dalam Efek",
+    "fundsSecuritiesDesc": "Dana yang diinvestasikan pada efek",
+    "totalFunds": "Total Keseluruhan Dana",
+    "totalFundsDesc": "Total keseluruhan dana yang dimiliki",
+    "purchaseAllocationSecurities": "Alokasi pembelian berdasarkan efek",
+    "shares": "Saham",
+    "bonds": "Obligasi",
+    "purchaseAllocationBusiness": "Alokasi pembelian berdasarkan sektor usaha",
+    "growthStocks": "Pertumbuhan Saham",
+    "incomeStocks": "Pendapatan Saham",
+    "alternatives": "Alternatif",
+    "errorGetUserDashboard": "Gagal mendapatkan data dasbor",
+    "errorGetUserProfile": "Gagal mendapatkan data profile pengguna",
+    "mustVerify": "Mohon verifikasi nomor handphone dan email anda terlebih dahulu."
+  },
+  "verification": {
+    "photoIdCardTitle": {
+      "title": "Foto Kartu Identitas",
+      "camera": "Kamera",
+      "upload": "Unggah",
+      "retake": "Ambil Ulang",
+      "uploadTitle": "Unggah Kartu Identitas Anda",
+      "popUpRequirements": "Foto KTP diperlukan untuk validasi data kamu dan untuk keperluan tanda tangan dokumen elektronik.",
+      "uploadDescription": "Untuk mengonfirmasi identitas Anda, harap unggah foto digital atau ambil foto.",
+      "uploadRequirement": {
+        "title": "Ketentuan mengunggah KTP",
+        "text1": "Mengambil foto KTP langsung melalui kamera atau upload foto KTP.",
+        "text2": "File yang diunggah harus dalam format JPG/JPEG dan maksimal 4 MB.",
+        "text3": "KTP tidak rusak seperti retak atau patah.",
+        "text4": "Ambil foto KTP dengan posisi Landscape",
+        "text5": "Pastikan foto e-KTP jelas, tidak buram, pencahayaan cukup terang, dan tidak terpotong."
+      },
+      "successMessage": "Data foto KTP berhasil diperbarui."
+    },
+    "accountInformation": {
+      "accountInformationTitle": "Informasi Akun",
+      "popUpInformation": "Silakan isi Informasi Pribadi sesuai data KTP anda",
+      "popUpAddress": "Isi data alamat sesuai KTP anda",
+      "popUpValidity": "Jika masa berlaku KTP kamu seumur hidup kamu bisa langsung klik Seumur Hidup",
+      "popUpMotherName": "Nama Gadis Ibu Kandung kami butuhkan sebagai sandi keamanan jika suatu hari terjadi hal yang tidak di-inginkan.",
+      "popUpBeneficiary": "Ahli waris adalah orang yang mendapatkan bagian dari harta orang yang meninggal atau pewaris",
+      "popUpValidityDate": "Tanggal berlaku KTP harus sesuai dengan KTP anda",
+      "occupation": "Pekerjaan",
+      "address": "Alamat",
+      "validPeriod": "Masa Berlaku KTP",
+      "others": "Lainnya",
+      "fieldWarning": "Anda harus mengisi kolom ini",
+      "previewDocument": "Lihat dokumen",
+      "text1": "Apakah data di bawah sudah sesuai?",
+      "text2": "No KTP (NIK)",
+      "text3": "Masukan nomor KTP anda",
+      "text4": "Nama Lengkap",
+      "text5": "Masukan nama lengkap anda",
+      "text6": "Jenis Kelamin",
+      "text7": "Tempat Lahir",
+      "text8": "Masukan kota kelahiran anda",
+      "text9": "Tanggal Lahir",
+      "text10": "Agama",
+      "text11": "Pendidikan Terakhir",
+      "text12": "Status Pernikahan",
+      "text13": "Nama Pasangan",
+      "text14": "Masukan nama pasangan anda",
+      "text15": "Pekerjaan",
+      "text16": "Masukan pekerjaan anda",
+      "text17": "Bidang Pekerjaan",
+      "text18": "Masukan bidang pekerjaan",
+      "text19": "Lama Bekerja",
+      "text20": "Alamat Tempat Bekerja",
+      "text21": "Masukan alamat tempat anda bekerja",
+      "text22": "Nomor Telepon Tempat Bekerja",
+      "text23": "Masukan nomor telepon",
+      "text24": "Alamat",
+      "text25": "Masukan alamat anda",
+      "text26": "RT",
+      "text27": "Masukan nomor RT",
+      "text28": "RW",
+      "text29": "Masukan nomor RW",
+      "text30": "Kelurahan",
+      "text31": "Masukan nama kelurahan",
+      "text32": "Kecamatan",
+      "text33": "Masukan nama kecamatan",
+      "text34": "Kabupaten / Kota",
+      "text35": "Masukan nama kabupaten / kota",
+      "text36": "Provinsi",
+      "text37": "Masukan nama provinsi",
+      "text38": "Kode POS",
+      "text39": "Masukan kode pos",
+      "text40": "Kota Penerbit KTP",
+      "text41": "Masukan nama kota penerbit KTP",
+      "text42": "Kewarganegaraan",
+      "text43": "Masukan kewarganegaraan",
+      "text44": "Tanggal Masa Berlaku KTP",
+      "text45": "Masukan tanggal masa berlaku KTP",
+      "text46": "Nama Ibu Kandung",
+      "text47": "Masukan nama ibu kandung",
+      "text48": "Nama Ahli Waris",
+      "text49": "Masukan nama ahli waris",
+      "text50": "Nomor Telepon",
+      "text51": "Masukan nomor telepon",
+      "text52": "Tujuan Investasi",
+      "text53": "Sumber Informasi Danamart",
+      "text54": "Apakah kamu mempunyai NPWP?",
+      "text55": "No. NPWP",
+      "text56": "Masukan nomor NPWP",
+      "text57": "Tanggal Terbit NPWP",
+      "text58": "Masukan tanggal terbit NPWP",
+      "text59": "Simpan",
+      "text60": "Seumur Hidup",
+      "text61": "File NPWP",
+      "text62": "Masukan file atau foto NPWP",
+      "text63": "Hubungan dengan Ahli Waris",
+      "text64": "Masukan hubungan dengan ahli waris",
+      "dropdown": {
+        "yes": "Ya",
+        "no": "Tidak",
+        "male": "Laki-Laki",
+        "female": "Perempuan",
+        "religion": {
+          "text1": "Islam",
+          "text2": "Katolik",
+          "text3": "Protestan",
+          "text4": "Hindu",
+          "text5": "Budha",
+          "text6": "Konghucu"
+        },
+        "education": {
+          "text1": "Strata III",
+          "text2": "Strata II",
+          "text3": "Strata I / Diploma IV",
+          "text4": "Diploma III / Akademi",
+          "text5": "SLTA / Sederajat",
+          "text6": "SLTP / Sederajat",
+          "text7": "SD / Sederajat"
+        },
+        "marriage": {
+          "text1": "Belum Kawin",
+          "text2": "Kawin",
+          "text3": "Cerai Hidup",
+          "text4": "Cerai Mati"
+        },
+        "workingLength": {
+          "text1": "Tahun",
+          "text2": "Tahun",
+          "text3": "Lebih dari"
+        },
+        "plan": {
+          "text1": "Dana Tabungan",
+          "text2": "Dana Pensiun",
+          "text3": "Dana Darurat",
+          "text4": "Modal Usaha",
+          "text5": "Lainnya"
+        },
+        "information": {
+          "text1": "Search Engine",
+          "text2": "Instagram",
+          "text3": "Facebook",
+          "text4": "Tiktok",
+          "text5": "Youtube",
+          "text6": "Referral",
+          "text7": "Event",
+          "text8": "Berita",
+          "text9": "Radio",
+          "text10": "Lainnya"
+        },
+        "jobDetailList": {
+          "text1": "Alas Kaki",
+          "text2": "Asuransi",
+          "text3": "Bank",
+          "text4": "Elektronik dan Komponennya",
+          "text5": "Energi",
+          "text6": "Garmen, Tekstil",
+          "text7": "Iklan, Percetakan dan Media",
+          "text8": "Institusi Keuangan",
+          "text9": "Jalan Tol, Bandara dan Pelabuhan",
+          "text10": "Kabel",
+          "text11": "Kayu",
+          "text12": "Keramik, Kaca atau Porselain",
+          "text13": "Kertas",
+          "text14": "Kimia",
+          "text15": "Konstruksi Bangunan",
+          "text16": "Konstruksi Non-Bangunan",
+          "text17": "Kosmetik dan Rumah Tangga",
+          "text18": "Layanan Komputer",
+          "text19": "Makanan dan Minuman",
+          "text20": "Mesin dan Alat Berat",
+          "text21": "Obat-obatan",
+          "text22": "Otomotif dan Komponennya",
+          "text23": "Pakan Ternak",
+          "text24": "Pariwisata, Hotel dan Restauran",
+          "text25": "Pendidikan",
+          "text26": "Peralatan Rumah Tangga",
+          "text27": "Perikanan",
+          "text28": "Perkebunan",
+          "text29": "Pertambangan Batu/Pasir",
+          "text30": "Pertambangan Batubara",
+          "text31": "Pertambangan Gas Alam",
+          "text32": "Pertambangan Logam dan Mineral",
+          "text33": "Perumahan dan Property",
+          "text34": "Perusahaan Grosir",
+          "text35": "Perusahaan Investasi",
+          "text36": "Perusahaan Retail",
+          "text37": "Perusahaan Sekuritas",
+          "text38": "Plastik dan Kemasan",
+          "text39": "Produk Logam",
+          "text40": "Pusat Kesehatan",
+          "text41": "Semen",
+          "text42": "Tanaman",
+          "text43": "Telekomunikasi",
+          "text44": "Tembakau",
+          "text45": "Transportasi",
+          "text46": "Lainnya"
+        }
+      },
+      "validationForm": {
+        "text1": "Kolom ini wajib diisi",
+        "text2": "Harus berisi 16 digit angka",
+        "text3": "Harus berisi 15-16 digit angka / karakter",
+        "text4": "Harus berisi 3 digit angka",
+        "text5": "Harus berisi minimal 7 digit angka"
+      }
+    },
+    "financialInformationTittle": "Informasi Keuangan",
+    "financial": {
+      "income": "Pendapatan",
+      "listIncome": {
+        "salary": "Gaji",
+        "profit": "Keuntungan",
+        "husbandOrParent": "Suami / Orang Tua",
+        "other": "Lainnya"
+      },
+      "popUpLabel": {
+        "clickForMore": "Klik untuk info lebih lanjut",
+        "sidInformation": "Nomor Tunggal Identitas Pemodal atau Single Investor Identification (SID), yaitu merupakan kode tunggal dan khusus yang diterbitkan oleh PT Kustodian Sentral Efek Indonesia (KSEI). SID akan didapatkan apabila Anda menjadi investor di pasar modal Indonesia.",
+        "monthlyIncomeTitle": "Penjelasan mengenai Penghasilan per bulan",
+        "monthlyInformation": "\n            Sesuai dengan POJK NOMOR 57 /POJK.04/2020 TENTANG PENAWARAN EFEK MELALUI LAYANAN URUN DANA BERBASIS TEKNOLOGI INFORMASI Pasal 56 dan 57 terkait <strong>kriteria Pemodal dan batasan pembelian Efek:</strong>\n            <br><br>\n            a. Setiap Pemodal dengan penghasilan sampai dengan Rp500.000.000,00 (lima ratus juta rupiah) per tahun, dapat membeli Efek melalui Layanan Urun Dana paling banyak sebesar 5% (lima persen) dari penghasilan per tahun;\n            <br><br>\n            b. Setiap Pemodal dengan penghasilan lebih dari Rp500.000.000,00 (lima ratus juta rupiah) per tahun, dapat membeli Efek melalui Layanan Urun Dana paling banyak sebesar 10% (sepuluh persen) dari penghasilan per tahun.\n            <br><br>\n            Maka dengan ini, Penyelenggara akan meminta data \"penghasilan per bulan\" untuk dijadikan batasan pembelian/investasi melalui platform Danamart. \"Penghasilan per bulan\" kamu akan dikalkulasi dengan mengkalikannya dengan 12 dan akan didapatkan \"penghasilan per tahun\".\n          ",
+        "close": "Tutup",
+        "accessCardTitle": "Penjelasan Terkait Kartu AKSes KSEI",
+        "accessCardInformation": "\n            Sesuai dengan POJK NOMOR 57 /POJK.04/2020 TENTANG PENAWARAN EFEK MELALUI LAYANAN URUN DANA BERBASIS TEKNOLOGI INFORMASI Pasal 56 dan 57 terkait <strong>kriteria Pemodal dan batasan pembelian Efek:</strong>\n            <br><br>\n            a. Setiap Pemodal dengan penghasilan sampai dengan Rp500.000.000,00 (lima ratus juta rupiah) per tahun, dapat membeli Efek melalui Layanan Urun Dana paling banyak sebesar 5% (lima persen) dari penghasilan per tahun; dan\n            <br><br>\n            b. Setiap Pemodal dengan penghasilan lebih dari Rp500.000.000,00 (lima ratus juta rupiah) per tahun, dapat membeli Efek melalui Layanan Urun Dana paling banyak sebesar 10% (sepuluh persen) dari penghasilan per tahun.\n            <br><br>\n            Dalam hal Pemodal merupakan:\n            <br><br>\n            <ul style=\"list-style-type: decimal; padding-left: 20px; margin: 0;\">\n              <li><strong>badan hukum</strong>; dan</li>\n              <li>pihak yang mempunyai pengalaman berinvestasi di pasar modal yang dibuktikan dengan <strong>kepemilikan rekening Efek paling sedikit 2 (dua) tahun</strong> sebelum penawaran Efek;</li>\n              <li>Dalam hal Efek yang diterbitkan melalui Layanan Urun Dana merupakan Efek bersifat utang atau Sukuk dijamin atau <strong>ditanggung dengan nilai penjaminan atau nilai penanggungan paling sedikit 125%</strong> (seratus dua puluh lima persen) dari nilai penghimpunan dana.</li>\n            </ul>\n            <br>\n            Maka, <strong>kriteria Pemodal dan batasan pembelian Efek oleh Pemodal tidak berlaku.</strong>\n          "
+      },
+      "previewDocument": "Lihat dokumen",
+      "incomeSource": "Sumber Penghasilan",
+      "select": "Pilih",
+      "incomePerMonth": "Penghasilan per bulan",
+      "areYouAgree": "Apakah Anda menyetujui?",
+      "validateInputForm": "Saya menyatakan bahwa data penghasilan yang saya isikan ini adalah benar dan akurat sesuai dengan kondisi keuangan saya saat ini.",
+      "bankInformation": "Informasi Bank",
+      "nameOfAccount": "Nama Pemilik Rekening",
+      "accountNumber": "No. Rekening",
+      "accountNumberPlaceHolder": "Nomor Rekening",
+      "bankName": "Nama Bank",
+      "sidInformation": "Informasi SID",
+      "doYouAlready": "Apakah sudah memiliki rekening efek?",
+      "noSID": "Nomor SID",
+      "monthYearRegis": "Bulan Tahun Registrasi",
+      "accessCard": "File Kartu Akses (JPG Format Max 4MB)",
+      "beneficialInformation": "Informasi Beneficial Owner",
+      "isThereBeneficial": "Apakah Terdapat Pemilik Manfaat (Beneficial Owner)?",
+      "fullName": "Nama Lengkap",
+      "gender": "Jenis Kelamin",
+      "identityNumber": "Nomor Identitas",
+      "fileIdentity": "File Identitas (JPG Format Max 4MB)",
+      "address": "Alamat",
+      "birthPlace": "Tempat Lahir",
+      "birthDate": "Tanggal Lahir",
+      "citizenship": "Kewarganegaraan",
+      "job": "Pekerjaan",
+      "jobList": {
+        "governmentEmployee": "Pegawai Negeri",
+        "privateSectorEmployee": "Pegawai Swasta",
+        "stateOwnedEnterpriseEmployee": "Pegawai BUMN/BUMD",
+        "nationalMilitaryOrPoliceOfficer": "TNI/POLRI",
+        "businessOwner": "Pengusaha",
+        "trader": "Pedagang",
+        "farmerOrFisherman": "Petani/Nelayan",
+        "student": "Pelajar/Mahasiswa",
+        "housewife": "Ibu Rumah Tangga",
+        "unemployed": "Tidak Bekerja",
+        "employee": "Karyawan / Karyawati",
+        "entrepreneur": "Wiraswasta",
+        "stateOfficial": "Pejabat Negara",
+        "accountant": "Akuntan",
+        "lawyerOrNotary": "Pengacara/Notaris",
+        "profession": "Professional",
+        "retiree": "Pensiunan",
+        "privateLecturerOrTeacher": "Dosen/Guru Swasta",
+        "publicLecturerOrTeacher": "Dosen/Guru Negeri",
+        "doctor": "Dokter"
+      },
+      "jobAddress": "Alamat Pekerjaan",
+      "jobPhoneNumber": "Nomor Telepon Pekerjaan",
+      "biologicalMotherName": "Nama Gadis Ibu Kandung",
+      "sourceOfFunds": "Sumber Dana",
+      "investmentGoals": "Tujuan Investasi",
+      "investmentGoalsList": {
+        "longTermInvest": "Investasi Jangka Panjang",
+        "shortTermInvest": "Investasi Jangka Pendek",
+        "speculation": "Spekulasi",
+        "income": "Pendapatan",
+        "other": "Lainnya"
+      },
+      "relationshipWithBeneficial": "Hubungan dengan Beneficial Owner",
+      "marriageStatus": "Status Perkawinan Beneficial Owner",
+      "marriageStatusList": {
+        "single": "Belum Menikah",
+        "married": "Menikah"
+      },
+      "partnerFullname": "Nama Lengkap Pasangan",
+      "ktpNumber": "No KTP",
+      "validationIncome": "Silakan setujui pernyataan pendapatanmu terlebih dahulu!"
+    },
+    "photoSelfieTittle": "Foto Diri",
+    "photoSelfie": {
+      "previewSelfie": "Pratinjau Foto Selfie",
+      "switchCamera": "Ubah Kamera",
+      "camera": "Kamera",
+      "retake": "Ambil Ulang",
+      "continue": "Lanjutkan",
+      "cancel": "Batalkan",
+      "delete": "Hapus",
+      "requirements": "Ketentuan mengunggah Foto Selfie",
+      "requirements1": "Mengambil foto langsung menggunakan kamera.",
+      "requirements2": "Pastikan wajah kamu terlihat dengan pencahayaan yang cukup.",
+      "requirements3": "Area wajah terlihat jelas tanpa menggunakan aksesori seperti kacamata, masker, topi, dan lain-lain.",
+      "requirements4": "Tidak perlu memegang e-KTP atau benda lainnya.",
+      "success": "Terima kasih telah melengkapi Formulir Pengajuan Menjadi Pemodal, tim kami akan memverifikasi data Kamu.",
+      "agreement": "Setuju mengenai pernyataan foto selfie",
+      "popUpLabel": {
+        "title": "Kami bekerjasama dengan Digisign untuk proses tanda tangan dokumen, silakan baca pernyataan di bawah terlebih dahulu.",
+        "reason": "Foto Selfie diperlukan untuk validasi data kamu dan untuk keperluan tanda tangan dokumen elektronik.",
+        "statement": {
+          "read": "Baca Pernyataan",
+          "title": "XI. SERTIFIKAT ELEKTRONIK DAN TANDA TANGAN ELEKTRONIK",
+          "description": "\n              Anda akan menggunakan Sertifikat Elektronik dan Tanda Tangan Elektronik untuk menandatangani dokumen elektronik dengan PT. Dana Aguna Nusantara <strong>(Danamart)</strong>. PT. Dana Aguna Nusantara <strong>(Danamart)</strong> bekerja sama dengan PT. Solusi Net Internusa (Digisign.id) selaku penyelenggara Sertifikasi Elektronik Indonesia yang telah berinduk pada Kementrian Komunikasi dan Informatika Republik Indonesia dengan merk Digisign.id.\n              <br><br>\n              Dengan ini, Anda menyatakan setuju untuk mendaftar sebagai pengguna platform Digisign.id dan diterbitkan sertifikat elektronik oleh PT. Solusi Net Internusa (Digisign.id) sebagai penyelenggara Sertifikasi Elektronik Oleh PT Solusi Net Internusa (Digisign.id) atas nama Anda dalam rangka penggunaan layanan Tanda Tangan Elektronik di Platform Digisign.id untuk menandatangani dokumen elektronik.\n              <br><br>\n              Apabila data pribadi Anda terverifikasi kesesuaiannya, maka PT Solusi Net Internusa (Digisign.id) sebagai Penyelenggara Sertifikasi Elektronik berinduk oleh Kementerian Komunikasi dan Informatika Republik Indonesia, akan menerbitkan sertifikat elektronik sebagai bukti bahwa data pribadi Anda telah diverifikasi dan sesuai dengan data yang tercatat pada sistem instansi yang berhak mengeluarkan identitas tersebut.\n              <br><br>\n              Oleh karenanya, Anda menjamin keakuratan data pribadi yang Anda sediakan dan setuju atas pemrosesan data pribadi Anda untuk tujuan penerbitan sertifikat elektronik serta layanan lain dari PT Solusi Net Internusa (Digisign.id) yang melekat pada sertifikat elektronik tersebut.\n              <br><br>\n              Anda setuju untuk membebaskan PT Solusi Net Internusa (Digisign.id) dari tanggung jawab ganti kerugian, klaim atau gugatan atas hasil sertifikat elektronik yang diterbitkan apabila data yang diberikan yang tidak valid dan tidak benar.\n              <br><br>\n              Dengan ini, Anda menyatakan secara jelas dan tanpa adanya paksaan, akan memberikan kuasa kepada PT Dana Aguna Nusantara <strong>(Danamart)</strong> untuk meneruskan data KTP, swafoto, nomor ponsel dan alamat surel Anda sebagai data pendaftaran kepada PT Solusi Net Internusa (Digisign.id) guna memenuhi ketentuan Peraturan Perundang-undangan, yaitu Peraturan Pemerintah Nomor 71 Tahun 2019 tentang Penyelenggara Sistem dan Transaksi Elektronik, dan Peraturan Kementerian Informasi dan Komunikasi Nomor 11 Tahun 2018.\n              <br><br>\n              Dengan ini Anda telah membaca, memahami, dan setuju untuk terikat pada syarat dan ketentuan layanan Penyelenggara Sertifikat Elektronik yang terdapat pada Perjanjian Kepemilikan Sertifikat Elektronik (Subscriber Agreement), Kebijakan Privasi PSrE (CA Privacy Policy), serta Pernyataan Penyelenggaraan Sertifikat Elektronik (Certification Practice Statement) Digisign.id yang dapat diakses melalui <strong><a href=\"https://repository.digisign.id\" style=\"color: #3AC4A0;\" target=\"_blank\">https://repository.digisign.id</a></strong>.\n            ",
+          "close": "Tutup"
+        }
+      }
+    },
+    "buttonSave": "Simpan",
+    "buttonPrevious": "Sebelumnya",
+    "buttonNext": "Selanjutnya"
+  },
+  "offers": {
+    "sidebar": {
+      "text1": "Penawaran"
+    },
+    "dashboard": {
+      "text1": "Penawaran",
+      "text2": "Penawaran investasi eksklusif—kembangkan kekayaan Anda sekarang!",
+      "text3": "Tidak ada penawaran yang sesuai",
+      "filter": {
+        "text1": "Jenis Efek",
+        "text2": "Semua",
+        "text3": "Saham",
+        "text4": "Obligasi",
+        "text5": "Status Penawaran",
+        "text6": "Semua",
+        "text7": "Listing",
+        "text8": "Prelisting",
+        "text9": "Filter",
+        "text10": "Semua",
+        "text11": "Jumlah Penawaran Terbesar",
+        "text12": "Jumlah Penawaran Terkecil",
+        "text13": "Jangka Waktu Terlama",
+        "text14": "Jangka Waktu Tercepat",
+        "text15": "Imbal Hasil Terbesar",
+        "text16": "Imbal Hasil Terkecil"
+      },
+      "offerCard": {
+        "text1": "Pemodal",
+        "text2": "Jenis efek",
+        "text3": "Pembiayaan",
+        "text4": "Kupon",
+        "text5": "Tenor",
+        "text6": "Lihat Detail",
+        "text7": "Bagikan",
+        "text8": "Peluang investasi dari proyek yang <strong>telah selesai dikerjakan</strong> sehingga memiliki <strong>risiko lebih rendah</strong>.",
+        "text9": "Peluang investasi dari proyek yang <strong>sedang berjalan</strong> sehingga memiliki <strong>risiko lebih tinggi</strong>.",
+        "text10": "Selengkapnya",
+        "text11": "Cek Ombak"
+      },
+      "prelisting": "Tahapan sebelum listing, yaitu di mana kamu hanya bisa melihat penawaran yang tersedia di platform Danamart, tetapi <strong>masih belum bisa membeli</strong> penawaran efek tersebut. Tujuannya agar kamu mempelajari terlebih dahulu sebelum memutuskan pembelian/investasi pada penawaran efek yang tersedia. Tahapan prelisting ini berlangsung selama <strong>2 hari</strong>, sebelum berlanjut ke tahap listing.",
+      "listing": "Tahapan di mana selain bisa melihat informasi penawaran, kamu <strong>sudah bisa membeli</strong> penawaran efek yang tersedia di platform Danamart. Tahapan listing ini berlangsung selama <strong>30 hari</strong>, sejak berakhirnya masa prelisting.",
+      "shareOffer": {
+        "text1": "Tautan penawaran telah disalin!",
+        "text2": "Bagikan Penawaran Ini",
+        "text3": "Bagikan Tautan"
+      },
+      "detailOffer": {
+        "text1": "Minimal Investasi",
+        "text2": "Kode Efek",
+        "text3": "Lokasi",
+        "text4": "Tujuan Penggunaan Dana",
+        "text5": "Lihat Penawaran →"
+      }
+    },
+    "detail": {
+      "offer": "Penawaran",
+      "minimumInvest": "Minimal Investasi",
+      "securitiesCode": "Kode Efek",
+      "location": "Lokasi",
+      "intendFund": "Tujuan Penggunaan Dana",
+      "financier": "Pemodal",
+      "buy": "Beli",
+      "report": "Laporkan",
+      "securitiesType": "Jenis Efek",
+      "intendedUseOfFunds": "Tujuan Penggunaan Dana",
+      "offeredAmount": "Jumlah Dana Penawaran",
+      "minimumInvestmentAmount": "Jumlah Minimum Dana",
+      "coupon": "Kupon",
+      "tenor": "Tenor",
+      "guarantee": "Jaminan",
+      "offerType": "Jenis Penawaran",
+      "progress": {
+        "text1": "Pre-Listing",
+        "text2": "Listing",
+        "text3": "Pendanaan Selesai",
+        "text4": "Penyerahan Efek",
+        "text5": "Tanda Tangan Perjanjian",
+        "text6": "Penyerahan Dana",
+        "text7": "Pendistribusian Efek",
+        "text8": "Pembelian Selesai",
+        "text9": "Bisnis Berjalan",
+        "text10": "Penawaran Batal",
+        "text11": "Pengembalian Dana",
+        "text12": "Penawaran Dibatalkan",
+        "text13": "Progres Penawaran",
+        "popup": {
+          "title": "Progress Penawaran",
+          "text1": "<strong>Hari Kerja</strong> adalah hari dimana seseorang diharapkan untuk bekerja dan beraktivitas sesuai dengan jadwal kerja yang telah ditetapkan. Hari kerja hanya mencakup hari Senin hingga Jumat, sedangkan hari Sabtu dan Minggu dan libur nasional dianggap sebagai hari libur.",
+          "text2": "<strong>Hari Kalender</strong> adalah hari yang terdiri dari 24 jam dan digunakan untuk menghitung durasi waktu dalam sistem penanggalan. Hari kalender dihitung mulai dari tengah malam hingga tengah malah berikutnya. Dalam kalender, setiap bulan memiliki 28-31 hari, kecuali bulan Februari yang memiliki 28 atau 29 hari dalam setiap empat tahun pada tahun kabisat."
+        }
+      },
+      "tab": {
+        "title": {
+          "text1": "Overview",
+          "text2": "Investor Corner",
+          "text3": "News Update",
+          "text4": "Discuss",
+          "text5": "Factsheet",
+          "text6": "Report"
+        },
+        "overview": {
+          "title": "Informasi Penerbit",
+          "proyek": {
+            "title": "Proyek",
+            "text1": "Nilai Proyek",
+            "text2": "Proyeksi Margin Proyek",
+            "text3": "Jenis Pengerjaan Proyek",
+            "text4": "Uraian Pengerjaan Proyek"
+          },
+          "bisnis": {
+            "title": "Bisnis",
+            "text1": "Perusahaan",
+            "text2": "Alamat Perusahaan",
+            "text3": "Lama Perusahaan Berdiri",
+            "text4": "Sektor Usaha",
+            "text5": "Jumlah Direktur",
+            "text6": "Jumlah Komisaris",
+            "text7": "Jumlah Pemegang Saham",
+            "text8": "Jumlah Karyawan"
+          },
+          "keuangan": {
+            "title": "Keuangan",
+            "text1": "Penjualan",
+            "text2": "Laba Usaha",
+            "text3": "Laba Bersih",
+            "text4": "Aset Lancar",
+            "text5": "Aset Tetap",
+            "text6": "Hutang Lancar",
+            "text7": "Hutang Jangka Panjang",
+            "text8": "Ekuitas"
+          },
+          "penanggungJawab": {
+            "title": "Penanggung Jawab",
+            "text1": "Nama Lengkap",
+            "text2": "Jenis Kelamin",
+            "text3": "Umur (Tahun)",
+            "text4": "Pendidikan Terakhir",
+            "text5": "Alamat",
+            "text6": "Jabatan"
+          },
+          "proyeksi": {
+            "title": "Proyeksi",
+            "text1": "Proyeksi Penjualan Per Bulan",
+            "text2": "Proyeksi Penjualan Per Tahun"
+          }
+        },
+        "investorCorner": {
+          "text1": "Jumlah Investor",
+          "text2": "Jumlah Pendanaan Terbesar",
+          "text3": "Jumlah Pendanaan Terkecil",
+          "text4": "Jumlah Rata-Rata Pendanaan"
+        },
+        "discuss": {
+          "text1": "Gabung Grup WhatsApp",
+          "text2": "Tulis komentar...",
+          "text3": "Kirim"
+        },
+        "news": {
+          "text1": "Belum ada kabar terbaru"
+        },
+        "factsheet": {
+          "text1": "Dokumen tidak ada"
+        },
+        "report": {
+          "filter": {
+            "text1": "Tampilkan 7 entri",
+            "text2": "Tampilkan 10 entri",
+            "text3": "Tampilkan 25 entri",
+            "text4": "Tampilkan 50 entri",
+            "text5": "Tampilkan 75 entri",
+            "text6": "Tampilkan 100 entri",
+            "text7": "Cari..."
+          },
+          "table": {
+            "text1": "Tanggal Laporan",
+            "text2": "Jenis Laporan",
+            "text3": "Tidak ada laporan yang ditemukan.",
+            "text4": "Menampilkan",
+            "text5": "hingga",
+            "text6": "dari",
+            "text7": "entri"
+          },
+          "modalDetail": {
+            "title": "Detail Laporan",
+            "text1": "Jenis Laporan",
+            "text2": "Perkembangan Proyek",
+            "text3": "Jenis",
+            "text4": "Download",
+            "text5": "Lihat",
+            "text6": "Isi Laporan",
+            "text7": "File",
+            "text8": "Realisasi Penggunaan Data",
+            "text9": "Laporan Perubahan Ekuitas",
+            "text10": "Laporan Neraca",
+            "text11": "Catatan Atas Laporan Keuangan",
+            "text12": "Laporan Laba/Rugi",
+            "text13": "Nama Anggota Direksi",
+            "text14": "Laporan Arus Kas",
+            "text15": "Nama Anggota Dewan Komisaris",
+            "text16": "Laporan Hasil RUPS",
+            "text17": "Rencana Tanggal Pembagian Dividen",
+            "text18": "Jumlah Pembagian Dividen (Rp)",
+            "text19": "Tutup"
+          }
+        }
+      },
+      "reportForm": {
+        "title": "Laporan",
+        "text1": "Nama",
+        "text2": "Masukan nama anda",
+        "text3": "Email",
+        "text4": "Masukan email anda",
+        "text5": "Nomor Handphone",
+        "text6": "Masukan nomor handphone",
+        "text7": "Pernyataan",
+        "text8": "Masukan judul pernyataan",
+        "text9": "Isi",
+        "text10": "Masukan isi laporan",
+        "text11": "Kirim Laporan",
+        "text12": "Laporan berhasil dikirimkan.",
+        "text13": "Laporan gagal dikirimkan! Coba lagi.",
+        "validationForm": {
+          "text1": "Kolom ini wajib diisi"
+        }
+      },
+      "listingModal": {
+        "warningText": "Pembelian efek belum tersedia karena masih dalam status Pre-Listing. Silakan tunggu hingga status berubah menjadi Listing.",
+        "close": "Tutup"
+      }
+    },
+    "purchase": {
+      "title": "Pembelian Efek",
+      "type1": "Obligasi",
+      "type2": "Saham",
+      "card": {
+        "text1": "Uang Tunai",
+        "text2": "Dana Investasi",
+        "text3": "Dana dalam Sekuritas",
+        "text4": "Dana Dalam Efek",
+        "text5": "Sisa Pembelian",
+        "text6": "Tidak Terbatas"
+      },
+      "form": {
+        "sourceCash": {
+          "text1": "Pilih Sumber Dana",
+          "text2": "Cash In-hand",
+          "text3": "Transfer Tunai"
+        },
+        "titleObligasi": "Pembelian Obligasi",
+        "titleSaham": "Pembelian Saham",
+        "text1": "Imbal Hasil",
+        "text2": "Slot Pembelian",
+        "text3": "Jangka Waktu (Bulan)",
+        "text4": "Jumlah Pembelian (Rp)",
+        "text5": "Masukan Jumlah Pembelian (Rp)",
+        "text6": "Dana Reward + Interim (Rp)",
+        "text7": "Pilih Sumber Dana",
+        "text8": "Pakai Dana Reward + Interim",
+        "text9": "Total Pembelian Yang Harus Dibayarkan (Rp)",
+        "text10": "Pilih Bank Pembayaran",
+        "text11": "Potensi Keuntungan",
+        "text12": "Imbal Hasil/Bulan",
+        "text13": "Pajak 10%",
+        "text14": "Total Imbal Hasil",
+        "text15": "Biaya Administrasi 10%",
+        "text16": "Total Modal + Imbal Hasil",
+        "text17": "Hasil Investasi (Nett)",
+        "text18": "Mengetahui berinvestasi pada PO Financing",
+        "text19": "Buy",
+        "text20": "Harga Per Lembar Saham (Rp)",
+        "text21": "Sisa Lembar Saham",
+        "text22": "Total Pembelian (Rp)",
+        "text23": "Pilih Bank Pembayaran",
+        "text24": "Jumlah Pembelian (Lot)",
+        "text25": "Kode Efek",
+        "text26": "Sektor Usaha",
+        "text27": "Sisa Lembar Saham",
+        "text28": "Harga Perlembar Saham (Rp)",
+        "text29": "Total Pembelian (Rp)",
+        "text30": "Jumlah Pembelian (Lembar)",
+        "text31": "Input Jumlah Lot Pembelian",
+        "formResponse": {
+          "text1": "Pembelian Sukses",
+          "text2": "Semangat, sedikit lagi kamu berhasil beli efek! Segera selesaikan proses berikutnya untuk melanjutkan transaksi.",
+          "text3": "Selamat! Proses pembelian efek sudah berhasil!",
+          "text4": "Maaf, ada pembelian efek yang belum selesai diproses. Silakan proses terlebih dahulu transaksi Kamu",
+          "text5": "Minimum pembelian adalah Rp. 100.000,-",
+          "text6": "Silakan setujui bahwa anda berinvestasi pada Project Financing",
+          "text7": "Maaf jumlah pembelian anda melebihi slot yang ada",
+          "text8": "Maaf jumlah pembelian anda melebihi deposit anda",
+          "text9": "Maaf jumlah pembelian anda melebihi slot yang tersedia",
+          "text10": "Maaf jumlah pembelian anda melebihi batas transfer bank anda"
+        }
+      },
+      "disclaimer": {
+        "text": "\n            <p>PT Dana Aguna Nusantara adalah suatu perseroan terbatas yang bergerak di bidang jasa layanan urun dana berbasis teknologi informasi (“Penyelenggara”) dan mengembangkan bisnis layanan urun dana bersama dengan mempertemukan Pemodal dan Penerbit (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada layanan urun dana ini, timbulnya hubungan perdata terjadi apabila Pemodal sepakat untuk membeli efek yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang timbul dari hak sebagai Pemodal untuk menerima imbal hasil dari Penerbit merupakan risiko yang wajib ditanggung oleh Pemodal sesuai kebijakan imbal hasil Penerbit. Danamart hanya bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 27 Peraturan Otoritas Jasa Keuangan No. 57 Tahun 2020 tentang <strong>PENAWARAN EFEK MELALUI LAYANAN URUN DANA BERBASIS TEKNOLOGI INFORMASI (“POJK 57/2020”)</strong> yang menyatakan bahwa:</p>\n            <br>\n            <ol>\n              <li>OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERSETUJUAN TERHADAP PENERBIT DAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN MELANGGAR HUKUM.</li>\n              <li>INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA. APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA BERKONSULTASI DENGAN PENYELENGGARA.</li>\n              <li>PENERBIT DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN DANA INI.</li>\n              <li>Danamart bertindak sebagai penyelenggara urun dana yang mempertemukan Pemodal dan Penerbit dan bukan sebagai pihak yang menjalankan bisnis (Penerbit). Otoritas Jasa Keuangan bertindak sebagai regulator dan pemberi izin, bukan sebagai penjamin investasi.</li>\n              <li>Keputusan pembelian efek di Danamart, sepenuhnya merupakan hak dan tanggung jawab Pemodal. Pemodal yang melakukan pembelian efek telah menyetujui seluruh syarat dan ketentuan serta memahami risiko pembelian efek termasuk di dalamnya menjual kembali efek tersebut dengan cepat, membatalkan pembelian efek, dan atau kehilangan sebagian atau seluruh dari modal.</li>\n              <li>Risiko Usaha: Pembelian yang belum atau tidak menghasilkan sepenuhnya menjadi tanggung jawab Pemodal. Diharapkan Pemodal melakukan perhitungan dan analisa yang tepat terhadap Penerbit dan usahanya sebelum melakukan pembelian efek.</li>\n              <li>Risiko Investasi: Pemodal memiliki hak untuk mendapatkan imbal hasil atas usaha yang dilakukan oleh Penerbit. Tidak menutup kemungkinan bahwa tidak adanya pembagian imbal hasil karena usaha yang dilakukan oleh Penerbit mengalami penurunan.</li>\n              <li>Risiko Likuiditas: Adanya kemungkinan bahwa Pemodal tidak dapat dengan mudah menjual efek pada pasar sekunder untuk efek dari Penerbit.</li>\n              <li>Kegagalan Sistem Elektronik: Adanya kemungkinan bahwa sistem elektronik dapat mengalami gangguan sewaktu-waktu yang disebabkan oleh kesalahan teknis.</li>\n              <li>Risiko kelangkaan pembagian dividen dan/atau dilusi kepemilikan saham, jika Efek yang diterbitkan merupakan saham.</li>\n              <li>Risiko Gagal Bayar: Keputusan pembelian efek dapat mengakibatkan risiko kehilangan sebagian atau seluruh modal investasi termasuk di dalamnya penurunan usaha Penerbit dan lain hal sebagainya.</li>\n            </ol>\n          ",
+        "yes": "Ya",
+        "cancel": "Batalkan"
+      },
+      "validationForm": {
+        "text1": "Kolom ini wajib diisi"
+      },
+      "payment": {
+        "qris": {
+          "steps": "\n              <ol>\n                <li>Scan/screenshot kode QR yang tampil di layar dengan aplikasi bank, aplikasi dompet digital (e-wallet) atau aplikasi pembayaran lain yang mendukung pembayaran QRIS.</li>\n                <li>Periksa detail transaksi pada aplikasi, lalu klik tombol Bayar.</li>\n                <li>Masukan PIN.</li>\n                <li>Setelah transaksi selesai, kembali ke halaman ini dan akan diteruskan ke halaman portfolio.</li>\n              </ol>\n            "
+        },
+        "titleQR": "Pembayaran dengan QRIS",
+        "titleVA": "Pembayaran dengan Virtual Account",
+        "descriptionQR": "Kami juga telah mengirimkan instruksi pembayaran QRIS melalui email. Silakan periksa email Anda dan lanjutkan pembayaran.",
+        "descriptionVA": "Kami juga telah mengirimkan instruksi pembayaran VA melalui email. Silakan periksa email Anda dan lanjutkan pembayaran.",
+        "orderId": "ID Pesanan",
+        "nominal": "Nominal",
+        "expiredDate": "Berlaku Sampai",
+        "status": "Status",
+        "numberVA": "Nomor Virtual Account",
+        "numberVACopied": "Nomor VA berhasil disalin",
+        "scan": "Pindai QRIS",
+        "download": "Unduh QR",
+        "howToPayQR": "Cara pembayaran menggunakan QRIS:",
+        "howToPayVA1": "Petunjuk Pembayaran melalui BANK",
+        "howToPayVA2": "",
+        "refresh": "Perbarui Status",
+        "cancel": "Batalkan Transaksi",
+        "cancelationSucceed": "Transaksi pembayaran berhasil dibatalkan!",
+        "cancelationFailed": "Transaksi pembayaran gagal dibatalkan. Coba lagi."
+      },
+      "modals": {
+        "cancel": {
+          "text1": "Pembatalan Transaksi",
+          "text2": "Apakah Kamu yakin akan membatalkan transaksi ini?",
+          "cancel": "Tidak",
+          "yes": "Ya"
+        },
+        "otp": {
+          "process": "Proses",
+          "verification": "Verifikasi OTP",
+          "getOtp": "Dapatkan Kode OTP",
+          "selectType": "Pilih Jenis OTP",
+          "tooManyAttempts": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit ya.",
+          "wrongPassword": "Password salah, silakan coba kembali.",
+          "cancel": "Tidak",
+          "yes": "Ya",
+          "timeRemaining": "Waktu tersisa"
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "sidebar": {
+      "text1": "Portofolio"
+    },
+    "title": "Portofolio",
+    "text1": "Apakah Anda yakin ingin membatalkan pembelian?",
+    "text2": "Walau investasi berhasil dibatalin, tapi kamu gak usah bingung Danamart masih menyediakan banyak investasi lain. Yuk pilih salah satunya!",
+    "text3": "Silahkan Masukan Kode verifikasi yang Valid",
+    "cancel": "Tidak",
+    "continue": "Ya, batalkan",
+    "filter": {
+      "text1": "Tampilkan 7 entri",
+      "text2": "Tampilkan 10 entri",
+      "text3": "Tampilkan 25 entri",
+      "text4": "Tampilkan 50 entri",
+      "text5": "Tampilkan 75 entri",
+      "text6": "Tampilkan 100 entri",
+      "text7": "Cari..."
+    },
+    "table": {
+      "text1": "Tidak ada data dalam tabel.",
+      "text2": "Menampilkan",
+      "text3": "hingga",
+      "text4": "dari",
+      "text5": "entri",
+      "text6": "Kode Efek",
+      "text7": "ID Penawaran",
+      "text8": "Saham",
+      "text9": "Obligasi",
+      "text10": "Jumlah Pembelian",
+      "text11": "Harga/Saham (Rp)",
+      "text12": "Lembar Saham",
+      "text13": "Imbal Hasil (%)",
+      "text14": "Jangka Waktu (Bulan)",
+      "text15": "Jatuh Tempo",
+      "text16": "Cek Ombak",
+      "text17": "Penggalangan",
+      "dropdown": {
+        "text1": "Informasi Penawaran",
+        "text2": "Informasi Pembelian",
+        "text3": "Informasi Biaya dan Imbal Hasil",
+        "text4": "Factsheet",
+        "text5": "Batalkan Pembelian"
+      }
+    },
+    "modal": {
+      "offerInformation": {
+        "text1": "Informasi Penawaran",
+        "text2": "Nama Penerbit",
+        "text3": "Tanggal Penyerahan Dana",
+        "text4": "Sektor Usaha",
+        "text5": "Jadwal Pembayaran Kupon / Dividen",
+        "text6": "Persentase Saham Yang Dilepas",
+        "text7": "Status Pembayaran",
+        "text8": "Intensitas Pembagian Dividen",
+        "text9": "Persentase Pembagian Dividen",
+        "text10": "Kupon",
+        "text11": "Tenor",
+        "text12": "Jenis Penawaran"
+      },
+      "financingInformation": {
+        "text1": "Informasi Pembelian",
+        "text2": "Tanggal Pembelian",
+        "text3": "Jumlah Pembelian",
+        "text4": "Kontribusi"
+      },
+      "costReturn": {
+        "text1": "Informasi Biaya dan Imbal Hasil",
+        "text2": "Potensi Penerimaan Imbal Hasil per Periode",
+        "text3": "Potensi Penerimaan Biaya Keterlambatan",
+        "text4": "Total Potensi Penerimaan Imbal Hasil dan Biaya Keterlambatan",
+        "text5": "Biaya Administrasi"
+      },
+      "close": "Tutup"
+    }
+  },
+  "incomingFunds": {
+    "sidebar": {
+      "text1": "Dana Masuk"
+    },
+    "title": "Dana Masuk",
+    "filter": {
+      "text1": "Tampilkan 7 entri",
+      "text2": "Tampilkan 10 entri",
+      "text3": "Tampilkan 25 entri",
+      "text4": "Tampilkan 50 entri",
+      "text5": "Tampilkan 75 entri",
+      "text6": "Tampilkan 100 entri",
+      "text7": "Cari...",
+      "text8": "Filter Berdasarkan Tanggal",
+      "text9": "Tanggal Mulai",
+      "text10": "Tanggal Berakhir"
+    },
+    "table": {
+      "text1": "Tidak ada data dalam tabel.",
+      "text2": "Menampilkan",
+      "text3": "hingga",
+      "text4": "dari",
+      "text5": "entri",
+      "text6": "Tanggal",
+      "text7": "Jumlah (Rp)",
+      "text8": "Keterangan"
+    },
+    "text1": "Metode Transfer Dana",
+    "text2": "Bank Lain",
+    "text3": "Download Laporan Transaksi",
+    "modal": {
+      "detailBank": {
+        "text1": "Nomor Virtual Account berhasil disalin!",
+        "text2": "Pembayaran Melalui Virtual Account Bank",
+        "text3": "",
+        "text4": "Nama Rekening",
+        "text5": "Nomor VA Bank",
+        "text6": "",
+        "text7": "Limit Virtual Account",
+        "text8": "Mengerti",
+        "text9": "",
+        "text10": "Lain"
+      },
+      "detailIncome": {
+        "text1": "Keterangan Dana Masuk",
+        "text2": "Tanggal",
+        "text3": "Jumlah",
+        "text4": "Keterangan",
+        "close": "Tutup"
+      },
+      "downloadReport": {
+        "text1": "Download Laporan Transaksi",
+        "text2": "Dari",
+        "text3": "Sampai",
+        "text4": "Jenis File",
+        "cancel": "Batal",
+        "yes": "Download",
+        "text7": "Permintaan pengunduhan laporan berhasil. Mohon tunggu hingga proses selesai.",
+        "text8": "Laporan berhasil diunduh!",
+        "text9": "Gagal mengunduh laporan! Mohon coba lagi."
+      }
+    }
+  },
+  "outgoingFunds": {
+    "sidebar": {
+      "text1": "Dana Keluar"
+    },
+    "title": "Dana Keluar",
+    "text1": "Total Keseluruhan Dana",
+    "text2": "Dana yang dimiliki",
+    "text3": "Dana Dapat Diinvestasikan",
+    "text4": "Cash In-hand + Dana Reward + Dana Interim",
+    "text5": "Dana Yang bisa Ditarik",
+    "text6": "Dana yang dapat ditarik ke rekening",
+    "text7": "Tarik Dana",
+    "filter": {
+      "text1": "Tampilkan 7 entri",
+      "text2": "Tampilkan 10 entri",
+      "text3": "Tampilkan 25 entri",
+      "text4": "Tampilkan 50 entri",
+      "text5": "Tampilkan 75 entri",
+      "text6": "Tampilkan 100 entri",
+      "text7": "Cari...",
+      "text8": "Filter Berdasarkan Tanggal",
+      "text9": "Tanggal Mulai",
+      "text10": "Tanggal Berakhir"
+    },
+    "table": {
+      "text1": "Tidak ada data dalam tabel.",
+      "text2": "Menampilkan",
+      "text3": "hingga",
+      "text4": "dari",
+      "text5": "entri",
+      "text6": "Tanggal",
+      "text7": "Status",
+      "text8": "Jumlah",
+      "text9": "Keterangan",
+      "text10": "Diproses",
+      "text11": "Selesai"
+    },
+    "modal": {
+      "withdrawRequest": {
+        "steps": "\n            <ol>\n              <li>Masukkan jumlah nominal dana yang akan di Tarik Dana.</li>\n              <li>Klik tombol “Tarik Dana” untuk memproses menarik dana Kamu.</li>\n              <li>Danamart akan memproses permintaan Tarik Dana Kamu maksimal 2 hari kerja.</li>\n            </ol>\n          ",
+        "succeed": "Selamat, penarikan dana Anda diterima dan akan segera diproses!",
+        "pending": "Masih ada proses tarik dana yang belum diproses di akun Kamu. Silakan tunggu proses tarik dana hingga selesai, lalu coba kembali",
+        "tooManyAttempts": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit.",
+        "title": "Permintaan Penarikan Dana",
+        "text1": "Metode Tarik Dana",
+        "text2": "Jumlah Dana Yang Akan Ditarik + Biaya Admin (Rp)",
+        "text3": "Minimum penarikan Rp. 10.000,-",
+        "text4": "Biaya Admin",
+        "text5": "Jumlah Dana Yang Akan Diterima",
+        "text6": "Pilih Metode Verifikasi OTP",
+        "text7": "Dapatkan OTP",
+        "text8": "Waktu tersisa:",
+        "text9": "Batalkan",
+        "text10": "Kembali",
+        "text11": "Tarik Dana",
+        "text12": "Proses Tarik Dana",
+        "text13": "Input Jumlah Dana"
+      },
+      "detailOutcome": {
+        "title": "Keterangan Dana Keluar",
+        "text1": "Tanggal",
+        "text2": "Status",
+        "text3": "Selesai",
+        "text4": "Diproses",
+        "text5": "Jumlah",
+        "text6": "Keterangan",
+        "text7": "Close"
+      }
+    }
+  },
+  "purchaseHistory": {
+    "sidebar": {
+      "text1": "Riwayat Pembelian"
+    },
+    "title": "Riwayat Pembelian",
+    "filter": {
+      "text1": "Tampilkan 7 entri",
+      "text2": "Tampilkan 10 entri",
+      "text3": "Tampilkan 25 entri",
+      "text4": "Tampilkan 50 entri",
+      "text5": "Tampilkan 75 entri",
+      "text6": "Tampilkan 100 entri",
+      "text7": "Cari..."
+    },
+    "table": {
+      "text1": "Tidak ada data dalam tabel.",
+      "text2": "Menampilkan",
+      "text3": "hingga",
+      "text4": "dari",
+      "text5": "entri",
+      "text6": "Kode Efek",
+      "text7": "ID Penawaran",
+      "text8": "Jumlah Pembelian",
+      "text9": "Tanggal Pembelian",
+      "dropdown": {
+        "text1": "Informasi Penawaran",
+        "text2": "Informasi Pembelian",
+        "text3": "Informasi Biaya dan Imbal Hasil",
+        "text4": "Factsheet"
+      }
+    },
+    "modal": {
+      "offerInformation": {
+        "text1": "Informasi Penawaran",
+        "text2": "Nama Penerbit",
+        "text3": "ID Penawaran",
+        "text4": "Jatuh Tempo",
+        "text5": "Tanggal Penyerahan Dana",
+        "text6": "Jadwal Penyerahan Kupon/Dividen",
+        "text7": "Sektor Usaha",
+        "text8": "Status Pembayaran"
+      },
+      "purchaseInformation": {
+        "text1": "Informasi Pembelian",
+        "text2": "Tanggal Pembelian",
+        "text3": "Jumlah Pembelian",
+        "text4": "Kontribusi (%)"
+      },
+      "costReturn": {
+        "text1": "Informasi Biaya dan Imbal Hasil",
+        "text2": "Potensi Penerimaan Imbal Hasil per Periode",
+        "text3": "Potensi Penerimaan Biaya Keterlambatan",
+        "text4": "Total Potensi Penerimaan Imbal Hasil dan Biaya Keterlambatan",
+        "text5": "Biaya Administrasi"
+      },
+      "close": "Tutup"
+    }
+  },
+  "userLog": {
+    "sidebar": {
+      "text1": "Log Pengguna"
+    },
+    "title": "Log Pengguna",
+    "filter": {
+      "text1": "Tampilkan 7 entri",
+      "text2": "Tampilkan 10 entri",
+      "text3": "Tampilkan 25 entri",
+      "text4": "Tampilkan 50 entri",
+      "text5": "Tampilkan 75 entri",
+      "text6": "Tampilkan 100 entri",
+      "text7": "Cari...",
+      "text8": "Tanggal Mulai",
+      "text9": "Tanggal Berakhir",
+      "text10": "Terapkan",
+      "text11": "Hapus"
+    },
+    "table": {
+      "text1": "Tidak ada data dalam tabel.",
+      "text2": "Menampilkan",
+      "text3": "hingga",
+      "text4": "dari",
+      "text5": "entri"
+    }
+  },
+  "promotion": {
+    "sidebar": {
+      "text1": "Promosi"
+    },
+    "title": "Promosi",
+    "text1": "Punya kode promo? Masukan kode-mu disini",
+    "text2": "Jenis kode yang kamu punya",
+    "text3": "Pilih Jenis",
+    "text4": "Kode Promo",
+    "text5": "Input kode-mu disini",
+    "text6": "Masukan kode promo",
+    "text7": "Validasi Kode",
+    "text8": "Selamat! Kode-mu valid dan berhasil diklaim. Saat ini sudah bisa menikmati benefitnya.",
+    "text9": "Maaf! Kode-mu tidak valid, kuota sudah habis , masa berlakunya telah berakhir atau tidak memenuhi syarat dan ketentuan. Silakan coba lagi dengan kode lainnya ya.",
+    "modal": {
+      "title": "Tentang Kode Promo dan Kode Referral",
+      "text1": "Kode Promo adalah kode unik yang dapat digunakan oleh-mu untuk mendapatkan penawaran menarik ya.",
+      "text2": "Ups!",
+      "text3": "Maaf! Kode-mu tidak valid, kuota sudah habis , masa berlakunya telah berakhir atau tidak memenuhi syarat dan ketentuan. Silakan coba lagi dengan kode lainnya ya.",
+      "close": "Tutup",
+      "ok": "Ok"
+    }
+  },
+  "setting": {
+    "sidebar": {
+      "text1": "Pengaturan"
+    },
+    "title": "Pengaturan",
+    "text1": "Ubah Password",
+    "text2": "Ubah Email",
+    "text3": "Ubah No Handphone",
+    "text4": "Ubah Rekening",
+    "text5": "Verifikasi",
+    "text6": "Hapus Akun",
+    "verifyPhoneAndEmail": {
+      "text1": "Verifikasi nomor handphone berhasil!",
+      "text2": "Permintaan berhasil. Silakan cek email anda.",
+      "text3": "Verifikasi Akun Kamu",
+      "text4": "Email",
+      "text5": "Terverifikasi",
+      "text6": "Link verifikasi akan dikirim ke email",
+      "text7": "No Handphone",
+      "text8": "Kode verifikasi akan dikirim ke no handphone",
+      "text9": "Lanjutkan Verifikasi"
+    },
+    "deleteAccount": {
+      "text1": "Hapus Akun",
+      "text2": "Password Akun Danamart Anda",
+      "text3": "Verifikasi OTP",
+      "text4": "Akun anda berhasil dihapus",
+      "text5": "Masukkan password akun danamart",
+      "tooManyAttempts": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit ya.",
+      "disclaimer": "\n          <p>Sesuai dengan <strong>Peraturan Menteri Komunikasi dan Informatika No. 20 Tahun 2016</strong> tentang <strong>Perlindungan Data Pribadi Dalam Sistem Elektronik</strong> Pasal 20, disebutkan bahwa: <em>“Jika Pemilik Data Pribadi meminta penghapusan Data Perseorangan Tertentu miliknya, permintaan penghapusan tersebut dilakukan sesuai dengan ketentuan peraturan perundang-undangan.”</em></p>\n          <br>\n          <p>Dengan ini Danamart menyediakan fitur <strong>\"Hapus Akun\"</strong> dengan ketentuan sebagai berikut:</p>\n          <br>\n          <ol>\n            <li>Data pribadi yang akan dihapus meliputi: Nama, Email, No. Handphone, Tempat/Tanggal Lahir, Agama, Pekerjaan, Alamat, No. Rekening, dan data KTP.</li>\n            <li>Pastikan tidak terdapat <strong>DanaCash</strong> yang masih tersedia di dalam akun.</li>\n            <li>Jika terdapat <strong>DanaReward</strong>, maka DanaReward tersebut tidak dapat diambil kembali, kecuali melalui proses pendanaan terlebih dahulu sesuai dengan ketentuan yang berlaku pada DanaReward.</li>\n            <li>Pastikan tidak terdapat pendanaan yang sedang berjalan pada akun.</li>\n            <li>Data yang dihapus tidak mencakup riwayat transaksi Pemodal. Data transaksi akan tetap disimpan sesuai kebijakan penyimpanan data yang berlaku.</li>\n          </ol>\n        "
+    },
+    "changePassword": {
+      "text1": "Ubah Password",
+      "text2": "Password Saat Ini",
+      "text3": "Password Baru",
+      "text4": "Konfirmasi Password Baru",
+      "text5": "Simpan Perubahan",
+      "text6": "Password akunkamu telah berhasil diubah.",
+      "text7": "Password lama salah atau tidak sesuai.",
+      "text8": "Password harus terdiri dari minimal 8 karakter dan mencakup huruf kecil, huruf kapital, serta angka.",
+      "text9": "Konfirmasi password tidak sesuai.",
+      "text10": "Masukkan password akun danamart",
+      "text11": "Masukkan password baru akun danamart",
+      "text12": "Konfirmasi password baru akun danamart",
+      "passwordPolicy": "\n          <p><strong>Persyaratan Password:</strong></p>\n          <br>\n          <ol>\n            <li>Minimal terdiri dari <strong>8 karakter</strong>.</li>\n            <li>Setidaknya terdiri dari <strong>huruf kecil</strong>, <strong>huruf kapital</strong>, dan <strong>angka</strong>.</li>\n            <li><strong>Periode maksimum</strong> penggunaan password yang diperbolehkan adalah <strong>90 hari</strong>.</li>\n            <li><strong>Interval minimum</strong> untuk menggunakan password yang sama kembali adalah setelah <strong>5 kali</strong> pergantian password.</li>\n            <li>Password yang salah dapat dicoba ulang hingga <strong>3 kali</strong> sebelum akun terkunci.</li>\n            <li>Lama akun tetap terkunci adalah <strong>30 menit</strong> sampai bisa direset ulang.</li>\n          </ol>\n        "
+    },
+    "changeEmail": {
+      "text1": "Ubah Email",
+      "text2": "Alamat email anda adalah",
+      "text3": "Email Baru",
+      "text4": "Password Akun Danamart",
+      "text5": "Format email tidak sesuai",
+      "text6": "Password salah atau tidak sesuai.",
+      "text7": "Alamat Email sudah digunakan! Silahkan Ganti Email yang lain",
+      "text8": "Silakan cek email Kamu untuk verifikasi perubahan email.",
+      "text9": "Masukkan email baru",
+      "text10": "Masukkan password akun danamart",
+      "modal": {
+        "text1": "Konfirmasi",
+        "text2": "Email Kamu akan diubah menjadi",
+        "text3": "Kami akan mengirimkan email verifikasi ke alamat email Kamu yang baru. Akun kamu akan logout otomatis setelah ini.",
+        "text4": "Ingin melanjutkan?",
+        "cancel": "Batalkan",
+        "continue": "Lanjutkan"
+      }
+    },
+    "changeBankAccount": {
+      "text1": "Rekening Kamu",
+      "text2": "Rekening Baru",
+      "text3": "* Anda belum mengisi data akun bank",
+      "text4": "Pilih Bank",
+      "text5": "Pilih bank...",
+      "text6": "Cari bank...",
+      "text7": "Bank tidak ditemukan",
+      "text8": "Nomor Rekening Baru",
+      "text9": "Masukkan nomor rekening",
+      "text10": "Nama Pemilik Rekening",
+      "text11": "Masukkan nama rekening",
+      "text12": "Password Akun Kamu",
+      "text13": "Masukkan password akun danamart",
+      "text14": "Pilih Metode OTP",
+      "text15": "Pilih metode verifikasi",
+      "text16": "Ganti Rekening",
+      "text17": "Verifikasi Kode OTP",
+      "text18": "Perubahan Rekening",
+      "text19": "Resend OTP",
+      "text20": "Waktu tersisa",
+      "text21": "Lanjutkan proses perubahan rekening?",
+      "validation": {
+        "text1": "Terima kasih atas kesabarannya. Kami ingin memberitahukan bahwa masih terdapat permintaan perubahan data yang masih dalam proses. Mohon tunggu sampai proses ini selesai dan Anda dapat mengajukannya kembali.",
+        "text2": "Kode OTP telah dikirim ke nomor anda. Silakan cek handphone anda.",
+        "text3": "Kami telah menerima permintaan perubahan data anda. Selanjutnya tim kami akan melakukan konfirmasi terkait permintaan perubahan data ini dengan cara menghubungimu. Mohon ditunggu ya.",
+        "text4": "Kode verifkasi salah, silakan masukkan kode verifikasi yang valid.",
+        "text5": "No rekening salah atau tidak valid.",
+        "text6": "Nama pemilik rekening tidak sesuai.",
+        "text7": "Password salah, silakan coba kembali.",
+        "text8": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit ya.",
+        "text9": "Silahkan pilih metode pengiriman Kode Verifikasi.",
+        "text10": "Terjadi kesalahan. Silakan login ulang akun Anda."
+      },
+      "close": "Tutup",
+      "continue": "Lanjutkan"
+    },
+    "changePhoneNumber": {
+      "text1": "Ubah Nomor Handphone",
+      "text2": "Nomor handphone anda adalah",
+      "text3": "* Anda belum mengisi data nomor handphone",
+      "text4": "Nomor Telepon",
+      "text5": "Masukkan nomor handphone baru",
+      "text6": "Password Akun Kamu",
+      "text7": "Masukkan password akun danamart",
+      "text8": "Pilih Metode Pengiriman Kode Verifikasi",
+      "text9": "Pilih Metode Verifikasi",
+      "text10": "Kirim Verifikasi",
+      "text11": "Verifikasi Kode OTP",
+      "text12": "Perubahan Nomor Handphone",
+      "text13": "Resend OTP",
+      "text14": "Waktu tersisa",
+      "text15": "Lanjutkan proses perubahan nomor handphone?",
+      "cancel": "Batalkan",
+      "continue": "Lanjutkan",
+      "validation": {
+        "text1": "Kode verifikasi Berhasil Dikirim. Silahkan Cek Handphone Anda!",
+        "text2": "Maaf, Anda baru saja meminta kode verifikasi. Demi keamanan akun, silakan meminta kode verifikasi ulang setelah 5 menit ya.",
+        "text3": "Password salah, silakan coba kembali.",
+        "text4": "Nomor Handphone anda masih dalam proses pengajuan. Tunggu data selesai di konfirmasi oleh verifikator!",
+        "text5": "Kami telah menerima permintaan perubahan data-mu, selanjutnya tim kami akan melakukan konfirmasi terkait permintaan perubahan data ini dengan cara menghubungi-mu, mohon ditunggu ya.",
+        "text6": "Kode salah! Silakan ulangi input."
+      }
+    }
+  },
+  "idleLogout": "Anda tidak aktif selama 30 menit atau lebih. Silakan masuk kembali ke Danamart.",
+  "logout": {
+    "text1": "Keluar",
+    "description": "Apakah anda ingin logout dari Danamart?",
+    "yes": "Keluar",
+    "cancel": "Batal"
+  }
+} as const;

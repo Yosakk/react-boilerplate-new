@@ -1,0 +1,10 @@
+export { default as AuthCarousel1 } from "./onboard-carousel-1.png";
+export { default as AuthCarousel2 } from "./onboard-carousel-2.png";
+export { default as AuthCarousel3 } from "./onboard-carousel-3.png";
+export { default as AuthCarousel4 } from "./onboard-carousel-4.png";
+export { default as SeedyChat } from "./seedy-chat.png";
+export { default as SeedyMoneyBuddy } from "./seedy-money-buddy.png";
+export { default as SeedyQuestion } from "./seedy-question.png";
+export { default as Polygon } from "./polygon.png";
+export { default as SeedyLens } from "./seedy-question-lens.png";
+export { default as SeedyQuestionDone } from "./seedy-question-done.png";

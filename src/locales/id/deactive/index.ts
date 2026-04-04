@@ -1,0 +1,20 @@
+export default {
+  "text1": "Bagaimana kami dapat membantu Anda dengan akun Anda?",
+  "text2": "Silakan pilih salah satu opsi",
+  "text3": "(wajib)",
+  "text4": "Saya perlu menonaktifkan sementara akun seed saya",
+  "text5": "Saya ingin menghapus akun seed saya",
+  "email1": "Alamat email Anda! ",
+  "email2": "Masukkan alamat email yang dapat kami gunakan untuk menghubungi Anda",
+  "phone1": "Nomor Telepon Anda! ",
+  "phone2": "Silakan masukkan nomor telepon yang dapat kami gunakan untuk menghubungi Anda",
+  "tellUs1": "Tolong Beritahu Kami Lebih Lanjut! ",
+  "tellUs2": "Mengapa Anda ingin menonaktifkan akun seed",
+  "tellUs3": "Mengapa Anda ingin menghapus akun seed",
+  "ok": "OK",
+  "success1": "Berhasil",
+  "success2": "Akun Anda telah berhasil dinonaktifkan",
+  "success3": "Akun Anda telah berhasil dihapus",
+  "error1": "Ups Maaf!",
+  "error2": "Kami tidak dapat memproses permintaan Anda saat ini. Coba lagi nanti."
+} as const;

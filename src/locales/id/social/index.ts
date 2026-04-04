@@ -1,0 +1,138 @@
+export default {
+  "postSection": {
+    "shareBattle": "Bagikan Pertandingan Ini",
+    "shareLinks": "Bagikan Tautan",
+    "share": "Bagikan",
+    "play": "Main",
+    "joined": "Bergabung",
+    "player": "Pemain",
+    "players": "Pemain",
+    "fee": "Biaya",
+    "free": "Gratis",
+    "category": "Kategori",
+    "participant": "peserta",
+    "participants": "peserta"
+  },
+  "follow": "Mengikuti",
+  "unfollow": "Berhenti Mengikuti",
+  "postSetting": {
+    "publicTitle": "Publik",
+    "publicDesc": "Semua orang bisa melihat postinganmu",
+    "privateTitle": "Pribadi",
+    "privateDesc": "Hanya kamu yang bisa melihat postinganmu",
+    "friendsTitle": "Hanya Teman",
+    "friendsDesc": "Pengikut yang kamu ikuti balik",
+    "premiumTitle": "Premium",
+    "premiumDesc": "Hanya pembeli konten premium yang bisa melihat detail postingan"
+  },
+  "pieSection": {
+    "title": "Judul",
+    "detail": "Tambahkan judul berdasarkan tujuan keuanganmu",
+    "placeholder": "Buat judul Pie kamu",
+    "amount": "Jumlah",
+    "amountError": "Masukkan jumlah alokasi kamu",
+    "selectAsset": "Pilih Asset",
+    "overview": "Ringkasan",
+    "stocks": "Saham",
+    "crypto": "Kripto"
+  },
+  "errorState": {
+    "image1": "Gambar kamu melebihi batas ukuran 5MB.",
+    "image2": "Kamu hanya bisa memasukan gambar dalam format JPG, JPEG, PNG, .HEIC, .HEIF",
+    "video1": "Kamu hanya bisa memasukan video dalam format .MOV dan .MP4.",
+    "video2": "Kamu hanya bisa memasukan video dengan durasi maksimum 60 detik.",
+    "video3": "Video kamu melebihi batas ukuran 20MB.",
+    "thread1": "Teks melebihi 500 karakter.",
+    "thread2": "Maaf, kami tidak bisa menemukan URL kamu. Silakan masukkan URL yang benar.",
+    "thread3": "Thread kamu melebihi batas karakter maksimum.",
+    "poll1": "Pertanyaan kamu melebihi batas karakter maksimum. Mohon ketik ulang pertanyaan kamu.",
+    "poll2": "Tanggal akhir tidak boleh kurang dari tanggal hari ini."
+  },
+  "reportUser": {
+    "text1": "Laporkan Pengguna",
+    "text2": "Akun ini akan dilaporkan.",
+    "text3": "Mengapa kamu melaporkan akun ini?",
+    "text4": "Posting tertentu yang seharusnya tidak ada di Seeds.",
+    "text5": "Ada sesuatu yang aneh tentang akun ini.",
+    "text6": "Apakah kamu yakin ingin melaporkan akun ini? Setelah itu, kamu tidak akan lagi melihat status atau thread yang diposting oleh profil ini.",
+    "text7": "Kamu telah melaporkan akun ini. Kamu tidak akan melihat status atau thread yang diposting oleh profil ini lagi."
+  },
+  "reportPost": {
+    "text1": "Laporkan Posting",
+    "text2": "Posting ini akan dilaporkan.",
+    "text3": "Mengapa kamu melaporkan posting ini?",
+    "option1": "Spam",
+    "option2": "Konten dewasa atau aktivitas seksual",
+    "option3": "Ujaran kebencian atau simbol kebencian",
+    "option4": "Pengejaran atau pelecehan",
+    "option5": "Saya tidak suka ini",
+    "option6": "Penipuan atau kecurangan",
+    "option7": "Lainnya",
+    "success1": "Laporan telah diajukan.",
+    "success2": "Terima kasih telah membantu kami."
+  },
+  "blockUser": {
+    "block": "Blokir",
+    "text": "Mereka tidak akan dapat mengirim pesan kepada kamu atau menemukan profil, posting, atau cerita kamu di Seeds"
+  },
+  "gif": "GIF",
+  "pdf": "PDF",
+  "gallery": "Gallery",
+  "talk": "Talk",
+  "pie": "Pie",
+  "poll": "Poll",
+  "navbar": {
+    "following": "Mengikuti",
+    "foryou": "Untukmu",
+    "space": "Space",
+    "circle": "Circle"
+  },
+  "filterType": {
+    "all": "Semua",
+    "allDesc": "Semua Orang",
+    "circle": "Circle",
+    "circleDesc": "Berdasarkan Circle",
+    "personal": "Teman",
+    "personalDesc": "Hanya Teman"
+  },
+  "fiterSortBy": {
+    "all": "Semua",
+    "allDesc": "Seluruh postingan",
+    "recent": "Terbaru",
+    "recentDesc": "Berdasarkan waktu di posting",
+    "relevant": "Paling Relevan",
+    "relevantDesc": "Berdasarkan preferensi pengguna",
+    "like": "Paling disukai",
+    "likeDesc": "Berdasarkan yang paling disukai",
+    "trending": "Paling Tren",
+    "trendingDesc": "Berdasarkan keterlibatan tertinggi"
+  },
+  "placeholder1": "Apa yang ingin kamu diskusikan? ...",
+  "placeholder2": "Gunakan @ untuk menandai pengguna, @ untuk menandai circle, # untuk menambahkan hashtag pengguna, $ untuk menandai aset.",
+  "payment": {
+    "paymentMethod": "Metode Pembayaran",
+    "virtualNumber": "Nomor Virtual Akun Anda",
+    "pendingPaidSocial": "Menunggu Pembayaran",
+    "socialFee": "Konten Premium",
+    "adminFee": "Biaya Admin",
+    "serviceFee": "Biaya Layanan",
+    "discountFee": "Diskon",
+    "totalAmount": "Total Biaya",
+    "idTransaction": "ID Transaksi",
+    "close": "Tutup",
+    "paymentSuccessful": "Berhasil",
+    "recurringSaved": "Pembayaran anda telah tersimpan"
+  },
+  "dailyQuiz": {
+    "rightAnswer": "Selamat, kamu benar!",
+    "wrongAnswer": "Oops, kurang tepat.",
+    "answer": "Jawaban",
+    "shareText": "Kamu akan membagikan ini ke profil kamu. Setuju?",
+    "accept": "Terima",
+    "cancel": "Batal",
+    "shareWin": "Kesuksesan kamu telah dibagikan! Teruslah menginspirasi orang lain dengan pengetahuan finansialmu!",
+    "shareLose": "Usaha kamu telah dibagikan! Teruslah belajar dan tumbuh setiap hari! ",
+    "postWin": "Saya berhasil menjawab daily quiz hari ini dengan benar! Senang sekali!",
+    "postLose": "Saya salah menjawab daily hari ini. tapi saya belajar!"
+  }
+} as const;

@@ -1,0 +1,40 @@
+export default {
+  "text1": "Article",
+  "text2": "Explore our curated financial articles",
+  "text3": "Sort by :",
+  "text4": "Search",
+  "text5": "Don't miss popular financial news here!",
+  "text6": "You may like",
+  "text7": "News",
+  "text8": "See all",
+  "text9": "No article found in",
+  "text10": "There is no keyword",
+  "text11": "in the",
+  "text12": "category",
+  "text13": "All",
+  "text14": "No news found in",
+  "text15": "",
+  "text16": "Link copied to clipboard",
+  "text17": "Contributor",
+  "text18": "Categories",
+  "text19": "Sorry, this category isn’t available",
+  "text20": "Check out other related articles — you might find some fresh insights!",
+  "text21": "Latest Post",
+  "text22": "by",
+  "text23": "Search category...",
+  "text24": "Comment",
+  "text25": "Comment",
+  "text26": "Comments",
+  "text27": "Type your comment...",
+  "text28": "Check out this article on SeedsPedia!",
+  "text29": "Check out this news on SeedsPedia!",
+  "text30": "Share not supported. Link copied instead!",
+  "text31": "Sharing canceled",
+  "article": {
+    "sort": {
+      "all": "All",
+      "relevant": "Most Relevant",
+      "recent": "Most Recent"
+    }
+  }
+} as const;

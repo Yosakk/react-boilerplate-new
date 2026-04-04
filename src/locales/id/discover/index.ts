@@ -1,0 +1,22 @@
+export default {
+  "hotNews": "Hot News",
+  "newsList": "News",
+  "findMoreYouMighLike": "Find more news you might like.",
+  "youMayLike": "You May Like",
+  "seeAll": "Semua",
+  "trendingToday": "Sedang Tren Hari Ini",
+  "whatIsTrendingToday": "Apa yang sedang tren hari ini?",
+  "circleList": "Daftar Circle",
+  "exploreCircleList": "Jelajahi daftar komunitas kami. Temukan yang menarik bagi Anda atau buat sendiri.",
+  "assetList": "Daftar Asset",
+  "exploreAssetList": "Jelajahi daftar komunitas kami. Temukan yang menarik bagi Anda atau buat sendiri.",
+  "merchantBannerText": "Nikmati berbagai promo spesial hanya untuk Anda!",
+  "playList": "Daftar Permainan",
+  "explorePlayList": "Jelajahi daftar komunitas kami. Temukan yang menarik bagi Anda atau buat sendiri.",
+  "clearHistory": "Hapuskan Histori",
+  "search": "Cari",
+  "recentSearch": "Pencarian Terbaru",
+  "peopleList": "Daftar Orang",
+  "explorePeopleList": "Temukan pengguna yang cocok dengan Anda",
+  "dataNotFound": "Data Tidak Ditemukan"
+} as const;

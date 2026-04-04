@@ -1,0 +1,238 @@
+export default {
+  "index": {
+    "text1": "WELCOME TO SEEDS",
+    "text2": "PREMIUM",
+    "text3": "Unlock your Ultimate Experience",
+    "text4": "Discover a world of premium gaming and educational content tailored just for you.",
+    "text5": "Explore Plans 🚀",
+    "text6": "My Plan",
+    "text7": "Hello",
+    "text8": ", you are in ",
+    "text9": "Package",
+    "text10": "Your progress",
+    "text11": "% to complete",
+    "text12": " days",
+    "text13": " day",
+    "text14": "Subscription active until: ",
+    "text15": "Your Plan Benefits",
+    "text16": "Extend Now!",
+    "text17": "Let’s Begin!",
+    "text18": "Want full access to modules and daily rewards?",
+    "text19": "💰 Upgrade to",
+    "text20": "Plan",
+    "text21": "/month",
+    "text22": ""
+  },
+  "explorePlan": {
+    "text1": "Enjoy 3 Days of Plus !",
+    "text2": "Boost your knowledge with free or Plus access",
+    "text3": "🎉 Upgrade to Plus – Free Trial Inside!",
+    "text4": "🎉 Upgrade to MAX – Free Trial Inside!",
+    "text5": "🎉 Choose Your Plan – Free Trial Inside!",
+    "text6": "Choose Your Plan!",
+    "text7": "Choose the right plan for your financial journey!"
+  },
+  "journey": {
+    "text1": "Learning Adventure Awaits",
+    "text2": "Welcome to your personalized Journey",
+    "text3": "Your",
+    "text4": "days.",
+    "text5": "day.",
+    "text6": "Do all activities for free",
+    "text7": "Seeds Academy",
+    "text8": "Unlock your potential with expert-led courses and interactive lessons. Dive deep into subjects that ignite your curiosity and build a strong foundation for lifelong learning.",
+    "text9": "Start Learning",
+    "text10": "Seeds Games",
+    "text11": "Challenge your knowledge and have fun! Test your understanding across various topics and compete with friends to climb the leaderboards.",
+    "text12": "Play Now",
+    "text13": "1 On 1 Consultation",
+    "text14": "Receive tailored guidance from industry experts. Book a session to clarify doubts, discuss career paths, or get personalized academic support.",
+    "text15": "Start Consultation",
+    "text16": "Plan",
+    "text17": "expires in"
+  },
+  "purchaseHistory": {
+    "text1": "All Time",
+    "text2": "This Year",
+    "text3": "Last Year",
+    "text4": "Subscription History",
+    "text5": "Filter by Period",
+    "text6": "There is no purchased plan",
+    "text7": "Oops, No Subscription Yet!",
+    "text8": "Start now and unlock all the awesome features ✨",
+    "text9": "🚀 Start Subscription"
+  },
+  "purchaseSucceed": {
+    "text1": "Purchase Successful",
+    "text2": "You're now subscribed to the",
+    "text3": " Plan.",
+    "text4": "Start Your Journey Now! 🚀",
+    "text5": "Back to Home"
+  },
+  "upgradePlan": {
+    "text1": "Upgrade Your Plan",
+    "text2": "Choose a Higher Tier",
+    "text3": "You haven't subscribed to any plan yet",
+    "text4": "Explore Plans"
+  },
+  "modalDetailPlanComparison": {
+    "text1": "Detailed Plan Comparison",
+    "text2": "Take a Closer Look at Each Plan",
+    "text3": "Confirm My Plan",
+    "text4": "I'm Interested in a Different Plan"
+  },
+  "modalDetailPlan": {
+    "text1": "Essential features for light users",
+    "text2": "Enhanced experience for growing needs",
+    "text3": "Unlock full potential with all advanced tools",
+    "text4": "Plan",
+    "text5": "",
+    "text6": "Monthly",
+    "text7": "Yearly",
+    "text8": "/month",
+    "text9": "/year",
+    "text10": "Confirm Payment"
+  },
+  "modalConfirmPayment": {
+    "text1": "Confirm Your Plan",
+    "text2": "Review your plan details and confirm your subscription below.",
+    "text3": "Plan",
+    "text4": "",
+    "text5": "/month",
+    "text6": "/year",
+    "text7": "Essential features for light users",
+    "text8": "Enhanced experience for growing needs",
+    "text9": "Unlock full potential with all advanced tools",
+    "text10": "Payment Method",
+    "text11": "Transfer Bank",
+    "text12": "E-Wallet",
+    "text13": "Credit Card",
+    "text14": "QRIS",
+    "text15": "Please select your payment method",
+    "text16": "Detail Payment"
+  },
+  "modalPayment": {
+    "title": "Payment Method",
+    "virtualAccountLabel": "Virtual Account",
+    "eWalletLabel": "E-Wallet",
+    "creditCardLabel": "Credit / Debit Card",
+    "ccLabel": "Credit Card",
+    "button": "Pay",
+    "alreadyHave": "You already have an active subscription plan.",
+    "WalletForm": {
+      "title": "Enter {{wallet}} Number",
+      "phoneLabel": "{{wallet}} Number",
+      "phonePlaceholder": "8xxxxxxxx",
+      "paymentDeadline": "Pay before {{date}}",
+      "admissionFeeLabel": "Subscription Fee",
+      "adminFeeLabel": "Admin Fee",
+      "serviceFeeLabel": "Service Fee",
+      "adminFeeDiscountLabel": "Admin Fee Discount ",
+      "promoCodeDiscountLabel": "Promo Code Discount",
+      "button": "Pay",
+      "seedsCoin": "Seeds Coin Redeemed",
+      "totalPayment": "Total Payment",
+      "confirmPayment": "Confirm Payment",
+      "choose": "Choose Payment Method"
+    },
+    "VirtualAccountGuide": {
+      "title": "{{bank}} Virtual Account",
+      "bankName": "Bank {{bank}}",
+      "accountNumberLabel": "No. rekening",
+      "promoCodeDiscountLabel": "Promo Code Discount",
+      "copy": "Copy",
+      "accountNameLabel": "Virtual Account Name",
+      "admissionFeeLabel": "Play Membership",
+      "adminFeeLabel": "Admin",
+      "note": "Please complete your payment in 24 hours. Your order will be cancelled automatically if you do not make any payments in 24 hours",
+      "instructionLabel": "mBanking Transfer Instructions",
+      "step1": {
+        "1": "Choose",
+        "2": "m-Transfer > {{provider}} Virtual Account."
+      },
+      "step2": {
+        "1": "Enter",
+        "2": "Virtual Account number",
+        "3": "and choose",
+        "4": "Send"
+      },
+      "step3": {
+        "1": "Check the information shown on the screen. Make sure the Merchant is",
+        "2": "Seeds and total bill",
+        "3": "and your username are correct.",
+        "4": "If true, Select",
+        "5": "Ya"
+      },
+      "step4": {
+        "1": "Enter your m-{{provider}} PIN and select",
+        "2": "OK"
+      },
+      "button": "Pay",
+      "seedsCoin": "Seeds Coin Redeemed",
+      "howToPay": "How to Pay",
+      "choosePayment": "Choose Payment Method:",
+      "warningCompletion": "Complete payment in",
+      "minuteWarning": "Less than 1 minute",
+      "expired": "Payment expired",
+      "minimumPaymentError": "The minimum transaction amount for Virtual Account payments is IDR 10,000.",
+      "choose": "Choose Payment Method"
+    },
+    "information": {
+      "text1": "Your current plan",
+      "text2": " is valid until ",
+      "text3": " The incoming plan",
+      "text4": " will take effect on ",
+      "text5": " at ",
+      "text6": "month",
+      "text7": "months"
+    }
+  },
+  "historyCard": {
+    "text1": "Plan",
+    "text2": "",
+    "text3": "Start Date:",
+    "text4": "End Date:",
+    "text5": "Price Paid:"
+  },
+  "subscriptionPlanCardPlus": {
+    "text1": "RECOMMENDED",
+    "text2": "/month",
+    "text3": "Plan",
+    "text4": "",
+    "text5": "Enhanced experience for growing needs",
+    "text6": "Know More"
+  },
+  "subscriptionPlanCard": {
+    "text1": "/month",
+    "text2": "Plan",
+    "text3": "",
+    "text4": "Essential features for light users",
+    "text5": "Unlock full potential with all advanced tools",
+    "text6": "Know More"
+  },
+  "payment": {
+    "paymentMethod": "Payment Method",
+    "virtualNumber": "Your Virtual Account Number",
+    "pendingPaidSubscription": "Pending Paid Subscription",
+    "subscriptionFee": "Subscription Fee",
+    "adminFee": "Admin Fee",
+    "serviceFee": "Service Fee",
+    "discountFee": "Discount Fee",
+    "discountCoins": "Discount Coins",
+    "totalAmount": "Total Amount",
+    "idTransaction": "ID Transaction",
+    "close": "Close",
+    "paymentSuccessful": "Successful",
+    "recurringSaved": "Your recurring has been saved!",
+    "information": {
+      "text1": "Your current plan",
+      "text2": " is valid until ",
+      "text3": " The incoming plan",
+      "text4": " will take effect on ",
+      "text5": " at ",
+      "text6": "month",
+      "text7": "months"
+    },
+    "warningIncoming": "You already have an active or incoming plan."
+  }
+} as const;
