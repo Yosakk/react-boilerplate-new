@@ -1,17 +1,26 @@
 import { type JSX, useCallback } from "react";
-import { useTypingBubble, type MessageSpan } from "../../hooks/onboarding/useTypingBubble";
+import {
+  useTypingBubble,
+  type MessageSpan,
+} from "../../hooks/onboarding/useTypingBubble";
 
 interface Props {
   message: MessageSpan[];
 }
 
 export default function TypingBubble({ message }: Props): JSX.Element {
-  const { displayedText, finalSpans, currentSpan, currentIsNewLine, currentIsBold, skip } =
-    useTypingBubble(message, 30, {
-      granularity: "char",
-      allowSkip: true,
-      respectReducedMotion: true,
-    });
+  const {
+    displayedText,
+    finalSpans,
+    currentSpan,
+    currentIsNewLine,
+    currentIsBold,
+    skip,
+  } = useTypingBubble(message, 30, {
+    granularity: "char",
+    allowSkip: true,
+    respectReducedMotion: true,
+  });
 
   const onClick = useCallback(() => {
     skip?.();

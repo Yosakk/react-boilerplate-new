@@ -1,6 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input/input";
 import { cn } from "@/_helper/twMerge";
 
@@ -57,7 +62,11 @@ export default function ReferralDialog({
 
           <div className="relative flex items-start gap-3 p-6 pt-8">
             {mascotSrc ? (
-              <img src={mascotSrc} alt="Mascot" className="h-20 w-auto shrink-0" />
+              <img
+                src={mascotSrc}
+                alt="Mascot"
+                className="h-20 w-auto shrink-0"
+              />
             ) : null}
 
             <div className="flex-1 text-center sm:text-left">

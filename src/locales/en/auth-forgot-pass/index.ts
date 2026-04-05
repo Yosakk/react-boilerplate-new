@@ -17,7 +17,8 @@ export default {
     label: "Confirm New Password",
     placeholder: "Please confirm your password",
   },
-  information: "Password must be 8 characters long and have both uppercase and lowercase letters.",
+  information:
+    "Password must be 8 characters long and have both uppercase and lowercase letters.",
   modal: {
     title1: "Success",
     title2: "The new password has been successfully created.",

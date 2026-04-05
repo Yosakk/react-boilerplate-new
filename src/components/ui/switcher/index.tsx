@@ -10,7 +10,9 @@ type Props = { className?: string };
 
 export default function LanguageSwitcher({ className }: Props) {
   const { i18n } = useTranslation();
-  const current = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
+  const current = (i18n.resolvedLanguage || i18n.language || "en").split(
+    "-"
+  )[0];
   const activeIndex = Math.max(
     0,
     LANGS.findIndex((l) => l.code === current)

@@ -46,8 +46,10 @@ export default {
   },
   section11: {
     text1: "Want to Collaborate with Seeds?",
-    text2: "Make finance fun, empower the future. Join the Seeds revolution now!",
-    text3: "Join us, get involved, and together let's shape the future of investing!",
+    text2:
+      "Make finance fun, empower the future. Join the Seeds revolution now!",
+    text3:
+      "Join us, get involved, and together let's shape the future of investing!",
     text4: "Contact Us",
   },
   section12: {

@@ -43,7 +43,8 @@ export default {
       seedsTag: {
         required: "Silakan masukkan username Anda",
         taken: "Username ini sudah digunakan",
-        regex: "Username hanya boleh berisi huruf, angka, serta simbol ( _ ) atau ( . ).",
+        regex:
+          "Username hanya boleh berisi huruf, angka, serta simbol ( _ ) atau ( . ).",
         length: "Format username tidak valid (harus 3-15 karakter).",
         invalidOrUsed: "Username tidak valid atau sudah digunakan",
       },
@@ -53,7 +54,8 @@ export default {
       },
       password: {
         required: "Password wajib diisi",
-        rules: "Password minimal 8 karakter dan harus mengandung huruf besar & huruf kecil",
+        rules:
+          "Password minimal 8 karakter dan harus mengandung huruf besar & huruf kecil",
       },
       confirmPassword: {
         required: "Konfirmasi password wajib diisi",

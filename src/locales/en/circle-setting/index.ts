@@ -19,7 +19,8 @@ export default {
     popUpDelete: {
       title: "Delete",
       subtitle1: "Are you sure you want to delete this circle?",
-      subtitle2: "If you delete this circle, you will permanently lose all data",
+      subtitle2:
+        "If you delete this circle, you will permanently lose all data",
       button1: "Cancel",
       button2: "Delete Circle",
     },

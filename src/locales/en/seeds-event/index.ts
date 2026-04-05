@@ -2,7 +2,8 @@ export default {
   myEvent: "My Event",
   myCertificate: "My Certificate",
   myCertificates: "My Certificates",
-  sendEmailConfirm: "Are you sure to send this certificate to your registered email?",
+  sendEmailConfirm:
+    "Are you sure to send this certificate to your registered email?",
   emailMessage: "The certificate was sent successfully to your email.",
   yes: "Yes",
   no: "No",
@@ -34,7 +35,8 @@ export default {
     inputName: "Input your name",
     inputPhone: "Input your phone number",
     inputEmail: "Input your email address",
-    bookInfo: "Tickets that have been purchased will be sent to the email that has been filled in.",
+    bookInfo:
+      "Tickets that have been purchased will be sent to the email that has been filled in.",
     continue: "Continue",
   },
   pay: "Pay",
@@ -68,7 +70,8 @@ export default {
       admissionFeeLabel: "Event's Fee",
       adminFeeLabel: "Admin",
       note: "Please complete your payment in 24 hours. Your order will be cancelled automatically if you do not make any payments in 24 hours.",
-      instructionMessage: 'Click "Continue" to start the process and get payment instructions.',
+      instructionMessage:
+        'Click "Continue" to start the process and get payment instructions.',
       instructionLabel: "mBanking Transfer Instructions",
       step1: {
         "1": "Choose",
@@ -125,7 +128,8 @@ export default {
     checkIn: "Check In",
     checkOut: "Check Out",
     notificationMethod: "Notification Method",
-    notificationModalMessage: "Let’s kept up to date!  Choose your preference in notifications.",
+    notificationModalMessage:
+      "Let’s kept up to date!  Choose your preference in notifications.",
     checkInMessage1: "Are you sure to check-in?",
     checkInMessage2: "Will you check in now? Your data will be recorded.",
     checkOutMessage1: "Are you sure to check-out?",

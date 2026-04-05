@@ -154,14 +154,16 @@ export default {
       text13: "Event :",
       text14: "ID Tiket :",
       text15: "Waktu Check-in :",
-      text16: "Pastikan untuk check-out setelah event untuk melengkapi kehadiran Anda",
+      text16:
+        "Pastikan untuk check-out setelah event untuk melengkapi kehadiran Anda",
       text17: "Detail Event",
       text18: "Anda belum mendaftar",
       text19: "Silakan daftar ke event",
       text20: "Daftar Event",
     },
     checkOutForm: {
-      text1: "Belum ada pertanyaan. Anda dapat melanjutkan ke halaman berikutnya.",
+      text1:
+        "Belum ada pertanyaan. Anda dapat melanjutkan ke halaman berikutnya.",
       text2: "Unggah file gagal",
       text3: "Jawaban berhasil dikirim!",
       text4: "Kode tiket tidak tersedia.",
@@ -200,7 +202,8 @@ export default {
     certificate: {
       text1:
         "Sertifikat event belum tersedia. Harap tunggu hingga event berakhir atau dalam 7 hari.",
-      text2: "Sertifikat ini diterbitkan oleh Seeds untuk partisipasi Anda dalam",
+      text2:
+        "Sertifikat ini diterbitkan oleh Seeds untuk partisipasi Anda dalam",
       text3: "Unduh Sertifikat",
       text4: "Sertifikat Tidak Tersedia",
       text5:
@@ -243,7 +246,8 @@ export default {
       text4: "tim dukungan kami",
     },
     form: {
-      text1: "Belum ada pertanyaan. Anda bisa melanjutkan ke halaman berikutnya.",
+      text1:
+        "Belum ada pertanyaan. Anda bisa melanjutkan ke halaman berikutnya.",
       text2: "Gagal memuat pertanyaan:",
       text3: "Unggah file gagal",
       text4: "Jawaban berhasil dikirim!",

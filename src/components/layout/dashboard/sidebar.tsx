@@ -25,7 +25,8 @@ type SidebarProps = {
 const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   const location = useLocation();
   const dispatch = useAppDispatch();
-  const [logoutOpened, { open: openLogout, close: closeLogout }] = useDisclosure(false);
+  const [logoutOpened, { open: openLogout, close: closeLogout }] =
+    useDisclosure(false);
 
   const [expanded, setExpanded] = useState<Record<number, boolean>>(() =>
     Object.fromEntries(MenuData.map((item, i) => [i, item.expand ?? false]))
@@ -38,7 +39,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
         if (here === item.path || here.startsWith(item.path + "/")) return true;
       }
       if (Array.isArray(item.child)) {
-        return item.child.some((c: any) => here === c.path || here.startsWith(c.path + "/"));
+        return item.child.some(
+          (c: any) => here === c.path || here.startsWith(c.path + "/")
+        );
       }
       return false;
     },
@@ -53,7 +56,13 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
   return (
     <>
       {/* Logout Confirm Modal */}
-      <Modal opened={logoutOpened} onClose={closeLogout} title="Log out" centered size="sm">
+      <Modal
+        opened={logoutOpened}
+        onClose={closeLogout}
+        title="Log out"
+        centered
+        size="sm"
+      >
         <Text size="sm" c="dimmed" mb="lg">
           Are you sure you want to log out?
         </Text>
@@ -75,7 +84,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
           align="center"
           h={56}
           px="md"
-          style={{ borderBottom: "1px solid var(--mantine-color-default-border)" }}
+          style={{
+            borderBottom: "1px solid var(--mantine-color-default-border)",
+          }}
         >
           <img
             src={LogoSeeds}
@@ -90,7 +101,8 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
           <Stack gap={rem(4)}>
             {MenuData.map((item, index) => {
               const active = isParentActive(item);
-              const hasChild = Array.isArray(item.child) && item.child.length > 0;
+              const hasChild =
+                Array.isArray(item.child) && item.child.length > 0;
               const Icon = item.icon;
 
               if (hasChild) {
@@ -103,7 +115,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
                     active={active}
                     defaultOpened={active}
                     opened={expanded[index]}
-                    onChange={(val) => setExpanded((prev) => ({ ...prev, [index]: val }))}
+                    onChange={(val) =>
+                      setExpanded((prev) => ({ ...prev, [index]: val }))
+                    }
                     styles={{
                       root: { borderRadius: rem(10), fontWeight: 500 },
                     }}

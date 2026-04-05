@@ -86,7 +86,9 @@ export default function LoginPinDialog({
               length={max}
             />
           </div>
-          <p className="text-gray-400 my-2">{t("authRegisterAccount.page6.text5")}</p>
+          <p className="text-gray-400 my-2">
+            {t("authRegisterAccount.page6.text5")}
+          </p>
 
           <button
             type="button"
@@ -98,7 +100,9 @@ export default function LoginPinDialog({
               "bg-gradient-to-r from-[#3AC4A0] to-[#177C62] transition duration-200 hover:opacity-90 rounded-xl",
               "min-h-[44px]",
               loading && "opacity-70 cursor-wait",
-              !(pin.length === max) && !loading && "opacity-60 cursor-not-allowed"
+              !(pin.length === max) &&
+                !loading &&
+                "opacity-60 cursor-not-allowed"
             )}
           >
             {loading ? "Processing..." : "Next"}

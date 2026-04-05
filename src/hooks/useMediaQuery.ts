@@ -19,9 +19,13 @@ type Breakpoint = keyof typeof breakpoints;
  * const isMd = useMediaQuery("md"); // true if >= 992px
  */
 export function useMediaQuery(bp: Breakpoint): boolean {
-  const matches = useMantineMediaQuery(`(min-width: ${breakpoints[bp]})`, true, {
-    getInitialValueInEffect: false,
-  });
+  const matches = useMantineMediaQuery(
+    `(min-width: ${breakpoints[bp]})`,
+    true,
+    {
+      getInitialValueInEffect: false,
+    }
+  );
   return matches ?? false;
 }
 

@@ -1,7 +1,8 @@
 export default {
   leaderBoard: {
     title: "Circle Leaderboard",
-    description: "Find or create a Circle that matches your interests in Seeds.",
+    description:
+      "Find or create a Circle that matches your interests in Seeds.",
     join: "Joined",
     sort: "Sort by:",
   },
@@ -69,7 +70,8 @@ export default {
   settingMember: {
     title: "Add your members",
     add: "Add your members",
-    subtitle: "You can add members by searching for the name or using the share link later.",
+    subtitle:
+      "You can add members by searching for the name or using the share link later.",
     button: "Create Circle",
   },
   success: {
@@ -83,11 +85,13 @@ export default {
   },
   failed: {
     title: "Failed!",
-    subtitle: "Sorry, the new Circle creation has been failed. Please try again!",
+    subtitle:
+      "Sorry, the new Circle creation has been failed. Please try again!",
   },
   exist: {
     title: "Oops!",
-    subtitle: "The circle name is already exists, please try with another name.",
+    subtitle:
+      "The circle name is already exists, please try with another name.",
   },
   premium: {
     mainTitle: "Setting Circle Premium",
@@ -95,9 +99,11 @@ export default {
     subtitle: "Set your circle premium to Lifetime Membership or Subscription.",
     option: {
       title1: "Lifetime Membership",
-      subtitle1: "Member only need to pay one time to have access to the circle.",
+      subtitle1:
+        "Member only need to pay one time to have access to the circle.",
       title2: "Subscription",
-      subtitle2: "Member need to pay subscription every month/3 month/6month/12 month",
+      subtitle2:
+        "Member need to pay subscription every month/3 month/6month/12 month",
     },
     button: "Done",
   },
@@ -174,13 +180,15 @@ export default {
     idTransaction: "ID Transaction",
     close: "Close",
     paymentSuccessful: "Successful",
-    paymentSuccessDescription: "Your premium circle payment has been successfully processed",
+    paymentSuccessDescription:
+      "Your premium circle payment has been successfully processed",
     paymentFailed: "Payment Failed",
     paymentFailedDescription:
       "We can’t process your payment, Check your internet connection and try again.",
     paymentFailedWarning: "Payment Failed Circle Premium",
     getAccessToUnlock: "Get Access to unlock your membership",
-    enjoyUnlimitedAccess: "Enjoy unlimited access to all premium content from various experts.",
+    enjoyUnlimitedAccess:
+      "Enjoy unlimited access to all premium content from various experts.",
     getFullAccess: "Get full access by paying once for a lifetime",
   },
 } as const;

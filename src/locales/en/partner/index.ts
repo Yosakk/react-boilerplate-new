@@ -14,7 +14,8 @@ export default {
   },
   section4: {
     title: "Empowering The Next Generation Together",
-    subtitle: "Join us in making financial education more exciting and accessible for everyone",
+    subtitle:
+      "Join us in making financial education more exciting and accessible for everyone",
     option1: {
       title: "Community",
       text: "Exclusive Content Access, Community Recognition, Engagement Opportunities",

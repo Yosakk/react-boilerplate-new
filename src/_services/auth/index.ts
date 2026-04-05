@@ -51,7 +51,10 @@ export const userApi = Api.injectEndpoints({
     resendOTP: build.mutation<OTPResI, OTPReqI>({
       query: (body) => ({ url: `${prefix}/otp/resend`, method: "PUT", body }),
     }),
-    verifyOTP: build.mutation<VerifyOTPResI, VerifyOTPReqI & { method: OtpMethod }>({
+    verifyOTP: build.mutation<
+      VerifyOTPResI,
+      VerifyOTPReqI & { method: OtpMethod }
+    >({
       query: ({ method, ...body }) => ({
         url: `${prefix}/otp/verify/${method}`,
         method: "POST",

@@ -58,9 +58,12 @@ export default {
     qualifiedTitle: "Selamat!",
     failTitle: "Kamu Kalah!",
     eliminatedTitle: "Yah, Sayangnya",
-    winDescription: "Kerja Bagus! Kamu telah berhasil memenangkan tahap akhir! Tetap semangat!",
-    qualifiedDescription: "Kamu berhasil masuk ke tahap selanjutnya. Pertahankan kerja keras kamu!",
-    failDescription: "Hampir saja! Kamu hampir mencapai puncak! Terus berjuang untuk menang!",
+    winDescription:
+      "Kerja Bagus! Kamu telah berhasil memenangkan tahap akhir! Tetap semangat!",
+    qualifiedDescription:
+      "Kamu berhasil masuk ke tahap selanjutnya. Pertahankan kerja keras kamu!",
+    failDescription:
+      "Hampir saja! Kamu hampir mencapai puncak! Terus berjuang untuk menang!",
     eliminatedDescription:
       "Kali ini kamu tidak bisa lanjut ke tahap selanjutnya. Terus berjuang! Kamu lebih dari ini!",
     yourRank: "Peringkat Kamu",
@@ -70,7 +73,8 @@ export default {
     letsCheck: "Yuk Cek",
     yourRank: "Peringkat Kamu",
     enter: "Masuk",
-    onGoing: "Oops! Pertandingan belum dimulai. Babak {{data}} akan diadakan pada",
+    onGoing:
+      "Oops! Pertandingan belum dimulai. Babak {{data}} akan diadakan pada",
   },
   waitingPage: {
     success: "Kamu berhasil didaftarkan untuk mengikuti kompetisi ini.",

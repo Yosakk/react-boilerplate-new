@@ -41,7 +41,11 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
   });
 
   return (
-    <form className="flex flex-col items-center" onSubmit={submitProfile} noValidate>
+    <form
+      className="flex flex-col items-center"
+      onSubmit={submitProfile}
+      noValidate
+    >
       {!isSSO && (
         <div className="w-full flex justify-start">
           <img
@@ -105,7 +109,9 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
                       error={errors.phoneNumber}
                       onBlur={() => {
                         field.onBlur();
-                        validateOnBlur.phoneNumber(String(methods.getValues("phoneNumber") ?? ""));
+                        validateOnBlur.phoneNumber(
+                          String(methods.getValues("phoneNumber") ?? "")
+                        );
                       }}
                     />
                   )}
@@ -155,7 +161,11 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
         </div>
 
         <div className="w-full flex justify-start items-start gap-2">
-          <img src={BlueWarning} alt="BlueWarning" className="w-[20px] mt-[1px]" />
+          <img
+            src={BlueWarning}
+            alt="BlueWarning"
+            className="w-[20px] mt-[1px]"
+          />
           <p className="font-poppins text-sm text-[#2B4CCD]">
             {t("authRegisterAccount.page2.text6")}
           </p>
@@ -221,13 +231,16 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
               style={{ color: "#2B4CCD" }}
               onClick={openTncFromSignup}
             >
-              {t("authRegisterAccount.page2.text8")} {t("authRegisterAccount.page2.text9")}
+              {t("authRegisterAccount.page2.text8")}{" "}
+              {t("authRegisterAccount.page2.text9")}
             </span>
           </p>
         </div>
         {errors.tncAccepted && (
           <div className="w-full">
-            <p className="text-red-500 text-sm mt-1">{errors.tncAccepted.message}</p>
+            <p className="text-red-500 text-sm mt-1">
+              {errors.tncAccepted.message}
+            </p>
           </div>
         )}
 
@@ -244,7 +257,9 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
                             hover:from-[#2ea884] hover:to-[#0f5b47]
                         "
           >
-            {submitting ? "Processing..." : t("authRegisterAccount.page2.text16")}
+            {submitting
+              ? "Processing..."
+              : t("authRegisterAccount.page2.text16")}
           </button>
         </div>
       </div>

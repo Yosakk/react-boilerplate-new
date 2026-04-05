@@ -3,7 +3,8 @@ export default {
     text1: "SELAMAT DATANG DI SEEDS",
     text2: "PREMIUM",
     text3: "Buka Pengalaman Terbaikmu",
-    text4: "Temukan dunia konten edukatif dan game premium yang dirancang khusus untukmu.",
+    text4:
+      "Temukan dunia konten edukatif dan game premium yang dirancang khusus untukmu.",
     text5: "Jelajahi Paket 🚀",
     text6: "Paket Saya",
     text7: "Halo",
@@ -98,7 +99,8 @@ export default {
   },
   modalConfirmPayment: {
     text1: "Konfirmasi Paket Anda",
-    text2: "Periksa detail paket Anda dan konfirmasikan langganan di bawah ini.",
+    text2:
+      "Periksa detail paket Anda dan konfirmasikan langganan di bawah ini.",
     text3: "Paket",
     text4: "",
     text5: "/bulan",
@@ -237,6 +239,7 @@ export default {
       text6: "bulan",
       text7: "bulan",
     },
-    warningIncoming: "Anda sudah memiliki langganan aktif atau langganan yang akan datang!",
+    warningIncoming:
+      "Anda sudah memiliki langganan aktif atau langganan yang akan datang!",
   },
 } as const;

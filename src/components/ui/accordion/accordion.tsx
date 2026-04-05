@@ -9,11 +9,17 @@ const Accordion = AccordionPrimitive.Root;
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> & { borderColor?: string }
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> & {
+    borderColor?: string;
+  }
 >(({ className, borderColor = "border-gray-300", ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn("border-b cursor-pointer last:border-b-0", borderColor, className)}
+    className={cn(
+      "border-b cursor-pointer last:border-b-0",
+      borderColor,
+      className
+    )}
     {...props}
   />
 ));

@@ -30,7 +30,8 @@ export default {
   text16: "Expired on ",
   text17:
     "Want to change or continue your SeedsPlan for the next activation? Pay now, and you won’t have to worry about it later!",
-  text18: "*Your next plan will activate automatically after your current plan expires.",
+  text18:
+    "*Your next plan will activate automatically after your current plan expires.",
   text19:
     "*You have subscribed to 2 Seeds Plan. You have to wait for your first package to run out to subscribe again.",
   month: "Month",
@@ -95,7 +96,8 @@ export default {
   history: {
     transactionHistory: "Transaction History",
     transactionHistoryEmpty: "Transaction History Is Empty",
-    noTransaction: "You haven’t made any transaction yet. Start your first transaction now!",
+    noTransaction:
+      "You haven’t made any transaction yet. Start your first transaction now!",
     back: "Back",
   },
   yes: "Yes",

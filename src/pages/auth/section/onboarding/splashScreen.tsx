@@ -19,7 +19,11 @@ const SplashScreen: React.FC<ISplashScreen> = ({ isFading }: ISplashScreen) => {
         className="absolute top-0 right-0 w-[60%] md:w-[375px] h-auto z-0"
       />
       <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center">
-        <img src={LeftBanner} alt="LeftBanner" className="w-[340px] md:w-[375px] h-auto" />
+        <img
+          src={LeftBanner}
+          alt="LeftBanner"
+          className="w-[340px] md:w-[375px] h-auto"
+        />
         <div className="flex flex-col justify-start items-start">
           <p className="font-semibold font-poppins text-4xl text-white mt-2 text-left">
             {t("onboarding.leftBanner.text1")}
@@ -34,7 +38,8 @@ const SplashScreen: React.FC<ISplashScreen> = ({ isFading }: ISplashScreen) => {
             style={{
               width: "0%",
               animation: "loadingBar 2.5s ease-in-out forwards",
-              backgroundImage: "repeating-linear-gradient(315deg, #5DEF8F 0 15px, white 5px 20px)",
+              backgroundImage:
+                "repeating-linear-gradient(315deg, #5DEF8F 0 15px, white 5px 20px)",
               backgroundSize: "auto",
               backgroundRepeat: "repeat",
             }}

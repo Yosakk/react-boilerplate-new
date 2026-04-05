@@ -1,7 +1,8 @@
 export default {
   leaderBoard: {
     title: "Circle Leaderboard",
-    description: "Cari atau buat Circle yang sesuai dengan minat kamu di Seeds.",
+    description:
+      "Cari atau buat Circle yang sesuai dengan minat kamu di Seeds.",
     join: "Bergabung",
     sort: "Urutkan berdasarkan:",
   },
@@ -53,7 +54,8 @@ export default {
   },
   typePopUp: {
     title: "Tipe Membership",
-    subtitle: "Atur Circle kamu menjadi gratis atau premium untuk akses lebih banyak",
+    subtitle:
+      "Atur Circle kamu menjadi gratis atau premium untuk akses lebih banyak",
     option: {
       free: {
         title: "Gratis",
@@ -69,12 +71,14 @@ export default {
   settingMember: {
     title: "Pengaturan Anggota",
     add: "Tambahkan anggota kamu",
-    subtitle: "Kamu dapat menambahkan anggota dengan mencari nama atau menggunakan tautan nanti.",
+    subtitle:
+      "Kamu dapat menambahkan anggota dengan mencari nama atau menggunakan tautan nanti.",
     button: "Buat Circle",
   },
   success: {
     title: "Sukses!",
-    subtitle: "Selamat! Circle baru telah berhasil dibuat. Bagikan Circle kamu sekarang!",
+    subtitle:
+      "Selamat! Circle baru telah berhasil dibuat. Bagikan Circle kamu sekarang!",
   },
   empty: {
     title: "Maaf",
@@ -91,12 +95,15 @@ export default {
   premium: {
     mainTitle: "Pengaturan Circle Premium",
     title: "Pilihan Circle Premium",
-    subtitle: "Atur circle kamu menjadi membership seumur hidup atau berlangganan.",
+    subtitle:
+      "Atur circle kamu menjadi membership seumur hidup atau berlangganan.",
     option: {
       title1: "Membership Seumur Hidup",
-      subtitle1: "Anggota hanya perlu membayar satu kali untuk mengakses circle.",
+      subtitle1:
+        "Anggota hanya perlu membayar satu kali untuk mengakses circle.",
       title2: "Berlangganan",
-      subtitle2: "Anggota perlu membayar langganan setiap bulan/3 bulan/6 bulan/12 bulan",
+      subtitle2:
+        "Anggota perlu membayar langganan setiap bulan/3 bulan/6 bulan/12 bulan",
     },
     button: "Selesai",
   },
@@ -173,13 +180,15 @@ export default {
     idTransaction: "ID Transaksi",
     close: "Tutup",
     paymentSuccessful: "Berhasil",
-    paymentSuccessDescription: "Pembayaran langganan premium anda telah berhasil diproses.",
+    paymentSuccessDescription:
+      "Pembayaran langganan premium anda telah berhasil diproses.",
     paymentFailed: "Pembayaran Gagal",
     paymentFailedDescription:
       "Kami tidak bisa memproses pembayaran anda. Cek koneksi internet anda dan coba lagi.",
     paymentFailedWarning: "Pembayaran Langganan Premium Gagal",
     getAccessToUnlock: "Dapatkan akses untuk membuka membershipmu",
-    enjoyUnlimitedAccess: "Nikmati akses tak terbatas ke semua konten premium dari berbagai ahli.",
+    enjoyUnlimitedAccess:
+      "Nikmati akses tak terbatas ke semua konten premium dari berbagai ahli.",
     getFullAccess: "Dapatkan akses penuh dengan membayar sekali seumur hidup",
   },
 } as const;

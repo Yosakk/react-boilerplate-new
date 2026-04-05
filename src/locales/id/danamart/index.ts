@@ -16,7 +16,8 @@ export default {
       password:
         "Kata sandi harus terdiri dari 8 karakter dan terdiri dari huruf besar dan huruf kecil.",
       wrongPassword: "Password salah. Cek password Anda sebelum mengisi form!",
-      recaptcha: "ReCAPTCHA tidak tersedia! Pastikan Anda telah mengisi ReCAPTCHA.",
+      recaptcha:
+        "ReCAPTCHA tidak tersedia! Pastikan Anda telah mengisi ReCAPTCHA.",
     },
     loginButton: "Masuk",
     disconnectAccount: "Putuskan Akun",
@@ -124,7 +125,8 @@ export default {
   },
   dashboard: {
     title: "Beranda",
-    description: "Pintu gerbang anda untuk memantau dan mengembangkan investasi.",
+    description:
+      "Pintu gerbang anda untuk memantau dan mengembangkan investasi.",
     verifyPhone: "Jangan lupa untuk memverifikasi nomor telepon Anda",
     verifyForm: "Jangan lupa lengkapi data diri kamu",
     here: "di sini",
@@ -150,7 +152,8 @@ export default {
     alternatives: "Alternatif",
     errorGetUserDashboard: "Gagal mendapatkan data dasbor",
     errorGetUserProfile: "Gagal mendapatkan data profile pengguna",
-    mustVerify: "Mohon verifikasi nomor handphone dan email anda terlebih dahulu.",
+    mustVerify:
+      "Mohon verifikasi nomor handphone dan email anda terlebih dahulu.",
   },
   verification: {
     photoIdCardTitle: {
@@ -165,8 +168,10 @@ export default {
         "Untuk mengonfirmasi identitas Anda, harap unggah foto digital atau ambil foto.",
       uploadRequirement: {
         title: "Ketentuan mengunggah KTP",
-        text1: "Mengambil foto KTP langsung melalui kamera atau upload foto KTP.",
-        text2: "File yang diunggah harus dalam format JPG/JPEG dan maksimal 4 MB.",
+        text1:
+          "Mengambil foto KTP langsung melalui kamera atau upload foto KTP.",
+        text2:
+          "File yang diunggah harus dalam format JPG/JPEG dan maksimal 4 MB.",
         text3: "KTP tidak rusak seperti retak atau patah.",
         text4: "Ambil foto KTP dengan posisi Landscape",
         text5:
@@ -178,7 +183,8 @@ export default {
       accountInformationTitle: "Informasi Akun",
       popUpInformation: "Silakan isi Informasi Pribadi sesuai data KTP anda",
       popUpAddress: "Isi data alamat sesuai KTP anda",
-      popUpValidity: "Jika masa berlaku KTP kamu seumur hidup kamu bisa langsung klik Seumur Hidup",
+      popUpValidity:
+        "Jika masa berlaku KTP kamu seumur hidup kamu bisa langsung klik Seumur Hidup",
       popUpMotherName:
         "Nama Gadis Ibu Kandung kami butuhkan sebagai sandi keamanan jika suatu hari terjadi hal yang tidak di-inginkan.",
       popUpBeneficiary:
@@ -454,7 +460,8 @@ export default {
       },
       partnerFullname: "Nama Lengkap Pasangan",
       ktpNumber: "No KTP",
-      validationIncome: "Silakan setujui pernyataan pendapatanmu terlebih dahulu!",
+      validationIncome:
+        "Silakan setujui pernyataan pendapatanmu terlebih dahulu!",
     },
     photoSelfieTittle: "Foto Diri",
     photoSelfie: {
@@ -467,7 +474,8 @@ export default {
       delete: "Hapus",
       requirements: "Ketentuan mengunggah Foto Selfie",
       requirements1: "Mengambil foto langsung menggunakan kamera.",
-      requirements2: "Pastikan wajah kamu terlihat dengan pencahayaan yang cukup.",
+      requirements2:
+        "Pastikan wajah kamu terlihat dengan pencahayaan yang cukup.",
       requirements3:
         "Area wajah terlihat jelas tanpa menggunakan aksesori seperti kacamata, masker, topi, dan lain-lain.",
       requirements4: "Tidak perlu memegang e-KTP atau benda lainnya.",
@@ -788,11 +796,13 @@ export default {
           text4:
             "Maaf, ada pembelian efek yang belum selesai diproses. Silakan proses terlebih dahulu transaksi Kamu",
           text5: "Minimum pembelian adalah Rp. 100.000,-",
-          text6: "Silakan setujui bahwa anda berinvestasi pada Project Financing",
+          text6:
+            "Silakan setujui bahwa anda berinvestasi pada Project Financing",
           text7: "Maaf jumlah pembelian anda melebihi slot yang ada",
           text8: "Maaf jumlah pembelian anda melebihi deposit anda",
           text9: "Maaf jumlah pembelian anda melebihi slot yang tersedia",
-          text10: "Maaf jumlah pembelian anda melebihi batas transfer bank anda",
+          text10:
+            "Maaf jumlah pembelian anda melebihi batas transfer bank anda",
         },
       },
       disclaimer: {
@@ -986,7 +996,8 @@ export default {
         text4: "Jenis File",
         cancel: "Batal",
         yes: "Download",
-        text7: "Permintaan pengunduhan laporan berhasil. Mohon tunggu hingga proses selesai.",
+        text7:
+          "Permintaan pengunduhan laporan berhasil. Mohon tunggu hingga proses selesai.",
         text8: "Laporan berhasil diunduh!",
         text9: "Gagal mengunduh laporan! Mohon coba lagi.",
       },
@@ -1033,7 +1044,8 @@ export default {
       withdrawRequest: {
         steps:
           "\n            <ol>\n              <li>Masukkan jumlah nominal dana yang akan di Tarik Dana.</li>\n              <li>Klik tombol “Tarik Dana” untuk memproses menarik dana Kamu.</li>\n              <li>Danamart akan memproses permintaan Tarik Dana Kamu maksimal 2 hari kerja.</li>\n            </ol>\n          ",
-        succeed: "Selamat, penarikan dana Anda diterima dan akan segera diproses!",
+        succeed:
+          "Selamat, penarikan dana Anda diterima dan akan segera diproses!",
         pending:
           "Masih ada proses tarik dana yang belum diproses di akun Kamu. Silakan tunggu proses tarik dana hingga selesai, lalu coba kembali",
         tooManyAttempts:
@@ -1161,7 +1173,8 @@ export default {
     text5: "Input kode-mu disini",
     text6: "Masukan kode promo",
     text7: "Validasi Kode",
-    text8: "Selamat! Kode-mu valid dan berhasil diklaim. Saat ini sudah bisa menikmati benefitnya.",
+    text8:
+      "Selamat! Kode-mu valid dan berhasil diklaim. Saat ini sudah bisa menikmati benefitnya.",
     text9:
       "Maaf! Kode-mu tidak valid, kuota sudah habis , masa berlakunya telah berakhir atau tidak memenuhi syarat dan ketentuan. Silakan coba lagi dengan kode lainnya ya.",
     modal: {
@@ -1271,10 +1284,12 @@ export default {
       validation: {
         text1:
           "Terima kasih atas kesabarannya. Kami ingin memberitahukan bahwa masih terdapat permintaan perubahan data yang masih dalam proses. Mohon tunggu sampai proses ini selesai dan Anda dapat mengajukannya kembali.",
-        text2: "Kode OTP telah dikirim ke nomor anda. Silakan cek handphone anda.",
+        text2:
+          "Kode OTP telah dikirim ke nomor anda. Silakan cek handphone anda.",
         text3:
           "Kami telah menerima permintaan perubahan data anda. Selanjutnya tim kami akan melakukan konfirmasi terkait permintaan perubahan data ini dengan cara menghubungimu. Mohon ditunggu ya.",
-        text4: "Kode verifkasi salah, silakan masukkan kode verifikasi yang valid.",
+        text4:
+          "Kode verifkasi salah, silakan masukkan kode verifikasi yang valid.",
         text5: "No rekening salah atau tidak valid.",
         text6: "Nama pemilik rekening tidak sesuai.",
         text7: "Password salah, silakan coba kembali.",
@@ -1317,7 +1332,8 @@ export default {
       },
     },
   },
-  idleLogout: "Anda tidak aktif selama 30 menit atau lebih. Silakan masuk kembali ke Danamart.",
+  idleLogout:
+    "Anda tidak aktif selama 30 menit atau lebih. Silakan masuk kembali ke Danamart.",
   logout: {
     text1: "Keluar",
     description: "Apakah anda ingin logout dari Danamart?",

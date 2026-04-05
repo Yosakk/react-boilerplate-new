@@ -2,7 +2,8 @@ export default {
   warning: "Mohon selesaikan proses onboarding Anda.",
   leftBanner: {
     text1: "Ayo Mulai",
-    text2: "Mulai perjalananmu bersama Seeds dan kembangkan pengetahuan investasimu",
+    text2:
+      "Mulai perjalananmu bersama Seeds dan kembangkan pengetahuan investasimu",
   },
   welcomeCarousel: {
     title: {

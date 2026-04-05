@@ -50,5 +50,6 @@ export default {
   text39: "Enter email address",
   text40: "🔒 We respect your privacy. No spam, only updates on the demo.",
   text41: "Real-Time Impact",
-  text42: "See whats happening in real-time! Thousands are joining every day and making progress.",
+  text42:
+    "See whats happening in real-time! Thousands are joining every day and making progress.",
 } as const;

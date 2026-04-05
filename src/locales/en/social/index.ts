@@ -38,14 +38,16 @@ export default {
   },
   errorState: {
     image1: "Your image is exceeding the 5MB size limit",
-    image2: "You can only insert image in JPG, JPEG, PNG, .HEIC, .HEIF. format.",
+    image2:
+      "You can only insert image in JPG, JPEG, PNG, .HEIC, .HEIF. format.",
     video1: "You can only insert video in .MOV and .MP4 format.",
     video2: "You can only insert video with maximum durations of 60 seconds",
     video3: "Your video is exceeding the 20MB size limit.",
     thread1: "Text exceed 500 characters",
     thread2: "Sorry, we can not find your URL. Please insert the correct URL",
     thread3: "Your thread is exceeding the maximum character limit",
-    poll1: "Your question is exceeding the maximum character limit. Please rewrite the questions",
+    poll1:
+      "Your question is exceeding the maximum character limit. Please rewrite the questions",
     poll2: "The ending date can not be less than today's date",
   },
   reportUser: {
@@ -110,7 +112,8 @@ export default {
     trendingDesc: "Based on highest engagement",
   },
   placeholder1: "What do you want to discuss? ...",
-  placeholder2: "Use @ to tag user, @ to tag circle, # to add hashtags user, $ to tag assets",
+  placeholder2:
+    "Use @ to tag user, @ to tag circle, # to add hashtags user, $ to tag assets",
   payment: {
     paymentMethod: "Payment Method",
     virtualNumber: "Your Virtual Account Number",
@@ -132,8 +135,10 @@ export default {
     shareText: "Your will share this to your profile. Accept ?",
     accept: "Accept",
     cancel: "Cancel",
-    shareWin: "Your success has been shared! Keep inspiring others with your financial knowledge!",
-    shareLose: " Your attempt has been shared! Keep learning and growing every day! ",
+    shareWin:
+      "Your success has been shared! Keep inspiring others with your financial knowledge!",
+    shareLose:
+      " Your attempt has been shared! Keep learning and growing every day! ",
     postWin: "I am answered today’s daily quiz right! Feeling great!",
     postLose: "I am answered today’s daily quiz wrong. but i’m learning!",
   },

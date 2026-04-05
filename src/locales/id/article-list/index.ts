@@ -18,7 +18,8 @@ export default {
   text17: "Kontributor",
   text18: "Kategori",
   text19: "Maaf, kategori ini tidak tersedia",
-  text20: "Lihat artikel lain yang relevan — siapa tahu Anda menemukan wawasan baru!",
+  text20:
+    "Lihat artikel lain yang relevan — siapa tahu Anda menemukan wawasan baru!",
   text21: "Unggahan Terbaru",
   text22: "oleh",
   text23: "Cari kategori...",

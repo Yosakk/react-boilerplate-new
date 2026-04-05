@@ -142,15 +142,18 @@ export default {
   guidance: {
     guidanceTitle: "Petunjuk",
     goals: "Tujuan",
-    goalsDescription: "Bangun portofolio terbaikmu menggunakan virtual balance yang disediakan.",
+    goalsDescription:
+      "Bangun portofolio terbaikmu menggunakan virtual balance yang disediakan.",
     howToPlay: {
       title: "Cara Bermain",
       text1: "Mulai dengan melihat portofolio dan virtual balance.",
       text2: "Klik 'Lihat Lebih' untuk melihat daftar aset yang tersedia.",
       text3: "Klik pada aset untuk melihat hasil analisis data.",
-      text4: "Untuk membeli aset, klik tombol 'Beli'. Untuk menjual aset, klik tombol 'Jual'.",
+      text4:
+        "Untuk membeli aset, klik tombol 'Beli'. Untuk menjual aset, klik tombol 'Jual'.",
       text5: "Anda dapat membuat transaksi dalam spesifik waktu tertentu.",
-      text6: "Lihat posisi anda pada leaderboard untuk melihat persaingan dengan pemain lain.",
+      text6:
+        "Lihat posisi anda pada leaderboard untuk melihat persaingan dengan pemain lain.",
     },
     winner: "Pemenang",
     winnerDescription:
@@ -158,15 +161,18 @@ export default {
     tips: {
       title: "Tips",
       text1: "Lakukan analisa anda sendiri sebelum melakukan transaksi.",
-      text2: "Pelajari analisa saham dan aset untuk membantu membuat keputusan.",
+      text2:
+        "Pelajari analisa saham dan aset untuk membantu membuat keputusan.",
       text3: "Selalu bersiap untuk menghadapi perubahan harga.",
     },
   },
   floatingButton: {
     text1:
       "Masih kurang yakin dengan cara main di Play Arena? Check video tutorialnya di sini dan ikutin step-stepnya! Yuk, belajar lebih banyak di play arena, buat dapetin hadiahnya!",
-    text2: "Yuk, sharing bareng teman dan temukan ahli buat ningkatin informasi",
-    text3: "Jangan lupa buat baca syarat dan ketentuan Play Arena sebelum memulai permainannya",
+    text2:
+      "Yuk, sharing bareng teman dan temukan ahli buat ningkatin informasi",
+    text3:
+      "Jangan lupa buat baca syarat dan ketentuan Play Arena sebelum memulai permainannya",
   },
   watchlist: {
     myWatchlist: "Daftar Pantau Saya",
@@ -198,10 +204,12 @@ export default {
     cancelAddAsset: "Batalkan penambahan aset ke daftar pantauan?",
     yes: "Ya",
     no: "Tidak",
-    alreadyExist: "Aset yang Anda tambahkan sudah ada dalam daftar pantauan yang telah dibuat.",
+    alreadyExist:
+      "Aset yang Anda tambahkan sudah ada dalam daftar pantauan yang telah dibuat.",
     ok: "Oke",
     createNewWatchlist: "Daftar Pantauan Baru",
-    descNewWatchlist: "Buat daftar pantauan untuk membantu Anda mengumpulkan aset favorit Anda",
+    descNewWatchlist:
+      "Buat daftar pantauan untuk membantu Anda mengumpulkan aset favorit Anda",
     watchlistName: "Nama Daftar Pantauan",
     groupName: "Nama Grup yang Diinginkan",
     btnNewWatchlist: "Buat Daftar Pantauan Baru",

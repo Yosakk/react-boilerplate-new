@@ -14,7 +14,8 @@ export default {
     text3c: "Learn",
     text3d:
       "Learn everything about the finance world with seeds. Together with friends and many professionals. ",
-    text4: "Get the latest trending news and knowledge about investing and finance.",
+    text4:
+      "Get the latest trending news and knowledge about investing and finance.",
     text5: "Event Highlight",
     text6: "Keep up with your exciting activities!",
   },
@@ -30,7 +31,8 @@ export default {
   },
   section4: {
     text1: "Over 1000+ people trust us",
-    text2: "Professionw-1/2 text-white tracking-widestals, universities, many more do!",
+    text2:
+      "Professionw-1/2 text-white tracking-widestals, universities, many more do!",
     text3: "Chat",
     text4: "with like-minded people",
     text5: "Our Recommendation Circle",
@@ -38,7 +40,8 @@ export default {
   },
   section5: {
     text1: "Discover",
-    text2: "Explore trending news and gain insights about Finance and Investing.",
+    text2:
+      "Explore trending news and gain insights about Finance and Investing.",
   },
   section6: {
     text1:

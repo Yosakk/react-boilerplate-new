@@ -43,7 +43,8 @@ export default {
       seedsTag: {
         required: "Please enter your username",
         taken: "This username is already taken",
-        regex: "Username can only include letters, number, and the symbols ( _ ) or ( . ).",
+        regex:
+          "Username can only include letters, number, and the symbols ( _ ) or ( . ).",
         length: "Invalid username format (must contain 3-15 character).",
         invalidOrUsed: "Username is invalid or already used",
       },
@@ -53,7 +54,8 @@ export default {
       },
       password: {
         required: "Password is required",
-        rules: "Password must be at least 8 characters and include uppercase and lowercase letters",
+        rules:
+          "Password must be at least 8 characters and include uppercase and lowercase letters",
       },
       confirmPassword: {
         required: "Password confirmation is required",

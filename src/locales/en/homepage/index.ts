@@ -17,7 +17,8 @@ export default {
     text15: "Please Login to enter the arena simulation",
     text16: "Login to enter arena simulation",
     text17: "Virtual cash is virtual money available for play game",
-    text18: "Get update of your asset today! And playing our game to get more rewards.",
+    text18:
+      "Get update of your asset today! And playing our game to get more rewards.",
     text19: "Total Reward this month",
   },
   section3: {

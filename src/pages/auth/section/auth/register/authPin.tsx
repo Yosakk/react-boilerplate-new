@@ -37,7 +37,11 @@ export default function CreateSeedsPinSection({
 
   return (
     <section className="w-full flex items-center justify-center py-10">
-      <form onSubmit={handleSubmit} className="w-full max-w-md text-center px-6 sm:px-8" noValidate>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-md text-center px-6 sm:px-8"
+        noValidate
+      >
         <img
           src={SeedyPin}
           alt="Seeds pin mascot"
@@ -75,7 +79,9 @@ export default function CreateSeedsPinSection({
             />
           )}
         </div>
-        <p className="text-gray-400 my-2">{t("authRegisterAccount.page6.text5")}</p>
+        <p className="text-gray-400 my-2">
+          {t("authRegisterAccount.page6.text5")}
+        </p>
 
         {withConfirm && step === "confirm" && (
           <button

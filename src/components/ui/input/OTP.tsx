@@ -51,7 +51,13 @@ const InputOTP = forwardRef<HTMLInputElement, Props>(function InputOTP(
     )
       return;
 
-    if (!e.ctrlKey && !e.metaKey && !e.altKey && e.key.length === 1 && !/^\d$/.test(e.key)) {
+    if (
+      !e.ctrlKey &&
+      !e.metaKey &&
+      !e.altKey &&
+      e.key.length === 1 &&
+      !/^\d$/.test(e.key)
+    ) {
       e.preventDefault();
     }
   };
@@ -67,7 +73,12 @@ const InputOTP = forwardRef<HTMLInputElement, Props>(function InputOTP(
   const focusHidden = () => hiddenRef.current?.focus();
 
   return (
-    <div className={className} onClick={focusHidden} role="group" aria-live="polite">
+    <div
+      className={className}
+      onClick={focusHidden}
+      role="group"
+      aria-live="polite"
+    >
       <input
         ref={hiddenRef}
         aria-label={ariaLabel ?? `Enter ${MAX}-digit code`}

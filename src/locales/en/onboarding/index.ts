@@ -22,7 +22,8 @@ export default {
     start: "Let's Start",
     login: "I Already Have an Account",
     text1: "Hi, I’m Seedy, your money buddy! 👋",
-    text2: "Quick quiz time! Just 5 question then we’re off to your first lesson! 🎉",
+    text2:
+      "Quick quiz time! Just 5 question then we’re off to your first lesson! 🎉",
   },
   question: {
     start: "Let's Go",
@@ -34,11 +35,13 @@ export default {
       text1: "Great choice, let’s dig deeper about ",
       text2: {
         part1: "Got it! You're in the ",
-        part2: " zone, let’s make this an exciting step forward from where you are now!",
+        part2:
+          " zone, let’s make this an exciting step forward from where you are now!",
       },
       text3: {
         part1: "Got it! You're here for ",
-        part2: ", let’s make this an exciting step forward toward what you’re aiming for!",
+        part2:
+          ", let’s make this an exciting step forward toward what you’re aiming for!",
       },
       text4:
         "Awesome! Let’s use your preferred ways to learn and make this journey even more engaging!",

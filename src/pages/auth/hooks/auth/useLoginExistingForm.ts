@@ -13,14 +13,19 @@ type UseExistingLoginFormOptions = {
   onSuccess?: () => void;
 };
 
-export function useExistingLoginForm(options: UseExistingLoginFormOptions = {}) {
+export function useExistingLoginForm(
+  options: UseExistingLoginFormOptions = {}
+) {
   const { autoNavigate = true, onSuccess } = options;
   const { t } = useTranslation();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
 
   const existing = useAppSelector((s) => s.userExisting);
-  const userNameExisting = useMemo(() => existing?.name || "", [existing?.name]);
+  const userNameExisting = useMemo(
+    () => existing?.name || "",
+    [existing?.name]
+  );
 
   const [openPin, setOpenPin] = useState(false);
   const [pinError, setPinError] = useState<string | null>(null);
@@ -60,8 +65,12 @@ export function useExistingLoginForm(options: UseExistingLoginFormOptions = {}) 
 
         return true;
       } catch (err: any) {
-        const msg: string = err?.data?.message ?? err?.error ?? err?.message ?? "";
-        if (err?.status === 401 || (typeof msg === "string" && msg.includes("crypto/bcrypt"))) {
+        const msg: string =
+          err?.data?.message ?? err?.error ?? err?.message ?? "";
+        if (
+          err?.status === 401 ||
+          (typeof msg === "string" && msg.includes("crypto/bcrypt"))
+        ) {
           setPinError(t("loginRevamp.text18"));
           return false;
         }

@@ -5,7 +5,8 @@ export default {
   subtitle: {
     general: "Congratulations!",
     email: "Congratulations, you have successfully changed your email.",
-    whatsapp: "Congratulations, you have successfully changed your telephone number.",
+    whatsapp:
+      "Congratulations, you have successfully changed your telephone number.",
     sms: "Congratulations, you have successfully changed your telephone number.",
   },
 } as const;

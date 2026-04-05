@@ -21,7 +21,8 @@ export default {
       descriptionCard3: "Menghapus akunmu akan menghapus semua informasimu.",
       confirm: "Konfirmasi",
       titleMail1: "Yuk, tambahin Emailmu!",
-      titleMail2: "Untuk keamanan verifikasi, tambahkan email Kamu terlebih dahulu",
+      titleMail2:
+        "Untuk keamanan verifikasi, tambahkan email Kamu terlebih dahulu",
       titleChangeMail1: "Yuk, ganti Email kamu!",
       titleChangeMail2: "Masukan email barumu",
       placeholderMail: "Masukan email kamu",
@@ -39,7 +40,8 @@ export default {
       },
       delete: {
         title1: "Yakin nih mau hapus akun?",
-        title2: "Kalo kamu pilih ‘Iya’, akunmu akan dihapus dalam jangka waktu 30 hari kedepan",
+        title2:
+          "Kalo kamu pilih ‘Iya’, akunmu akan dihapus dalam jangka waktu 30 hari kedepan",
         yes: "Iya",
         no: "Nggak",
       },
@@ -86,7 +88,8 @@ export default {
     savedPost: {
       title: "Postingan Tersimpan",
       info: "Informasi",
-      infoMessage: "Halaman ini berisi daftar postingan yang pernah anda simpan.",
+      infoMessage:
+        "Halaman ini berisi daftar postingan yang pernah anda simpan.",
       noData: "Oops, there’s no saved data yet",
       noDataMessage: "Find some posts and saved the best one!",
     },

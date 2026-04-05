@@ -17,8 +17,17 @@ type Options = {
   respectReducedMotion?: boolean;
 };
 
-export function useTypingBubble(message: MessageSpan[], speed = 40, opts: Options = {}) {
-  const { typeOnceKey, granularity = "word", allowSkip = true, respectReducedMotion = true } = opts;
+export function useTypingBubble(
+  message: MessageSpan[],
+  speed = 40,
+  opts: Options = {}
+) {
+  const {
+    typeOnceKey,
+    granularity = "word",
+    allowSkip = true,
+    respectReducedMotion = true,
+  } = opts;
 
   const [displayedText, setDisplayedText] = useState("");
   const [charIndex, setCharIndex] = useState(0);
@@ -31,10 +40,13 @@ export function useTypingBubble(message: MessageSpan[], speed = 40, opts: Option
 
   const prefersReduced = useMemo(() => {
     if (!respectReducedMotion || typeof window === "undefined") return false;
-    return window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
+    return (
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false
+    );
   }, [respectReducedMotion]);
 
-  const tokenize = (s: string) => (granularity === "word" ? s.split(/(\s+)/) : s.split(""));
+  const tokenize = (s: string) =>
+    granularity === "word" ? s.split(/(\s+)/) : s.split("");
 
   const completeAll = () => {
     const all: MessageSpan[] = [];
@@ -119,8 +131,10 @@ export function useTypingBubble(message: MessageSpan[], speed = 40, opts: Option
     displayedText,
     finalSpans,
     currentSpan: messageIndex < message.length ? message[messageIndex] : null,
-    currentIsNewLine: messageIndex < message.length ? !!message[messageIndex].newLine : false,
-    currentIsBold: messageIndex < message.length ? !!message[messageIndex].isBold : false,
+    currentIsNewLine:
+      messageIndex < message.length ? !!message[messageIndex].newLine : false,
+    currentIsBold:
+      messageIndex < message.length ? !!message[messageIndex].isBold : false,
     skip: allowSkip ? () => completeAll() : undefined,
     done,
   };

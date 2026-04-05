@@ -20,7 +20,8 @@ export default {
   noExpired: "Tidak ada tanggal kadaluarsa",
   havePromo: "Punya kode promo? Masukan disini!",
   enterPromo: "Masukan promo code anda...",
-  notFound: "Kode promo tidak ditemukan. Pastikan anda menggunakan kode promo yang valid",
+  notFound:
+    "Kode promo tidak ditemukan. Pastikan anda menggunakan kode promo yang valid",
   limitPurchaseMessage:
     "Kamu harus mencapai minimum pembelian supaya dapat menggunakan kode promo ini!",
   limitDailyMessage: "Kuota kode promo sudah mencapai limit",

@@ -1,4 +1,9 @@
-import { AuthCarousel1, AuthCarousel2, AuthCarousel3, AuthCarousel4 } from "@/assets/onboarding";
+import {
+  AuthCarousel1,
+  AuthCarousel2,
+  AuthCarousel3,
+  AuthCarousel4,
+} from "@/assets/onboarding";
 
 export const AuthSlides = [
   { name: "AuthCarousel1", image: AuthCarousel1 },

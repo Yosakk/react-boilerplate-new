@@ -19,7 +19,8 @@ export default {
     popUpDelete: {
       title: "Hapus",
       subtitle1: "Apakah kamu yakin ingin menghapus circle?",
-      subtitle2: "Jika kamu menghapus circle ini, kamu akan kehilangan semua data secara permanen.",
+      subtitle2:
+        "Jika kamu menghapus circle ini, kamu akan kehilangan semua data secara permanen.",
       button1: "Batal",
       button2: "Hapus Circle",
     },

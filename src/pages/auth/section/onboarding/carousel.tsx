@@ -43,7 +43,9 @@ const OnboardingCarousel: React.FC = () => {
               <div
                 className={cn(
                   "transition-opacity duration-700",
-                  selectedIndex === i ? "opacity-100" : "opacity-0 pointer-events-none"
+                  selectedIndex === i
+                    ? "opacity-100"
+                    : "opacity-0 pointer-events-none"
                 )}
                 aria-hidden={selectedIndex !== i}
               >

@@ -36,7 +36,8 @@ export default {
     button: "Join Now",
     option1: {
       title: "Learn",
-      subtitle: "Belajar lebih banyak tentang investasi dan keuangan dari para Profesional",
+      subtitle:
+        "Belajar lebih banyak tentang investasi dan keuangan dari para Profesional",
     },
     option2: {
       title: "Meet",

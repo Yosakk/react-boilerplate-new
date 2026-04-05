@@ -11,7 +11,8 @@ export default {
   seeQRCode: "Lihat Kode QR",
   expired: {
     text1: "Kode QR Anda telah kadaluarsa",
-    text2: "Lakukan pembelian ulang dan pastikan pembayaran anda selesai tepat waktu",
+    text2:
+      "Lakukan pembelian ulang dan pastikan pembayaran anda selesai tepat waktu",
     text3: "Pembayaran telah kadaluarsa",
   },
   repeat: "Ulangi Pembelian",

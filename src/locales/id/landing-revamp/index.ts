@@ -7,7 +7,8 @@ export default {
     aboutUs: "Tentang Kami",
   },
   home: {
-    title: "Tingkatkan Keuanganmu — dengan Cara yang Seru, Sosial, dan Terstruktur",
+    title:
+      "Tingkatkan Keuanganmu — dengan Cara yang Seru, Sosial, dan Terstruktur",
     description:
       "Belajar investasi, diskusi bareng komunitas, dan kumpulkan lencana dari misi keuangan harian — semua dalam satu platform.",
     buttonApp: "Unduh Aplikasi",
@@ -97,7 +98,8 @@ export default {
     accessDesc:
       "79,21% anak muda Indonesia usia 18–25 kini memiliki akses ke layanan keuangan — namun menabung jangka panjang masih menjadi tantangan besar. (OJK, SNLIK 2024)",
     appUsersLabel: "11% pengguna aplikasi investasi",
-    appUsersDesc: "Hanya 11% pengguna aplikasi investasi yang memahami istilah keuangan dasar",
+    appUsersDesc:
+      "Hanya 11% pengguna aplikasi investasi yang memahami istilah keuangan dasar",
     sourcesLabel: "Sebagian besar belajar investasi dari sumber yang salah",
     sourcesDesc:
       "58% investor muda mendapat informasi dari media sosial — seringkali tanpa memahami risiko atau memverifikasi kredibilitas.",
@@ -107,7 +109,8 @@ export default {
     subtitle:
       "Dari rating 4,9/5 hingga investasi lebih dari Rp12 M — pengguna suka belajar bersama SEEDS.",
     userStat: "30.000 pengguna aktif",
-    universityNote: "Dipercaya oleh mahasiswa dan alumni dari UI, ITB, UGM, dan lainnya.",
+    universityNote:
+      "Dipercaya oleh mahasiswa dan alumni dari UI, ITB, UGM, dan lainnya.",
     testi1: {
       desc: '"Gue ikut kuis berbayar cuma modal 10rb, menang ranking 2 langsung dapet 200rb. Worth banget sih! Lebih deg-degan daripada UTS, tapi malah bikin belajar investasi makin nyangkut!"',
       name: "Andhika",
@@ -140,7 +143,8 @@ export default {
     },
   },
   section9: {
-    title: "Dapatkan Aplikasi SEEDS — Belajar Kapan Saja, di Mana Saja, Tanpa Tekanan",
+    title:
+      "Dapatkan Aplikasi SEEDS — Belajar Kapan Saja, di Mana Saja, Tanpa Tekanan",
     button: "Unduh Sekarang",
   },
   section10: {
@@ -149,7 +153,8 @@ export default {
       "Semakin banyak teman yang kamu undang, semakin seru kompetisinya dan semakin besar hadiahnya. Ajak temanmu dan buktikan siapa investor paling cerdas!",
     copy: "Salin",
     benefitTitle: "Keuntungan Referral",
-    benefit1: "Dapatkan komisi 10% dari setiap kuis berbayar yang diikuti temanmu",
+    benefit1:
+      "Dapatkan komisi 10% dari setiap kuis berbayar yang diikuti temanmu",
     benefit2: "Kumpulkan poin loyalitas untuk ditukar dengan hadiah eksklusif",
     benefit3: "Ikuti tantangan eksklusif hanya untuk pengguna referral",
     rank: "Peringkat #1",

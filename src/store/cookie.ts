@@ -5,7 +5,9 @@ type CookieSetOptions = Parameters<typeof Cookies.set>[2];
 type CookieStorageOptions = {
   keyPrefix?: string;
   indexKey?: string;
-  expiration?: Record<string, Date | number | null> & { default?: Date | number | null };
+  expiration?: Record<string, Date | number | null> & {
+    default?: Date | number | null;
+  };
   setCookieOptions?: CookieSetOptions;
 };
 
@@ -58,7 +60,11 @@ export default class CookieStorage {
 
     const allKeys = await this.getAllKeys();
     const next = allKeys.filter((k) => k !== key);
-    this.cookies.set(this.indexKey, JSON.stringify(next), this.setCookieOptions);
+    this.cookies.set(
+      this.indexKey,
+      JSON.stringify(next),
+      this.setCookieOptions
+    );
   }
 
   async getAllKeys(): Promise<string[]> {

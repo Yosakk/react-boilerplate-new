@@ -80,8 +80,14 @@ export function usePinDialogController({
     }
   }, [pin, max, loading, onSubmit, t]);
 
-  const headerTitle = useMemo(() => titleNode ?? t("loginRevamp.text15"), [titleNode, t]);
-  const headerSubtitle = useMemo(() => subtitleNode ?? t("loginRevamp.text16"), [subtitleNode, t]);
+  const headerTitle = useMemo(
+    () => titleNode ?? t("loginRevamp.text15"),
+    [titleNode, t]
+  );
+  const headerSubtitle = useMemo(
+    () => subtitleNode ?? t("loginRevamp.text16"),
+    [subtitleNode, t]
+  );
 
   return {
     pin,

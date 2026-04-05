@@ -23,14 +23,22 @@ export default function AuthCard({
         containerClassName
       }
     >
-      <div className={"rounded-[28px] bg-white/95 p-3 md:p-8 w-full" + cardClassName}>
+      <div
+        className={
+          "rounded-[28px] bg-white/95 p-3 md:p-8 w-full" + cardClassName
+        }
+      >
         {children ?? <Outlet />}
       </div>
     </div>
   );
 
   if (fullscreen) {
-    return <main className="min-h-screen grid place-items-center bg-[#F7F7FB] p-4">{Card}</main>;
+    return (
+      <main className="min-h-screen grid place-items-center bg-[#F7F7FB] p-4">
+        {Card}
+      </main>
+    );
   }
   return Card;
 }

@@ -10,7 +10,8 @@ export default {
     dateOfBirth: "Enter Your Birth Date",
     email: "example@mail.com",
     phoneNumber: "Please enter your phone number",
-    successMessage: "Congratulations! The new password has been successfully created.",
+    successMessage:
+      "Congratulations! The new password has been successfully created.",
     successTitle: "Success!",
     seedsTag: "@seedstag",
     referralCode: "Referral Code",

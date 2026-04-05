@@ -102,16 +102,19 @@ export default {
     accessDesc:
       "79.21% of Indonesians aged 18–25 now have access to financial services — but long-term saving remains a major challenge. (OJK, SNLIK 2024)",
     appUsersLabel: "11% of investment app users",
-    appUsersDesc: "Only 11% of investment app users understand basic financial terms",
+    appUsersDesc:
+      "Only 11% of investment app users understand basic financial terms",
     sourcesLabel: "Most people learn investing from the wrong sources",
     sourcesDesc:
       "58% of young investors get their information from social media — often without understanding the risks or verifying credibility.",
   },
   section8: {
     title: "Trusted by Learners, Proven by Results",
-    subtitle: "From 4.9/5 ratings to IDR 12B+ investments — users love learning with SEEDS.",
+    subtitle:
+      "From 4.9/5 ratings to IDR 12B+ investments — users love learning with SEEDS.",
     userStat: "30,000 active users",
-    universityNote: "Trusted by students and alumni from UI, ITB, UGM, and more.",
+    universityNote:
+      "Trusted by students and alumni from UI, ITB, UGM, and more.",
     testi1: {
       desc: '"I joined a paid quiz with only IDR 10K, won 2nd place and got IDR 200K. Totally worth it! More thrilling than midterms, and it made learning about investing stick better!"',
       name: "Andhika",
@@ -258,7 +261,8 @@ export default {
   partner: {
     section1: {
       tag: "Our Partner",
-      title: "Partner with SEEDS — Let’s Build the Future of Financial Education",
+      title:
+        "Partner with SEEDS — Let’s Build the Future of Financial Education",
       description:
         "Work with us to create fun investment competitions, connect with young people, and make learning about money easy and exciting. Together, we can make investing safer, smarter, and more open for everyone.",
       button: "Contact Us",

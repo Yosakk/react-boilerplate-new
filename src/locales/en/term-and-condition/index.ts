@@ -62,13 +62,16 @@ export default {
       guidelines_1: "Treat others online as you would treat them in real life.",
       guidelines_2:
         "Be tolerant towards other’s perspective; respectfully disagree when opinions do not align.",
-      guidelines_3: "Respect the privacy and personal information of other User.",
+      guidelines_3:
+        "Respect the privacy and personal information of other User.",
       guidelines_4: "Communicate with courtesy and respect",
       prohibit_title: "Users are strictly prohibit to",
       prohibit_1: "Make personal attacks on other User.",
-      prohibit_2: "Use defamatory remarks or make false statements against others",
+      prohibit_2:
+        "Use defamatory remarks or make false statements against others",
       prohibit_3: "Post prejudiced comments or profanity.",
-      prohibit_4: "Bully or make inflammatory remarks to other community members.",
+      prohibit_4:
+        "Bully or make inflammatory remarks to other community members.",
       prohibit_5:
         "Organize, participate in, or encourage harassment of others. Disagreements happen and are normal, but continuous, repetitive, or severe negative comments may cross the line into harassment and are not tolerated at SEEDS.",
       prohibit_6:
@@ -82,7 +85,8 @@ export default {
       prohibit_10:
         "Share content that glorifies or promotes suicide or self-harm, including any encouragement to others to cut themselves, or embrace eating disorders such as anorexia or bulimia.",
       prohibit_11: "Share images of sadistic gore or animal cruelty.",
-      prohibit_12: "Use SEEDS for the organization, promotion, or support of violent extremism.",
+      prohibit_12:
+        "Use SEEDS for the organization, promotion, or support of violent extremism.",
       prohibit_13:
         "Evade user blocks or server bans. - send unwanted, repeated friend requests or messages, especially after they’ve made it clear they don’t want to talk to you anymore. - try to hide your identity in an attempt to contact someone who has blocked you, or otherwise circumvent the tools we have which enable users to protect themselves.",
       prohibit_14:

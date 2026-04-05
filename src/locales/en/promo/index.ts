@@ -21,7 +21,8 @@ export default {
   havePromo: "Have a promo code? Enter it here!",
   enterPromo: "Enter your promo code...",
   notFound: "Promo code not found. Make sure you entered a valid promo code.",
-  limitPurchaseMessage: "You need to reach the minimum transaction before using the promo!",
+  limitPurchaseMessage:
+    "You need to reach the minimum transaction before using the promo!",
   limitDailyMessage: "The promo code quota is already exceeding today’s limit",
   specificFeature: "Promo code only for specific feature",
   specificReferral: "Promo code only for specific referral code",

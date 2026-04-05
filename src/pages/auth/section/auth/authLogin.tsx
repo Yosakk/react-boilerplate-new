@@ -1,4 +1,11 @@
-import { Stack, Text, Group, Anchor, Divider as MantineDivider, rem } from "@mantine/core";
+import {
+  Stack,
+  Text,
+  Group,
+  Anchor,
+  Divider as MantineDivider,
+  rem,
+} from "@mantine/core";
 import { Input } from "@/components/ui/input/input";
 import { PasswordInput } from "@/components/ui/input/password";
 import { Button } from "@/components/ui/button";
@@ -33,7 +40,9 @@ const AuthLogin = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-  const altMethodLabel = isEmail ? t("authLogin.phone") : t("loginRevamp.text5");
+  const altMethodLabel = isEmail
+    ? t("authLogin.phone")
+    : t("loginRevamp.text5");
   const switchLabel = isEmail
     ? `${t("loginRevamp.text3")} ${t("authLogin.phone")}`
     : `${t("loginRevamp.text3")} Email`;
@@ -76,7 +85,12 @@ const AuthLogin = () => {
       >
         {t("loginRevamp.text1")}
       </Text>
-      <Text c="dimmed" size="sm" ta={{ base: "left", lg: "center" }} className="w-full">
+      <Text
+        c="dimmed"
+        size="sm"
+        ta={{ base: "left", lg: "center" }}
+        className="w-full"
+      >
         {t("loginRevamp.text2")}
       </Text>
 
@@ -102,7 +116,11 @@ const AuthLogin = () => {
       />
 
       {/* Login form */}
-      <form onSubmit={loginHandler} className="flex flex-col w-full lg:w-[70%]" noValidate>
+      <form
+        onSubmit={loginHandler}
+        className="flex flex-col w-full lg:w-[70%]"
+        noValidate
+      >
         <Stack gap="sm">
           {isEmail ? (
             <Input
@@ -123,7 +141,10 @@ const AuthLogin = () => {
               required
               value={identityVal}
               onChange={(val: string, country) => {
-                setValue("identity", val, { shouldDirty: true, shouldValidate: true });
+                setValue("identity", val, {
+                  shouldDirty: true,
+                  shouldValidate: true,
+                });
                 if (country?.code) {
                   setValue("country", country.code.toUpperCase(), {
                     shouldDirty: true,

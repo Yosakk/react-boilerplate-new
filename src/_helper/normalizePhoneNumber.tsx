@@ -1,7 +1,11 @@
 import type { Country } from "@/components/ui/input/phoneNumber";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 
-export function NormalizeLocalPart(raw: string, countryCode: string, dial: string) {
+export function NormalizeLocalPart(
+  raw: string,
+  countryCode: string,
+  dial: string
+) {
   const input = String(raw || "");
   const asIntl = input.trim();
   if (/^\+|\b00|\b011/.test(asIntl)) {

@@ -5,7 +5,10 @@ type Options = {
   autoDelayMs?: number;
 };
 
-export function useQuestionPreparation({ showQuestion, autoDelayMs = 1500 }: Options) {
+export function useQuestionPreparation({
+  showQuestion,
+  autoDelayMs = 1500,
+}: Options) {
   const [localShow, setLocalShow] = useState(false);
   const timerRef = useRef<number | null>(null);
 
@@ -16,7 +19,10 @@ export function useQuestionPreparation({ showQuestion, autoDelayMs = 1500 }: Opt
         timerRef.current = null;
       }
       setLocalShow(false);
-      timerRef.current = window.setTimeout(() => setLocalShow(true), autoDelayMs);
+      timerRef.current = window.setTimeout(
+        () => setLocalShow(true),
+        autoDelayMs
+      );
 
       return () => {
         if (timerRef.current) {

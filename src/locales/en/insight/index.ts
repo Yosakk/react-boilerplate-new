@@ -81,7 +81,8 @@ export default {
       text15: "Register Now",
       text16:
         "Check-out will be available after the event ends and within 150 meters of the location",
-      text17: "Your certificate will be available within 7 working days after the event",
+      text17:
+        "Your certificate will be available within 7 working days after the event",
       text18:
         "Check-in will be available 30 minutes before the event starts and within 150 meters of the location",
       text19: "Check-in will be available 15 minutes before the event starts",
@@ -154,7 +155,8 @@ export default {
       text13: "Event :",
       text14: "Ticket ID :",
       text15: "Check-in Time :",
-      text16: "Make sure to check out after the event to complete your attendance",
+      text16:
+        "Make sure to check out after the event to complete your attendance",
       text17: "Event Detail",
       text18: "You haven't registered yet",
       text19: "Please register to the event",
@@ -190,7 +192,8 @@ export default {
       text12: "Ticket ID :",
       text13: "Check-in Time :",
       text14: "Check-out Time :",
-      text15: "We'll send your certificate to your email. You can also access it anytime from",
+      text15:
+        "We'll send your certificate to your email. You can also access it anytime from",
       text16: "Event Detail",
       text17: "You haven't registered yet",
       text18: "Please register to the event",

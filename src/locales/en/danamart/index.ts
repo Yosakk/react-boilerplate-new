@@ -14,8 +14,10 @@ export default {
       limitEntry:
         "You have entered the wrong password three times. Your login feature will be frozen for 5 minutes for security reasons.",
       password: "Password must contain 8 digit with upper case and lower case",
-      wrongPassword: "Wrong password. Check your password before filling the form!",
-      recaptcha: "ReCAPTCHA value is not available! Fill the ReCAPTCHA before logging in.",
+      wrongPassword:
+        "Wrong password. Check your password before filling the form!",
+      recaptcha:
+        "ReCAPTCHA value is not available! Fill the ReCAPTCHA before logging in.",
     },
     loginButton: "Login",
     disconnectAccount: "Disconnect Account",
@@ -85,7 +87,8 @@ export default {
   register: {
     connectSeeds: "Connect Seeds to Danamart",
     connectDanamart: "Connect Danamart to Seeds",
-    automate: "Automate your investment journey by linking Seeds to Danamart effortlessly.",
+    automate:
+      "Automate your investment journey by linking Seeds to Danamart effortlessly.",
     notLinked: "Not Linked",
     linked: "Linked",
     linkAccount: "Link Phone Number and Email",
@@ -103,7 +106,8 @@ export default {
     phoneNumber: "Phone Number",
     createAccountButton: "Create Danamart Account",
     createDanamartAccount: "Create Danamart Account",
-    createDesc: "Create a new Danamart account and unlock your investment potential.",
+    createDesc:
+      "Create a new Danamart account and unlock your investment potential.",
     no: "No",
     yes: "Yes",
     createPasswordTitle: "Create password for Danamart account",
@@ -159,12 +163,14 @@ export default {
       uploadTitle: "Upload your ID Card",
       popUpRequirements:
         "Your ID card photo is required to validate your data and for electronic document signing purposes.",
-      uploadDescription: "To confirm you are, please upload digital photo or take a photo.",
+      uploadDescription:
+        "To confirm you are, please upload digital photo or take a photo.",
       uploadRequirement: {
         title: "ID Card Upload Requirements",
         text1:
           "Take a photo of the ID card directly through the camera or upload a photo of the ID card.",
-        text2: "The uploaded file must be in JPG/JPEG format and a maximum of 4 MB.",
+        text2:
+          "The uploaded file must be in JPG/JPEG format and a maximum of 4 MB.",
         text3: "The ID card must not be damaged such as cracks or breaks.",
         text4: "Take a photo of the ID card in Landscape position.",
         text5:
@@ -174,14 +180,17 @@ export default {
     },
     accountInformation: {
       accountInformationTitle: "Account Information",
-      popUpInformation: "Please fill in your personal information according to your ID card.",
+      popUpInformation:
+        "Please fill in your personal information according to your ID card.",
       popUpAddress: "Fill in the address data according to your ID card",
-      popUpValidity: "If your ID card is valid for a lifetime, you can simply click Lifetime",
+      popUpValidity:
+        "If your ID card is valid for a lifetime, you can simply click Lifetime",
       popUpMotherName:
         "We need your biological mother's maiden name as a security question in case something unexpected happens in the future.",
       popUpBeneficiary:
         "A beneficiary is someone who receives a portion of the estate or assets from a deceased person or testator.",
-      popUpValidityDate: "The ID card validity date must match the one on your ID card.",
+      popUpValidityDate:
+        "The ID card validity date must match the one on your ID card.",
       occupation: "Occupation",
       address: "Address",
       validPeriod: "ID Validity Period",
@@ -782,15 +791,18 @@ export default {
           text1: "Purchase Successful",
           text2:
             "Almost there! Just a few more steps to complete your investment. Proceed with the next steps to continue the transaction.",
-          text3: "Congratulations! Your investment purchase has been successfully completed!",
+          text3:
+            "Congratulations! Your investment purchase has been successfully completed!",
           text4:
             "Sorry, there is an unfinished transaction. Please complete your pending transaction first.",
           text5: "Minimum purchase amount is Rp. 100,000,-",
-          text6: "Please acknowledge that you are investing in Project Financing.",
+          text6:
+            "Please acknowledge that you are investing in Project Financing.",
           text7: "Sorry, your purchase amount exceeds the available slots.",
           text8: "Sorry, your purchase amount exceeds your in hand cash.",
           text9: "Sorry, your purchase amount exceeds the available slots",
-          text10: "Sorry, your purchase amount exceeds your bank transfer limit",
+          text10:
+            "Sorry, your purchase amount exceeds your bank transfer limit",
         },
       },
       disclaimer: {
@@ -826,7 +838,8 @@ export default {
         refresh: "Refresh Status",
         cancel: "Cancel Transaction",
         cancelationSucceed: "Payment transaction was successfully canceled!",
-        cancelationFailed: "Payment transaction cancellation failed. Please try again.",
+        cancelationFailed:
+          "Payment transaction cancellation failed. Please try again.",
       },
       modals: {
         cancel: {
@@ -984,7 +997,8 @@ export default {
         text4: "File Type",
         cancel: "Cancel",
         yes: "Download",
-        text7: "Report download request successful. Please wait for the download process.",
+        text7:
+          "Report download request successful. Please wait for the download process.",
         text8: "Report downloaded successfully.",
         text9: "Failed to download report.",
       },
@@ -1166,7 +1180,8 @@ export default {
       "Sorry! Your code is invalid, the quota has been exhausted, the validity period has expired, or it does not meet the terms and conditions. Please try again with another code.",
     modal: {
       title: "About Promo Codes and Referral Codes",
-      text1: "A Promo Code is a unique code that you can use to get exciting offers.",
+      text1:
+        "A Promo Code is a unique code that you can use to get exciting offers.",
       text2: "Oops!",
       text3:
         "Sorry! Your code is invalid, the quota has been exhausted, the validity period has expired, or it does not meet the terms and conditions. Please try again with another code.",
@@ -1270,10 +1285,12 @@ export default {
       validation: {
         text1:
           "Thank you for your patience. We would like to inform you that there is still a data change request in progress. Please wait until this process is completed before submitting another request.",
-        text2: "The OTP code has been sent to your number. Please check your phone.",
+        text2:
+          "The OTP code has been sent to your number. Please check your phone.",
         text3:
           "We have received your data change request. Our team will proceed to confirm this request by contacting you. Please wait patiently.",
-        text4: "The verification code is incorrect, please enter a valid verification code.",
+        text4:
+          "The verification code is incorrect, please enter a valid verification code.",
         text5: "The bank account number is incorrect or invalid.",
         text6: "The account holder's name does not match.",
         text7: "Incorrect password, please try again.",
@@ -1316,7 +1333,8 @@ export default {
       },
     },
   },
-  idleLogout: "You have been idle for 30 minutes or more. Please log in again to Danamart.",
+  idleLogout:
+    "You have been idle for 30 minutes or more. Please log in again to Danamart.",
   logout: {
     text1: "Logout",
     description: "Do you want to log out from Danamart?",

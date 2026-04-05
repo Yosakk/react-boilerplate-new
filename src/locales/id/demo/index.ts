@@ -48,7 +48,8 @@ export default {
   text37: "Berlangganan dengan",
   text38: "nomor telepon",
   text39: "Masukkan alamat email",
-  text40: "🔒 Kami menghormati privasi Anda. Tidak ada spam, hanya pembaruan tentang demo.",
+  text40:
+    "🔒 Kami menghormati privasi Anda. Tidak ada spam, hanya pembaruan tentang demo.",
   text41: "Dampak Waktu Nyata",
   text42:
     "Lihat apa yang terjadi secara real-time! Ribuan orang bergabung setiap hari dan membuat kemajuan.",

@@ -59,7 +59,11 @@ export default {
     lastUpdated: "Terakhir Perbarui: ",
     date: "26 April 2022",
     overview: {
-      title: ["Kebijakan Pengembalian Dana", "Kebijakan Umum", "Prosedur Pengembalian Dana"],
+      title: [
+        "Kebijakan Pengembalian Dana",
+        "Kebijakan Umum",
+        "Prosedur Pengembalian Dana",
+      ],
       desc: [
         "Refund Policy atau Kebijakan Pengembalian dana adalah Ketentuan dan/atau mekanisme pengembalian dana milik user oleh Seeds yang diakibatkan karena alasan alasan yang disebutkan dalam Syarat dan Ketentuan ini.\t",
         "Kebijakan Pengembalian dana ini berlaku terhadap fitur-fitur yang disediakan oleh Pihak Seeds. Kebijakan ini merupakan langkah dan metode tentang prosedur pengembalian dana yang dilakukan oleh SEEDS terhadap Pengguna\t Kejadian yang dapat dikategorikan sebagai Pengembalian Dana :\n a. Saat terjadi kendala pada aplikasi yang diakibatkan oleh Pihak SEEDS\n b. Dalam hal Fitur Play Arena dibatalkan secara sepihak oleh SEEDS karena tidak memenuhi persyaratan\n c. Pengembalian dana tidak berlaku terhadap Pengguna yang telah :\n i. membayar tiket dalam aplikasi SEEDS dan karena kelalaiannya ingin mengajukan pengembalian dana\n ii.menetapkan harga premium circle dan ingin mengajukan pengembalian dana atas kelalaian pengguna menetapkan harga fitur premium circle.\t",

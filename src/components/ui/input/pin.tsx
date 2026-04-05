@@ -1,4 +1,10 @@
-import React, { forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+} from "react";
 
 export type PinInputRef = {
   focus: () => void;
@@ -163,11 +169,16 @@ const PinInput = forwardRef<PinInputRef, Props>(function PinInput(
       </div>
 
       {error ? (
-        <p className="mt-2 md:mt-3 text-xs md:text-sm text-red-500" role="alert">
+        <p
+          className="mt-2 md:mt-3 text-xs md:text-sm text-red-500"
+          role="alert"
+        >
           {typeof error === "string" ? error : "Invalid PIN"}
         </p>
       ) : helperText ? (
-        <p className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400">{helperText}</p>
+        <p className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-400">
+          {helperText}
+        </p>
       ) : null}
     </div>
   );

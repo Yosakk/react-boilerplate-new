@@ -21,7 +21,10 @@ export const errorHandler = (error: unknown): void => {
   let title = "Error";
 
   if (error && typeof error === "object") {
-    const err = error as FetchBaseQueryError & { data?: ErrorData; status?: number | string };
+    const err = error as FetchBaseQueryError & {
+      data?: ErrorData;
+      status?: number | string;
+    };
     const data = err.data as ErrorData | undefined;
 
     // HTTP 401 → session expired

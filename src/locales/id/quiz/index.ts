@@ -35,10 +35,12 @@ export default {
   yourCurrentlyRank: "Peringkat Anda Saat Ini",
   cancel: "Batal",
   notification: "Pemberitahuan",
-  extraCash: "Oops, jika kamu ingin extra bantuan, kamu harus membayar Rp {{amount}}",
+  extraCash:
+    "Oops, jika kamu ingin extra bantuan, kamu harus membayar Rp {{amount}}",
   select: "Pilih",
   quizCompanion: "Pilih power-up kamu!",
-  chooseOptions: "Pilih Power-up bantuan Anda, Anda bahkan dapat memilih lebih dari satu!",
+  chooseOptions:
+    "Pilih Power-up bantuan Anda, Anda bahkan dapat memilih lebih dari satu!",
   freeOptions:
     "1 Power-Up Gratis! Pilihlah dengan tepat, menggukan lebih banyak akan ada biaya tambahan",
   fiftyfifty: "Pilihan ini akan eliminasi dua jawaban yang salah.",
@@ -132,7 +134,8 @@ export default {
   ended: "Berakhir",
   canceled: "Dibatalkan",
   quizDone1: "Selangkah lagi menuju kemenangan.",
-  quizDone2: "Ini rekomendasi circle yang akan membantu performa kamu di turnamen!",
+  quizDone2:
+    "Ini rekomendasi circle yang akan membantu performa kamu di turnamen!",
   testInvestment: "Uji kemampuan finansialmu dan dapatkan hadiahnya!",
   welcome: "Selamat datang di Seeds Quiz",
   areYouReady: "Kamu siap?",
@@ -155,7 +158,8 @@ export default {
   bankList: "Daftar Akun Bank",
   eWalletList: "Daftar Dompet Digital",
   thankyou: "Terima Kasih!",
-  withdrawalRequest: "Permintaan penarikan sedang diproses. Mohon tunggu maksimal 1x24 jam.",
+  withdrawalRequest:
+    "Permintaan penarikan sedang diproses. Mohon tunggu maksimal 1x24 jam.",
   transactionDetails: "Detail Transaksi",
   date: "Tanggal",
   refNum: "Nomor Referensi",

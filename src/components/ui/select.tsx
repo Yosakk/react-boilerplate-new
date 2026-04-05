@@ -2,7 +2,6 @@ import * as React from "react";
 import {
   Select as MantineSelect,
   type SelectProps as MantineSelectProps,
-  rem,
 } from "@mantine/core";
 import type { FieldError } from "react-hook-form";
 
@@ -12,12 +11,13 @@ export type SelectProps = Omit<MantineSelectProps, "error"> & {
 
 /**
  * Select built on Mantine with react-hook-form FieldError support.
+ * Base styles (label weight, error margin) come from theme.
  */
 const Select = React.forwardRef<HTMLInputElement, SelectProps>(function Select(
   { error, label, required, ...props },
   ref
 ) {
-  const errorMsg = typeof error === "string" ? error : (error as FieldError | undefined)?.message;
+  const errorMsg = typeof error === "string" ? error : error?.message;
 
   return (
     <MantineSelect
@@ -26,10 +26,6 @@ const Select = React.forwardRef<HTMLInputElement, SelectProps>(function Select(
       required={required}
       error={errorMsg}
       withAsterisk={required}
-      styles={{
-        label: { fontWeight: 500, fontSize: rem(13), marginBottom: rem(4) },
-        error: { marginTop: rem(4) },
-      }}
       {...props}
     />
   );

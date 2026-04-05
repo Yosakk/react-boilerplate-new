@@ -1,4 +1,9 @@
-import { Backward, LoginEmail, LoginPhone, SeedyAuthLogin } from "@/assets/auth";
+import {
+  Backward,
+  LoginEmail,
+  LoginPhone,
+  SeedyAuthLogin,
+} from "@/assets/auth";
 import Divider from "@/components/ui/divider";
 import { useAppDispatch, useAppSelector } from "@/store";
 import React from "react";
@@ -24,7 +29,8 @@ const AuthSignUp = () => {
   const [guardOpen, setGuardOpen] = React.useState(false);
   const [pendingPath, setPendingPath] = React.useState<string | null>(null);
   const isIOS = (): boolean =>
-    typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    typeof navigator !== "undefined" &&
+    /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   const handleGoOnboarding = () => {
     setGuardOpen(false);
@@ -70,7 +76,10 @@ const AuthSignUp = () => {
       {/* {isIOS() ? (
                 // <AppleLoginButton />
             ) : null} */}
-      <Divider lineClassName="bg-gray-300" children={t("authRegisterAccount.page1.text4")} />
+      <Divider
+        lineClassName="bg-gray-300"
+        children={t("authRegisterAccount.page1.text4")}
+      />
       <div className="flex justify-center items-center gap-2">
         <button
           type="button"

@@ -41,10 +41,12 @@ export default {
   transactionDetails: "Detail Transaksi",
   date: "Tanggal",
   referenceNumber: "Nomor Referensi",
-  withdrawalWarning: "Permintaan penarikan dana akan diproses dalam satu hari kerja.",
+  withdrawalWarning:
+    "Permintaan penarikan dana akan diproses dalam satu hari kerja.",
   checkStatus: "Cek Status Penarikan Dana",
   withdrawOnProgress: "Penarikan Dalam Proses",
-  withdrawOnProgressDescription: "Permintaan penarikanmu sedang diproses. Mohon tunggu.",
+  withdrawOnProgressDescription:
+    "Permintaan penarikanmu sedang diproses. Mohon tunggu.",
   platformOption: "Opsi Platform",
   enterAccountName: "Masukan nama rekening anda...",
   enterBankAccount: "Masukan rekening anda...",
@@ -76,8 +78,10 @@ export default {
     text3:
       "✨ Memverifikasi identitas Anda membantu menjaga keamanan akun dan memastikan transaksi berjalan lancar. Caranya mudah — cukup unggah identitas Anda dan tunggu sebentar untuk persetujuan.",
     text4: "Verifikasi Sekarang",
-    text5: "Pengajuan verifikasi berhasil dikirim. Mohon tunggu proses verifikasi hingga selesai.",
-    text6: "Anda telah melakukan pengajuan verifikasi. Mohon tunggu pengajuan Anda diproses.",
+    text5:
+      "Pengajuan verifikasi berhasil dikirim. Mohon tunggu proses verifikasi hingga selesai.",
+    text6:
+      "Anda telah melakukan pengajuan verifikasi. Mohon tunggu pengajuan Anda diproses.",
     text7: "Terjadi kesalahan. Silakan coba kembali.",
     text8: "Ambil Foto KTP Anda",
     text9: "Ambil selfie dengan Kartu Identitas",

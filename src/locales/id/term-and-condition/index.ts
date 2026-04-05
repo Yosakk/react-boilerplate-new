@@ -84,7 +84,8 @@ export default {
         "Berbagi konten seksual eksplisit diri Anda atau orang lain, atau berbagi atau mempromosikan berbagi citra intim (juga dikenal sebagai balas dendam porno) dalam upaya untuk mempermalukan atau merendahkan seseorang.",
       prohibit_10:
         "Membagikan konten yang mengagungkan atau mempromosikan bunuh diri atau melukai diri sendiri, termasuk dorongan apa pun kepada orang lain untuk memotong diri sendiri, atau merangkul gangguan makan seperti anoreksia atau bulimia.",
-      prohibit_11: "Membagikan gambar darah sadis atau kekejaman terhadap hewan.",
+      prohibit_11:
+        "Membagikan gambar darah sadis atau kekejaman terhadap hewan.",
       prohibit_12:
         "Menggunakan SEEDS untuk organisasi, promosi, atau dukungan ekstremisme kekerasan.",
       prohibit_13:
@@ -185,7 +186,8 @@ export default {
           },
         },
         "3": {
-          title: "Berikut adalah beberapa aturan untuk platform perdagangan kami:",
+          title:
+            "Berikut adalah beberapa aturan untuk platform perdagangan kami:",
           items: {
             "1": "Jangan pernah memposting informasi palsu: Jangan pernah memposting informasi yang menyesatkan tentang akun Anda dan/atau keterampilan trading Anda.",
             "2": 'Jangan pernah memposting saran Investasi: Jangan pernah menawarkan saran investasi langsung, atau apa pun yang dapat ditafsirkan sebagai saran investasi. - menyerukan tindakan langsung (seperti "berinvestasi").',

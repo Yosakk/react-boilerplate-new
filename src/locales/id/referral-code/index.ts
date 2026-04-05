@@ -5,7 +5,8 @@ export default {
   referal: "Referensikan teman Anda & Dapatkan lebih banyak XP",
   referralHistory: "Riwayat Referensi Anda",
   option1: "Undang temanmu",
-  option1desc: "Ajak teman Anda untuk menginstal aplikasi menggunakan link referral Anda.",
+  option1desc:
+    "Ajak teman Anda untuk menginstal aplikasi menggunakan link referral Anda.",
   option2: "Pakai referal kode yang telah diberikan",
   option3: "Raih XP Anda",
   option3desc: "Hasilkan lebih banyak XP saat teman Anda mendaftarkan Seeds.",

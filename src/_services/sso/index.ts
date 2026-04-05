@@ -9,7 +9,9 @@ export type GoogleUserInfo = {
   locale?: string;
 };
 
-export async function fetchGoogleUserInfo(accessToken: string): Promise<GoogleUserInfo | null> {
+export async function fetchGoogleUserInfo(
+  accessToken: string
+): Promise<GoogleUserInfo | null> {
   if (!accessToken) return null;
   try {
     const resp = await fetch("https://www.googleapis.com/oauth2/v3/userinfo", {

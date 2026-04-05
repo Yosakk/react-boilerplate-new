@@ -30,7 +30,8 @@ export default {
   text16: "Kedaluwarsa pada ",
   text17:
     "Ingin mengubah atau melanjutkan SeedsPlan Kamu untuk aktivitas berikutnya? Bayar sekarang dan kamu tidak perlu kuatir lagi nanti!",
-  text18: "Paket berikutnya akan aktif secara otomatis setelah paket saat ini berakhir",
+  text18:
+    "Paket berikutnya akan aktif secara otomatis setelah paket saat ini berakhir",
   text19:
     "Kamu telah berlangganan 2 paket SeedsPlan. Kamu harus menunggu paket pertama habis sebelum berlangganan lagi.",
   month: "Bulan",
@@ -72,11 +73,13 @@ export default {
       text6: "bulan",
       text7: "bulan",
     },
-    warningIncoming: "Anda sudah memiliki langganan aktif atau langganan yang akan datang!",
+    warningIncoming:
+      "Anda sudah memiliki langganan aktif atau langganan yang akan datang!",
   },
   modalUnsubscribe: {
     text1: "Apakah Anda yakin untuk berhenti berlangganan?",
-    text2: "Dengan berhenti berlangganan, keuntungan berikut akan dinonaktifkan",
+    text2:
+      "Dengan berhenti berlangganan, keuntungan berikut akan dinonaktifkan",
     text3: "Voucher akan dinonaktifkan",
     text4: "Dengan berlangganan ini, anda mendapatkan keuntungan ",
     text5: " voucher ",

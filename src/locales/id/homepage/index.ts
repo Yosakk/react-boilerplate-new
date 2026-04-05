@@ -16,7 +16,8 @@ export default {
     text14: "Lihat lebih banyak",
     text15: "Masuk untuk menuju arena bermain",
     text16: "Masuk untuk menuju permainan",
-    text17: "Dana Virtual adalah dana virtual yang tersedia untuk Simulasi permainan saham",
+    text17:
+      "Dana Virtual adalah dana virtual yang tersedia untuk Simulasi permainan saham",
     text18:
       "Dapatkan pembaruan aset Anda hari ini! Dan mainkan permainan kami untuk mendapatkan lebih banyak hadiah.",
     text19: "Total Hadiah Bulan Ini",

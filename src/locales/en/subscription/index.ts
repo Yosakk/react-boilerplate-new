@@ -3,7 +3,8 @@ export default {
     text1: "WELCOME TO SEEDS",
     text2: "PREMIUM",
     text3: "Unlock your Ultimate Experience",
-    text4: "Discover a world of premium gaming and educational content tailored just for you.",
+    text4:
+      "Discover a world of premium gaming and educational content tailored just for you.",
     text5: "Explore Plans 🚀",
     text6: "My Plan",
     text7: "Hello",

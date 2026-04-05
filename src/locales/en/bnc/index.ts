@@ -11,7 +11,8 @@ export default {
   seeQRCode: "See QR Code",
   expired: {
     text1: "Your QR Code has expired",
-    text2: "Please make the purchase again and ensure that your payment has been completed in time",
+    text2:
+      "Please make the purchase again and ensure that your payment has been completed in time",
     text3: "Payment expired",
   },
   repeat: "Repeat Purchase",

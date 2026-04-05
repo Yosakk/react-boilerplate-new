@@ -10,7 +10,8 @@ export function useOtpFlow() {
   const { methods } = useSignupForm();
   const [resendOTP, { isLoading: resendLoading, error: resendError, reset }] =
     useResendOTPMutation();
-  const [verifyOTP, { isLoading: verifyLoading, error: verifyError }] = useVerifyOTPMutation();
+  const [verifyOTP, { isLoading: verifyLoading, error: verifyError }] =
+    useVerifyOTPMutation();
 
   const [pinId, setpinId] = useState<string>("");
 
@@ -76,7 +77,10 @@ export function useOtpFlow() {
     reset();
   }, [reset]);
 
-  const loading = useMemo(() => resendLoading || verifyLoading, [resendLoading, verifyLoading]);
+  const loading = useMemo(
+    () => resendLoading || verifyLoading,
+    [resendLoading, verifyLoading]
+  );
   const error = resendError ?? verifyError;
 
   return {

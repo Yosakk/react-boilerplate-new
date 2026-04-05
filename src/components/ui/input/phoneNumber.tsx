@@ -1,7 +1,11 @@
 import * as React from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import {
   Command,
   CommandEmpty,
@@ -16,11 +20,24 @@ import { useTranslation } from "react-i18next";
 import { flagUrl } from "@/_helper/isoFlagCode";
 import type { FieldError } from "react-hook-form";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
-import { FormatNationalForDisplay, NormalizeLocalPart } from "@/_helper/normalizePhoneNumber";
+import {
+  FormatNationalForDisplay,
+  NormalizeLocalPart,
+} from "@/_helper/normalizePhoneNumber";
 import ValidationError from "../validation/error";
 
-type RawCountry = { name: string; flag: string; code: string; dial_code: string };
-export type Country = { name: string; flag: string; code: string; dial: string };
+type RawCountry = {
+  name: string;
+  flag: string;
+  code: string;
+  dial_code: string;
+};
+export type Country = {
+  name: string;
+  flag: string;
+  code: string;
+  dial: string;
+};
 export type PhoneFormat = "e164" | "e164_noplus" | "national";
 
 const COUNTRIES: Country[] = (countriesRaw as RawCountry[]).map((c) => ({
@@ -47,7 +64,10 @@ export interface BasePhoneInputProps {
   format?: PhoneFormat;
 }
 
-export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputProps>(
+export const BasePhoneInput = React.forwardRef<
+  HTMLInputElement,
+  BasePhoneInputProps
+>(
   (
     {
       id = "phone-input",
@@ -90,7 +110,8 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
         const digits = local.replace(/\D/g, "");
         let out = "";
         if (format === "e164") out = `${country.dial}${digits}`;
-        else if (format === "e164_noplus") out = `${country.dial.replace("+", "")}${digits}`;
+        else if (format === "e164_noplus")
+          out = `${country.dial.replace("+", "")}${digits}`;
         else out = digits;
 
         lastEmittedRef.current = out;
@@ -108,7 +129,9 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
       const q = searchQuery.toLowerCase();
       return COUNTRIES.filter(
         (c) =>
-          c.name.toLowerCase().includes(q) || c.code.toLowerCase().includes(q) || c.dial.includes(q)
+          c.name.toLowerCase().includes(q) ||
+          c.code.toLowerCase().includes(q) ||
+          c.dial.includes(q)
       );
     }, [searchQuery]);
 
@@ -124,14 +147,20 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
       if (typeof value === "string" && value.trim().startsWith("+")) {
         const p = parsePhoneNumberFromString(value);
         if (p?.country) {
-          const found = COUNTRIES.find((c) => c.code.toUpperCase() === p.country);
+          const found = COUNTRIES.find(
+            (c) => c.code.toUpperCase() === p.country
+          );
           if (found) setSelectedCountry(found);
           setLocalNumber(p.nationalNumber || "");
           return;
         }
       }
 
-      const local = NormalizeLocalPart(String(value), selectedCountry.code, selectedCountry.dial);
+      const local = NormalizeLocalPart(
+        String(value),
+        selectedCountry.code,
+        selectedCountry.dial
+      );
       setLocalNumber(local);
     }, [value, selectedCountry.code, selectedCountry.dial]);
 
@@ -166,7 +195,10 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
           <label
             htmlFor={id}
             data-slot="label"
-            className={cn("block mb-1 text-sm font-medium text-foreground", labelClassName)}
+            className={cn(
+              "block mb-1 text-sm font-medium text-foreground",
+              labelClassName
+            )}
           >
             <span>{label}</span>
             {required && (
@@ -199,7 +231,9 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
                         `https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/${selectedCountry.code.toUpperCase()}.svg`;
                     }}
                   />
-                  <span className="text-sm font-mono">{selectedCountry.dial}</span>
+                  <span className="text-sm font-mono">
+                    {selectedCountry.dial}
+                  </span>
                 </div>
                 <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
               </Button>
@@ -258,7 +292,11 @@ export const BasePhoneInput = React.forwardRef<HTMLInputElement, BasePhoneInputP
         </div>
 
         {isInvalid && (
-          <div id={errorId} aria-live="polite" className="mt-1 text-sm text-destructive">
+          <div
+            id={errorId}
+            aria-live="polite"
+            className="mt-1 text-sm text-destructive"
+          >
             <ValidationError error={error}></ValidationError>
           </div>
         )}

@@ -1,5 +1,8 @@
 import * as React from "react";
-import { Button as MantineButton, type ButtonProps as MantineButtonProps } from "@mantine/core";
+import {
+  Button as MantineButton,
+  type ButtonProps as MantineButtonProps,
+} from "@mantine/core";
 import { cn } from "@/_helper/twMerge";
 
 export type ButtonVariant =
@@ -34,7 +37,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
   ref
 ) {
   return (
-    <MantineButton ref={ref} variant={variant} size={size} className={cn(className)} {...props}>
+    <MantineButton
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(className)}
+      {...props}
+    >
       {children}
     </MantineButton>
   );

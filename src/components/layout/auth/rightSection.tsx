@@ -19,7 +19,12 @@ export default function AuthRightSection({
   showTopbar = true,
 }: Props): JSX.Element {
   return (
-    <section className={cn("flex items-start justify-center  overflow-y-auto", className)}>
+    <section
+      className={cn(
+        "flex items-start justify-center  overflow-y-auto",
+        className
+      )}
+    >
       <img
         src={Ornament}
         alt=""
@@ -27,10 +32,16 @@ export default function AuthRightSection({
         className="absolute top-0 right-0  w-[60%] h-auto pointer-events-none select-none block md:hidden"
       />
 
-      <div className={cn("w-full max-w-3xl px-6 py-10 sm:px-10", contentClassName)}>
+      <div
+        className={cn("w-full max-w-3xl px-6 py-10 sm:px-10", contentClassName)}
+      >
         {showTopbar && (
           <div className="flex items-center justify-between mb-5">
-            <img src={LogoSeeds} alt="Seeds" className="h-8 w-auto drop-shadow-sm" />
+            <img
+              src={LogoSeeds}
+              alt="Seeds"
+              className="h-8 w-auto drop-shadow-sm"
+            />
             <LanguageSwitcher />
           </div>
         )}

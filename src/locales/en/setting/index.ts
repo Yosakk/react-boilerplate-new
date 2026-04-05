@@ -18,7 +18,8 @@ export default {
       blank3Card1: "add your email",
       titleCard2: "Associated Account",
       titleCard3: "Delete Account",
-      descriptionCard3: "Deleting your account will delete all of your information.",
+      descriptionCard3:
+        "Deleting your account will delete all of your information.",
       confirm: "Confirm",
       titleMail1: "Let's, add your Email!",
       titleMail2: "For security purposes verify add your email first",
@@ -35,11 +36,13 @@ export default {
       prevent: {
         title: "Account Security Update",
         password: "Please bind your account with a phone number first",
-        unlink: "Please bind your account with a phone number and password first",
+        unlink:
+          "Please bind your account with a phone number and password first",
       },
       delete: {
         title1: "Are you sure to delete this account?",
-        title2: "If you select ‘yes’, your account data will be deleted in 30 days",
+        title2:
+          "If you select ‘yes’, your account data will be deleted in 30 days",
         yes: "Yes",
         no: "No",
       },
@@ -64,7 +67,8 @@ export default {
         newPassword: {
           label: "New Password",
           placeholder: "Please create password",
-          validation: "Password must contain 8 digit with upper case and lower case",
+          validation:
+            "Password must contain 8 digit with upper case and lower case",
         },
         oldPassword: {
           label: "Current Password",
@@ -87,7 +91,8 @@ export default {
       info: "Information",
       infoMessage: "This page contains your previous saved post.",
       noData: "Ups, belum ada postingan tersimpan",
-      noDataMessage: "Jelajahi postingan di halaman sosial dan simpan yang terbaik!",
+      noDataMessage:
+        "Jelajahi postingan di halaman sosial dan simpan yang terbaik!",
     },
     currency: {
       title: "Currency",

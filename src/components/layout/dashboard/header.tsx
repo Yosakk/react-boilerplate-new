@@ -71,7 +71,13 @@ export default function Header({
           </ActionIcon>
 
           {/* Notifications */}
-          <Indicator color="violet" size={8} offset={4} disabled={!hasNotification} processing>
+          <Indicator
+            color="violet"
+            size={8}
+            offset={4}
+            disabled={!hasNotification}
+            processing
+          >
             <ActionIcon
               variant="subtle"
               color="gray"

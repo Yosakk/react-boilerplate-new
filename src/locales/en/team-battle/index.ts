@@ -59,9 +59,12 @@ export default {
     failTitle: "You Lose!",
     eliminatedTitle: "Unfortunately",
     winDescription: "Well done! You’ve successfully won the final stage!",
-    qualifiedDescription: "You made it to the next stage. Keep up the good work!",
-    failDescription: "So close! You almost made it to the top! Keep pushing for winning!",
-    eliminatedDescription: "You didn't make it through to the next stage this time.",
+    qualifiedDescription:
+      "You made it to the next stage. Keep up the good work!",
+    failDescription:
+      "So close! You almost made it to the top! Keep pushing for winning!",
+    eliminatedDescription:
+      "You didn't make it through to the next stage this time.",
     yourRank: "Your rank",
   },
   stagePage: {

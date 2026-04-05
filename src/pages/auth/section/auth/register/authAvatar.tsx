@@ -1,7 +1,12 @@
 import { useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import TypingBubble from "../../onboarding/typingBubble";
-import { Backward, SeedyBirthdate, SeedyGreenAvatar, SeedyYellowAvatar } from "@/assets/auth";
+import {
+  Backward,
+  SeedyBirthdate,
+  SeedyGreenAvatar,
+  SeedyYellowAvatar,
+} from "@/assets/auth";
 import { Polygon, SeedyChat } from "@/assets/onboarding";
 
 type AvatarItem = {
@@ -17,7 +22,11 @@ type Props = {
   defaultSelectedId?: string;
 };
 
-export default function AuthAvatar({ onBack, onContinue, defaultSelectedId = "" }: Props) {
+export default function AuthAvatar({
+  onBack,
+  onContinue,
+  defaultSelectedId = "",
+}: Props) {
   const { t } = useTranslation();
 
   const avatars = useMemo<AvatarItem[]>(
@@ -64,10 +73,16 @@ export default function AuthAvatar({ onBack, onContinue, defaultSelectedId = "" 
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4">
         <div className="w-full md:w-[60%] flex justify-center items-center bg-[#7EFFA8] relative rounded-2xl p-2 gap-2 mb-12">
-          <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
+          <img
+            src={SeedyChat}
+            alt="SeedyChat"
+            className="w-[40px] h-auto shrink-0"
+          />
           <div className="w-full flex flex-col justify-start items-start">
             <div className="font-poppins text-neutral-medium font-medium text-sm md:text-md">
-              <TypingBubble message={[{ text: t("authRegisterAccount.page8.text1") }]} />
+              <TypingBubble
+                message={[{ text: t("authRegisterAccount.page8.text1") }]}
+              />
             </div>
             <img
               src={Polygon}
@@ -103,7 +118,11 @@ export default function AuthAvatar({ onBack, onContinue, defaultSelectedId = "" 
                 aria-label={av.alt ?? av.id}
               >
                 <div className="bg-[#F9F9F9] rounded-md px-6 py-4 flex justify-center items-center">
-                  <img src={av.img} alt={av.alt ?? av.id} className="w-auto h-[107px] shrink-0" />
+                  <img
+                    src={av.img}
+                    alt={av.alt ?? av.id}
+                    className="w-auto h-[107px] shrink-0"
+                  />
                 </div>
               </button>
             );

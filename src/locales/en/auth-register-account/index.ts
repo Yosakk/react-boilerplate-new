@@ -1,7 +1,8 @@
 export default {
   page1: {
     text1: "Welcome to Seeds!",
-    text2: "Take your first step with Seeds. Start growing your investment skills today.",
+    text2:
+      "Take your first step with Seeds. Start growing your investment skills today.",
     text3: "Sign up with Google",
     text4: "OR",
     text5: "Already have an account?",
@@ -9,11 +10,13 @@ export default {
   },
   page2: {
     text1: "Create Your Account",
-    text2: "Join Seeds and start your personalized investment learning journey!",
+    text2:
+      "Join Seeds and start your personalized investment learning journey!",
     text3: "Name",
     text4: "Username",
     text5: "Email Address",
-    text6: "Your Seeds username is your unique ID other users can recognize you with",
+    text6:
+      "Your Seeds username is your unique ID other users can recognize you with",
     text7: "By creating an account, you agree to our",
     text8: "Terms and Conditions",
     text9: "",
@@ -29,9 +32,11 @@ export default {
     text19: "Login",
     text20: "This email is already taken",
     text21: "Please enter your email",
-    text22: "Password must contain at least 8 characters with uppercase and lowercase.",
+    text22:
+      "Password must contain at least 8 characters with uppercase and lowercase.",
     text23: "Confirmed Password must be the same as Password.",
-    text24: "Username must be 3–15 characters and contain only letters and numbers",
+    text24:
+      "Username must be 3–15 characters and contain only letters and numbers",
   },
   page3: {
     text1: "Verify Your Phone Number",
@@ -60,7 +65,8 @@ export default {
   },
   page5: {
     text1: "Hello 👋",
-    text2: "Before you create an account, please read and accept our Terms and Conditions.",
+    text2:
+      "Before you create an account, please read and accept our Terms and Conditions.",
     text3: "Terms and Conditions",
     text4: "Privacy Policy",
     text5: "Agree",
@@ -69,7 +75,8 @@ export default {
     text1: "Create Your Seeds PIN",
     text2: "Create a 6-digit PIN to secure your data and learning progress",
     text3: "Confirm Your PIN",
-    text4: "Please re-enter the PIN you just created to keep your accont secure",
+    text4:
+      "Please re-enter the PIN you just created to keep your accont secure",
     text5: "This keeps your account secure",
     text6: "The PIN you entered is incorrect. Please try again!",
     text7: "Continue",

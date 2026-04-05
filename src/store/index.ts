@@ -17,7 +17,11 @@ import onboarding from "./onboarding";
 import userExistingReducer from "./user";
 import { Api } from "@/_services/api";
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { useDispatch, type TypedUseSelectorHook, useSelector } from "react-redux";
+import {
+  useDispatch,
+  type TypedUseSelectorHook,
+  useSelector,
+} from "react-redux";
 import { initialUserExistingState } from "./user";
 
 const cookieStorage = new CookieStorage(Cookies, {

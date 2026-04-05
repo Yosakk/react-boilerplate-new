@@ -18,7 +18,8 @@ export default {
     text1: "Bagaimana Seeds Meningkatkan",
     text2: "Perjalanan Keuangan Kamu",
     text3: "Belajar keuangan untuk mencapai investasi yang sukses",
-    text4: "Cari informasi dasar tentang keuangan dan miliki pertanyaan terkait keuangan.",
+    text4:
+      "Cari informasi dasar tentang keuangan dan miliki pertanyaan terkait keuangan.",
     text5: "Siap untuk mengadopsi strategi keuangan.",
     text6: "Tingkatkan kepercayaan diri dalam membuat keputusan keuangan.",
     text7: "Capai level tertinggi dari literasi keuangan",

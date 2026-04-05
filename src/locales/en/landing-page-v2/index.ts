@@ -6,7 +6,8 @@ export default {
     section1: {
       title1: "Play & Win",
       title2: "Real Prizes While Learning",
-      subtitle: "Challenge your financial knowledge with exciting games and win real money",
+      subtitle:
+        "Challenge your financial knowledge with exciting games and win real money",
     },
     section2: {
       title1: "Climb the Leaderboard & Be a Champion!",
@@ -19,7 +20,8 @@ export default {
     section5: {
       title1: "How to Play",
       title2: "Tournament",
-      title3: "Let’s Watch to learn everything about tournament and virtual trading here!",
+      title3:
+        "Let’s Watch to learn everything about tournament and virtual trading here!",
     },
     section6: {
       title1: "Download Now!",

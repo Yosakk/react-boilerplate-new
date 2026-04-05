@@ -36,14 +36,16 @@ export default {
   balanceWithdrawn: "Balance Withdrawn",
   confirm: "Confirm",
   thankYou: "Thank You",
-  withdrawalProcessed: "Your withdrawal request is being processed. Please wait max 1x24 hours.",
+  withdrawalProcessed:
+    "Your withdrawal request is being processed. Please wait max 1x24 hours.",
   transactionDetails: "Transaction Details",
   date: "Date",
   referenceNumber: "Reference Number",
   withdrawalWarning: "The withdrawal request would take one business day.",
   checkStatus: "Check Withdrawal Status",
   withdrawOnProgress: "Withdraw On Progress",
-  withdrawOnProgressDescription: "Your withdrawal request is being processed, please wait.",
+  withdrawOnProgressDescription:
+    "Your withdrawal request is being processed, please wait.",
   platformOption: "Platform Option",
   enterAccountName: "Enter your account name...",
   enterBankAccount: "Enter your bank account...",
@@ -56,8 +58,10 @@ export default {
     text1: "Completed",
     text2: "Pending",
     text3: "Rejected",
-    text4: "Your earnings have been approved and are now available in your account.",
-    text5: "Your earnings are currently on hold and waiting for admin approval.",
+    text4:
+      "Your earnings have been approved and are now available in your account.",
+    text5:
+      "Your earnings are currently on hold and waiting for admin approval.",
     text6:
       "Your earnings request has been rejected. Please review the reason provided by the admin for more details.",
     text7: "Amount",
@@ -77,7 +81,8 @@ export default {
     text4: "Verify Now",
     text5:
       "Verification request submitted successfully. Please wait while we process your verification.",
-    text6: "You have already submitted a verification request. Please wait while we process it.",
+    text6:
+      "You have already submitted a verification request. Please wait while we process it.",
     text7: "An error occurred. Please try again.",
     text8: "Take a Photo of Your ID",
     text9: "Take a Selfie with Your ID Card",

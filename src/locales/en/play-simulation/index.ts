@@ -37,7 +37,8 @@ export default {
   totalPortfolio: "Total Portfolio",
   yourAssetsPortfolio: "Your assets portfolio",
   joinArena1: "Are you ready to join Arena?",
-  joinArena2: "Get ready for trading challenges to test your skills and win prizes.",
+  joinArena2:
+    "Get ready for trading challenges to test your skills and win prizes.",
   sellAssetText1: "You can choose the amount of the asset to sell",
   sellAmount: "Sell Amount",
   cashAvailable: "Cash Available",

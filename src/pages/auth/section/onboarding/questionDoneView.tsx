@@ -19,8 +19,12 @@ type SSOIntent = {
 export default function QuestionDoneContainer({ onRestart, answers }: Props) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { state } = useLocation() as { state?: { returnTo?: string; ssoIntent?: SSOIntent } };
-  const submissionId = useAppSelector((s: RootState) => s.onboarding.submissionId);
+  const { state } = useLocation() as {
+    state?: { returnTo?: string; ssoIntent?: SSOIntent };
+  };
+  const submissionId = useAppSelector(
+    (s: RootState) => s.onboarding.submissionId
+  );
 
   const answer1 = answers[1]?.[0]?.header ?? "";
   const answer2 = answers[2]?.[0]?.header ?? "";

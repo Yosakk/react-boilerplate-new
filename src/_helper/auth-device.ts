@@ -16,10 +16,14 @@ export function getDeviceMeta() {
 
 export function getOrCreateVisitorId(domain?: string): string {
   const m =
-    typeof document !== "undefined" ? document.cookie.match(/(?:^|; )visitor_id=([^;]*)/) : null;
+    typeof document !== "undefined"
+      ? document.cookie.match(/(?:^|; )visitor_id=([^;]*)/)
+      : null;
   if (m?.[1]) return decodeURIComponent(m[1]);
 
-  const id = (crypto?.randomUUID?.() ?? Math.random().toString(36).slice(2, 10)).toUpperCase();
+  const id = (
+    crypto?.randomUUID?.() ?? Math.random().toString(36).slice(2, 10)
+  ).toUpperCase();
   if (typeof document !== "undefined") {
     const expires = new Date(Date.now() + 365 * 864e5).toUTCString();
     document.cookie = `visitor_id=${encodeURIComponent(id)}; Path=/; Expires=${expires}${domain ? `; Domain=${domain}` : ""}; SameSite=Lax`;

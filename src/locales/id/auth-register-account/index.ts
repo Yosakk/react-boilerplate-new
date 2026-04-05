@@ -1,7 +1,8 @@
 export default {
   page1: {
     text1: "Selamat datang di Seeds!",
-    text2: "Mulai langkah pertamamu dengan Seeds. Mulai tingkatkan keahlian investasimu hari ini!",
+    text2:
+      "Mulai langkah pertamamu dengan Seeds. Mulai tingkatkan keahlian investasimu hari ini!",
     text3: "Daftar dengan Google",
     text4: "ATAU",
     text5: "Sudah punya akun?",
@@ -13,7 +14,8 @@ export default {
     text3: "Nama",
     text4: "Username",
     text5: "Alamat Email",
-    text6: "Username Seeds kamu adalah pengenal unik untuk pengguna lain mengenalimu",
+    text6:
+      "Username Seeds kamu adalah pengenal unik untuk pengguna lain mengenalimu",
     text7: "Dengan membuat akun, Kamu menyetujui",
     text8: "Syarat dan Ketentuan",
     text9: "kami",
@@ -29,9 +31,11 @@ export default {
     text19: "Masuk",
     text20: "Email ini sudah terpakai",
     text21: "Isi dengan emailmu",
-    text22: "Kata sandi harus terdiri dari minimal 8 karakter dengan huruf besar dan huruf kecil.",
+    text22:
+      "Kata sandi harus terdiri dari minimal 8 karakter dengan huruf besar dan huruf kecil.",
     text23: "Konfirmasi kata sandi harus sama dengan kata sandi.",
-    text24: "Username harus 3–15 karakter dan hanya boleh berisi huruf dan angka",
+    text24:
+      "Username harus 3–15 karakter dan hanya boleh berisi huruf dan angka",
   },
   page3: {
     text1: "Verifikasi Nomor Telepon Anda",
@@ -60,16 +64,19 @@ export default {
   },
   page5: {
     text1: "Halo 👋",
-    text2: "Sebelum Anda membuat akun, silakan baca dan setujui Syarat dan Ketentuan kami.",
+    text2:
+      "Sebelum Anda membuat akun, silakan baca dan setujui Syarat dan Ketentuan kami.",
     text3: "Syarat dan Ketentuan",
     text4: "Kebijakan Privasi",
     text5: "Setuju",
   },
   page6: {
     text1: "Buat PIN Seeds Kamu",
-    text2: "Buat PIN 6 angka untuk mengamankan data dan kemajuan pembelajaranmu",
+    text2:
+      "Buat PIN 6 angka untuk mengamankan data dan kemajuan pembelajaranmu",
     text3: "Konfirmasi PIN Kamu",
-    text4: "Masukkan ulang PIN yang baru saja kamu buat untuk mengamankan akunmu",
+    text4:
+      "Masukkan ulang PIN yang baru saja kamu buat untuk mengamankan akunmu",
     text5: "Ini akan mengamankan akunmu",
     text6: "PIN yang kamu masukkan salah. Coba lagi!",
     text7: "Lanjut",

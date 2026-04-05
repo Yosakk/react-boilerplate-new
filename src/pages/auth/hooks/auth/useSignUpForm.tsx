@@ -1,7 +1,13 @@
-import React, { createContext, useContext, useEffect, useRef, useState } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useForm, FormProvider, type UseFormReturn } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
   useCreateNewUserMutation,
   useLazyValidateEmailQuery,
@@ -75,16 +81,153 @@ type Ctx = {
 
 const Ctx = createContext<Ctx | null>(null);
 
-const str = yup
-  .string()
-  .transform((v) => (v == null ? "" : v))
-  .defined();
-
-const normalizePhoneForRequired = (raw: unknown) => {
+function normalizePhoneForRequired(raw: unknown) {
   const s = String(raw ?? "");
   const digits = s.replace(/\D/g, "");
   return digits.length >= 6 ? s : "";
-};
+}
+
+function buildSignupSchema(
+  t: (key: string, opts?: any) => string,
+  signupType: SignupType,
+  isSSO: boolean
+) {
+  const str = z.string().default("");
+
+  const phoneSchema =
+    !isSSO && signupType === "phone"
+      ? z
+          .string()
+          .transform(normalizePhoneForRequired)
+          .pipe(
+            z
+              .string()
+              .min(
+                1,
+                t(
+                  "authRegister.authPersonalData" +
+                    ".validationVer2.phone.required"
+                )
+              )
+              .refine(
+                (value) => {
+                  if (!value) return false;
+                  const raw = String(value);
+                  const parsed = raw.trim().startsWith("+")
+                    ? parsePhoneNumberFromString(raw)
+                    : parsePhoneNumberFromString(raw, "ID");
+                  if (!parsed) {
+                    const digits = raw.replace(/\D/g, "");
+                    const p = parsePhoneNumberFromString(digits, "ID");
+                    return p?.isValid() ?? false;
+                  }
+                  return parsed.isValid();
+                },
+                t(
+                  "authRegister.authPersonalData" +
+                    ".validationVer2.phone.invalidOrUsed"
+                )
+              )
+          )
+      : str;
+
+  const emailSchema =
+    !isSSO && signupType === "email"
+      ? z
+          .string()
+          .min(
+            1,
+            t(
+              "authRegister.authPersonalData" + ".validationVer2.email.required"
+            )
+          )
+          .email(
+            t(
+              "authRegister.authPersonalData" +
+                ".validationVer2.email.invalidFormat"
+            )
+          )
+      : str;
+
+  const passwordSchema = isSSO
+    ? str
+    : z
+        .string()
+        .min(
+          1,
+          t(
+            "authRegister.authPersonalData" +
+              ".validationVer2.password.required"
+          )
+        )
+        .regex(
+          /^(?=.*[a-z])(?=.*[A-Z]).{8,}$/,
+          t("authRegister.authPersonalData" + ".validationVer2.password.rules")
+        );
+
+  const base = z.object({
+    phoneNumber: phoneSchema,
+    phoneCountry: str.default("ID"),
+    email: emailSchema,
+    name: z
+      .string()
+      .min(
+        2,
+        t("authRegister.authPersonalData" + ".validationVer2.name.min", {
+          min: 2,
+        })
+      )
+      .max(
+        100,
+        t("authRegister.authPersonalData" + ".validationVer2.name.max", {
+          max: 100,
+        })
+      ),
+    seedsTag: z
+      .string()
+      .min(
+        1,
+        t("authRegister.authPersonalData" + ".validationVer2.seedsTag.required")
+      )
+      .regex(
+        /^[A-Za-z0-9_]+$/,
+        t("authRegister.authPersonalData" + ".validationVer2.seedsTag.regex")
+      )
+      .refine(
+        (v) => v.length >= 3 && v.length <= 15,
+        t("authRegister.authPersonalData" + ".validationVer2.seedsTag.length")
+      ),
+    refCode: str,
+    birthDate: str,
+    password: passwordSchema,
+    confirmPassword: isSSO ? str : z.string().min(1),
+    provider: z.object({
+      provider: z.string(),
+      identifier: z.string().optional(),
+    }),
+    onboardingId: str,
+    tncAccepted: z.literal(true, {
+      errorMap: () => ({
+        message: t(
+          "authRegister.authPersonalData" + ".validationVer2.tnc.required"
+        ),
+      }),
+    }),
+    pin: str,
+    age: z.number().nullable().default(null),
+    avatar: str,
+  });
+
+  if (isSSO) return base;
+
+  return base.refine((data) => data.password === data.confirmPassword, {
+    message: t(
+      "authRegister.authPersonalData" +
+        ".validationVer2.confirmPassword.mismatch"
+    ),
+    path: ["confirmPassword"],
+  });
+}
 
 export function SignupFormProvider({
   children,
@@ -99,92 +242,12 @@ export function SignupFormProvider({
   const navState = (location.state as any) || null;
   const didSSOPrefill = useRef(false);
 
-  const schema: yup.ObjectSchema<SignupFormValues> = yup
-    .object({
-      phoneNumber: str.transform(normalizePhoneForRequired).when([], {
-        is: () => !isSSO && signupType === "phone",
-        then: (s) =>
-          s
-            .required(t("authRegister.authPersonalData.validationVer2.phone.required"))
-            .test(
-              "valid-phone",
-              t("authRegister.authPersonalData.validationVer2.phone.invalidOrUsed"),
-              function (value) {
-                const { phoneCountry } = this.parent as SignupFormValues;
-                if (!value) return false;
-                const country = (phoneCountry || "ID").toUpperCase();
-                const raw = String(value);
-                let parsed = raw.trim().startsWith("+")
-                  ? parsePhoneNumberFromString(raw)
-                  : parsePhoneNumberFromString(raw, country as any);
-                if (!parsed) {
-                  const digits = raw.replace(/\D/g, "");
-                  parsed = parsePhoneNumberFromString(digits, country as any);
-                }
-
-                return parsed?.isValid() ?? false;
-              }
-            ),
-        otherwise: (s) => s,
-      }),
-      phoneCountry: str.default("ID"),
-      email: str.when([], {
-        is: () => !isSSO && signupType === "email",
-        then: (s) =>
-          s
-            .email(t("authRegister.authPersonalData.validationVer2.email.invalidFormat"))
-            .required(t("authRegister.authPersonalData.validationVer2.email.required")),
-        otherwise: (s) => s,
-      }),
-      name: str
-        .min(2, t("authRegister.authPersonalData.validationVer2.name.min", { min: 2 }))
-        .max(100, t("authRegister.authPersonalData.validationVer2.name.max", { max: 100 }))
-        .required(t("authRegister.authPersonalData.validationVer2.name.required")),
-      seedsTag: str
-        .required(t("authRegister.authPersonalData.validationVer2.seedsTag.required"))
-        .matches(
-          /^[A-Za-z0-9_]+$/,
-          t("authRegister.authPersonalData.validationVer2.seedsTag.regex")
-        )
-        .test(
-          "len-3-15",
-          t("authRegister.authPersonalData.validationVer2.seedsTag.length"),
-          (v) => !v || (v.length >= 3 && v.length <= 15)
-        ),
-      refCode: str,
-      birthDate: str,
-      password: isSSO
-        ? str
-        : str
-            .required(t("authRegister.authPersonalData.validationVer2.password.required"))
-            .matches(
-              /^(?=.*[a-z])(?=.*[A-Z]).{8,}$/,
-              t("authRegister.authPersonalData.validationVer2.password.rules")
-            ),
-      confirmPassword: isSSO
-        ? str
-        : str
-            .required(t("authRegister.authPersonalData.validationVer2.confirmPassword.required"))
-            .oneOf(
-              [yup.ref("password")],
-              t("authRegister.authPersonalData.validationVer2.confirmPassword.mismatch")
-            ),
-      provider: yup.object({ provider: str.required(), identifier: str }),
-      onboardingId: str,
-      tncAccepted: yup
-        .boolean()
-        .oneOf([true], t("authRegister.authPersonalData.validationVer2.tnc.required"))
-        .required(),
-      pin: str,
-      age: yup.number().nullable().default(null),
-      avatar: str,
-    })
-    .required();
+  const schema = buildSignupSchema(t, signupType, isSSO);
 
   const methods = useForm<SignupFormValues>({
     mode: "onChange",
     reValidateMode: "onChange",
-    resolver: yupResolver(schema),
+    resolver: zodResolver(schema),
     defaultValues: {
       phoneNumber: "",
       phoneCountry: "ID",
@@ -195,9 +258,12 @@ export function SignupFormProvider({
       birthDate: "",
       password: "",
       confirmPassword: "",
-      provider: { provider: isSSO ? "google" : signupType, identifier: "" },
+      provider: {
+        provider: isSSO ? "google" : signupType,
+        identifier: "",
+      },
       onboardingId: onboardingId || "",
-      tncAccepted: false,
+      tncAccepted: false as any,
       pin: "",
       age: null,
       avatar: "",
@@ -212,7 +278,9 @@ export function SignupFormProvider({
 
   useEffect(() => {
     if (onboardingId != null) {
-      methods.setValue("onboardingId", onboardingId, { shouldDirty: false });
+      methods.setValue("onboardingId", onboardingId, {
+        shouldDirty: false,
+      });
     }
   }, [onboardingId, methods]);
 
@@ -239,7 +307,10 @@ export function SignupFormProvider({
       next.seedsTag = SuggestSeedsTag(profile?.name || profile?.email || "");
     }
 
-    methods.reset(next, { keepDirty: false, keepTouched: false });
+    methods.reset(next, {
+      keepDirty: false,
+      keepTouched: false,
+    });
     didSSOPrefill.current = true;
   }, [isSSO, methods, navState]);
 
@@ -249,7 +320,10 @@ export function SignupFormProvider({
   const [validateTag, tagState] = useLazyValidateSeedsTagQuery();
 
   const isValidating =
-    emailState.isFetching || phoneState.isFetching || refState.isFetching || tagState.isFetching;
+    emailState.isFetching ||
+    phoneState.isFetching ||
+    refState.isFetching ||
+    tagState.isFetching;
 
   async function checkRemote<T extends keyof SignupFormValues>(
     validator: (v: string, preferCache?: boolean) => any,
@@ -260,22 +334,31 @@ export function SignupFormProvider({
   ) {
     if (!v) return true;
     try {
-      const res = (await validator(v, true).unwrap?.()) ?? (await validator(v, true));
+      const res =
+        (await validator(v, true).unwrap?.()) ?? (await validator(v, true));
       const ok =
         typeof res === "boolean"
           ? res
           : (res?.valid ?? res?.ok ?? res?.available ?? res?.isValid ?? true);
       if (!ok) {
-        methods.setError(field, { type: "remote", message: takenMsg });
+        methods.setError(field, {
+          type: "remote",
+          message: takenMsg,
+        });
         return false;
       }
       methods.clearErrors(field);
       return true;
     } catch {
-      methods.setError(field, { type: "remote", message: fallbackMsg });
+      methods.setError(field, {
+        type: "remote",
+        message: fallbackMsg,
+      });
       return false;
     }
   }
+
+  const vPrefix = "authRegister.authPersonalData.validationVer2";
 
   const validateOnBlur = {
     email: (v: string) =>
@@ -283,42 +366,49 @@ export function SignupFormProvider({
         validateEmail,
         v,
         "email",
-        t("authRegister.authPersonalData.validationVer2.email.taken"),
-        t("authRegister.authPersonalData.validationVer2.email.invalidOrUsed")
+        t(`${vPrefix}.email.taken`),
+        t(`${vPrefix}.email.invalidOrUsed`)
       ),
     phoneNumber: (v: string) =>
       checkRemote(
         validatePhone,
         v,
         "phoneNumber",
-        t("authRegister.authPersonalData.validationVer2.phone.taken"),
-        t("authRegister.authPersonalData.validationVer2.phone.invalidOrUsed")
+        t(`${vPrefix}.phone.taken`),
+        t(`${vPrefix}.phone.invalidOrUsed`)
       ),
     seedsTag: (v: string) =>
       checkRemote(
         validateTag,
         v,
         "seedsTag",
-        t("authRegister.authPersonalData.validationVer2.seedsTag.taken"),
-        t("authRegister.authPersonalData.validationVer2.seedsTag.invalidOrUsed")
+        t(`${vPrefix}.seedsTag.taken`),
+        t(`${vPrefix}.seedsTag.invalidOrUsed`)
       ),
     refCode: (v: string) =>
       checkRemote(
         validateRef,
         v,
         "refCode",
-        t("authRegister.authPersonalData.validationVer2.refCode.notFound"),
-        t("authRegister.authPersonalData.validationVer2.refCode.invalid")
+        t(`${vPrefix}.refCode.notFound`),
+        t(`${vPrefix}.refCode.invalid`)
       ),
   };
 
   async function validateAllRemote(vals: Partial<SignupFormValues>) {
     const jobs: Promise<boolean>[] = [];
-    if (signupType === "email" && vals.email) jobs.push(validateOnBlur.email(vals.email));
-    if (signupType === "phone" && vals.phoneNumber)
+    if (signupType === "email" && vals.email) {
+      jobs.push(validateOnBlur.email(vals.email));
+    }
+    if (signupType === "phone" && vals.phoneNumber) {
       jobs.push(validateOnBlur.phoneNumber(vals.phoneNumber));
-    if (vals.seedsTag) jobs.push(validateOnBlur.seedsTag(vals.seedsTag));
-    if (vals.refCode) jobs.push(validateOnBlur.refCode(vals.refCode));
+    }
+    if (vals.seedsTag) {
+      jobs.push(validateOnBlur.seedsTag(vals.seedsTag));
+    }
+    if (vals.refCode) {
+      jobs.push(validateOnBlur.refCode(vals.refCode));
+    }
     const ok = await Promise.all(jobs);
     return ok.every(Boolean);
   }
@@ -390,7 +480,10 @@ export function SignupFormProvider({
 
   useEffect(() => {
     if (sessionStorage.getItem(TNC_FLAG_KEY) === "1") {
-      methods.setValue("tncAccepted", true, { shouldDirty: true, shouldValidate: true });
+      methods.setValue("tncAccepted", true, {
+        shouldDirty: true,
+        shouldValidate: true,
+      });
       sessionStorage.removeItem(TNC_FLAG_KEY);
     }
   }, [methods]);
@@ -427,6 +520,8 @@ export function SignupFormProvider({
 
 export function useSignupForm() {
   const ctx = useContext(Ctx);
-  if (!ctx) throw new Error("useSignupForm must be used within <SignupFormProvider/>");
+  if (!ctx) {
+    throw new Error("useSignupForm must be used within <SignupFormProvider/>");
+  }
   return ctx;
 }

@@ -1,5 +1,6 @@
 export default {
-  phoneNumber: "Mohon ketikkan nomor telepon anda. Kami akan kirimkan pesan melalui Whatsapp",
+  phoneNumber:
+    "Mohon ketikkan nomor telepon anda. Kami akan kirimkan pesan melalui Whatsapp",
   email: "Mohon ketikkan email anda. Kami akan kirimkan pesan melalui email",
   method: {
     email: "Lupa sandi via email",

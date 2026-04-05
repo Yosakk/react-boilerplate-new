@@ -1,5 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Polygon, SeedyChat, SeedyMoneyBuddy, SeedyQuestion } from "@/assets/onboarding";
+import {
+  Polygon,
+  SeedyChat,
+  SeedyMoneyBuddy,
+  SeedyQuestion,
+} from "@/assets/onboarding";
 import TypingBubble from "./typingBubble";
 import { useQuestionPreparation } from "../../hooks/onboarding/usePreparationQuestion";
 import type { OnboardingReqI } from "@/_interfaces/onboarding.interfaces";
@@ -12,9 +17,16 @@ interface QuestionPreparationI {
   params: OnboardingReqI;
 }
 
-const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, setStep, params }) => {
+const QuestionPreparation: React.FC<QuestionPreparationI> = ({
+  showQuestion,
+  setStep,
+  params,
+}) => {
   const { t } = useTranslation();
-  const { isShown } = useQuestionPreparation({ showQuestion, autoDelayMs: 2000 });
+  const { isShown } = useQuestionPreparation({
+    showQuestion,
+    autoDelayMs: 2000,
+  });
   const [trigger, { isLoading, isFetching }] = useLazyOnboardingQuery();
   const loading = isLoading || isFetching;
 
@@ -31,13 +43,19 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
       {!isShown ? (
         <div className="w-full flex flex-col justify-center items-center">
           <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
-            <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
+            <img
+              src={SeedyChat}
+              alt="SeedyChat"
+              className="w-[40px] h-auto shrink-0"
+            />
             <div className="flex flex-col justify-start items-start">
               <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">
                 Seedy
               </p>
               <div className="w-full md:w-[280px] font-poppins text-neutral-medium font-medium text-sm md:text-md">
-                <TypingBubble message={[{ text: t("onboarding.welcomeButton.text1") }]} />
+                <TypingBubble
+                  message={[{ text: t("onboarding.welcomeButton.text1") }]}
+                />
               </div>
               <img
                 src={Polygon}
@@ -56,13 +74,19 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({ showQuestion, set
         <div className="w-full flex flex-col justify-center items-center">
           <div className="w-full flex flex-col justify-center items-center my-7 ">
             <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
-              <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
+              <img
+                src={SeedyChat}
+                alt="SeedyChat"
+                className="w-[40px] h-auto shrink-0"
+              />
               <div className="w-full flex flex-col justify-start items-start">
                 <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md">
                   Seedy
                 </p>
                 <div className="w-full md:w-[280px] font-poppins text-neutral-medium font-medium text-sm md:text-md">
-                  <TypingBubble message={[{ text: t("onboarding.welcomeButton.text2") }]} />
+                  <TypingBubble
+                    message={[{ text: t("onboarding.welcomeButton.text2") }]}
+                  />
                 </div>
                 <img
                   src={Polygon}

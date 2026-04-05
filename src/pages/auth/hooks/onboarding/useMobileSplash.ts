@@ -27,7 +27,10 @@ export function useMobileSplash(options: UseMobileSplashOptions = {}) {
     setShowSplash(true);
 
     const t1 = window.setTimeout(() => setIsFading(true), progressMs);
-    const t2 = window.setTimeout(() => setShowSplash(false), progressMs + fadeMs);
+    const t2 = window.setTimeout(
+      () => setShowSplash(false),
+      progressMs + fadeMs
+    );
 
     return () => {
       clearTimeout(t1);

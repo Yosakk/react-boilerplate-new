@@ -56,22 +56,35 @@ export const mantineTheme = createTheme({
     TextInput: {
       defaultProps: { radius: "xl" },
       styles: {
-        label: { fontWeight: 500, marginBottom: rem(4) },
+        root: { width: "100%" },
+        wrapper: { width: "100%" },
+        label: { fontWeight: 500, fontSize: rem(13), marginBottom: rem(4) },
         error: { marginTop: rem(4) },
       },
     },
     PasswordInput: {
       defaultProps: { radius: "xl" },
       styles: {
-        label: { fontWeight: 500, marginBottom: rem(4) },
+        root: { width: "100%" },
+        wrapper: { width: "100%" },
+        label: { fontWeight: 500, fontSize: rem(13), marginBottom: rem(4) },
+        error: { marginTop: rem(4) },
+      },
+    },
+    Textarea: {
+      defaultProps: { radius: "md" },
+      styles: {
+        root: { width: "100%" },
+        label: { fontWeight: 500, fontSize: rem(13), marginBottom: rem(4) },
         error: { marginTop: rem(4) },
       },
     },
     Select: {
       defaultProps: { radius: "xl" },
-    },
-    Textarea: {
-      defaultProps: { radius: "md" },
+      styles: {
+        label: { fontWeight: 500, fontSize: rem(13), marginBottom: rem(4) },
+        error: { marginTop: rem(4) },
+      },
     },
     NumberInput: {
       defaultProps: { radius: "xl" },

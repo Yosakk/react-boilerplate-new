@@ -35,7 +35,8 @@ export default {
     inputName: "Masukan nama anda",
     inputPhone: "Masukan nomor telepon anda",
     inputEmail: "Masukan alamat email anda",
-    bookInfo: "Tiket yang telah dipesan akan dikirimkan ke email yang telah diisi.",
+    bookInfo:
+      "Tiket yang telah dipesan akan dikirimkan ke email yang telah diisi.",
     continue: "Lanjutkan",
   },
   pay: "Bayar",
@@ -128,9 +129,11 @@ export default {
     notificationMethod: "Pilih Notifikasi",
     notificationModalMessage: "Ayo up-to-date! Pilih preferensi notifikasimu.",
     checkInMessage1: "Apa kamu yakin untuk check-in?",
-    checkInMessage2: "Apakah kamu ingin check-in sekarang? Datamu akan langsung tercatat.",
+    checkInMessage2:
+      "Apakah kamu ingin check-in sekarang? Datamu akan langsung tercatat.",
     checkOutMessage1: "Apa kamu yakin untuk check-out?",
-    checkOutMessage2: "Apakah kamu ingin check-out sekarang? Datamu akan langsung tercatat.",
+    checkOutMessage2:
+      "Apakah kamu ingin check-out sekarang? Datamu akan langsung tercatat.",
     yes: "Ya",
     no: "Tidak",
   },

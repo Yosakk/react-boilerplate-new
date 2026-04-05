@@ -56,7 +56,9 @@ const TermsCondition: React.FC = () => {
             ))}
           <ul className="list-disc pl-5 ml-1 mb-3">
             {Object.values(
-              t("termAndCondition.tnc.list.5", { returnObjects: true }) as Record<string, string>
+              t("termAndCondition.tnc.list.5", {
+                returnObjects: true,
+              }) as Record<string, string>
             ).map((item, i) => (
               <li key={`l5-${i}`} className="mb-1">
                 {item}
@@ -148,7 +150,9 @@ const TermsCondition: React.FC = () => {
           } bg-white`}
         >
           {t("termAndCondition.lastupdate")}{" "}
-          <span className="text-purple-600">{t("termAndCondition.updatedate")}</span>
+          <span className="text-purple-600">
+            {t("termAndCondition.updatedate")}
+          </span>
         </p>
         {t("termAndCondition.announcement")}
         <br />

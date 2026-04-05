@@ -142,13 +142,16 @@ export default {
   guidance: {
     guidanceTitle: "Guidance",
     goals: "Goals",
-    goalsDescription: "Build the best portfolio using the virtual balance provided.",
+    goalsDescription:
+      "Build the best portfolio using the virtual balance provided.",
     howToPlay: {
       title: "How to Play",
       text1: "Start by viewing your portfolio and virtual balance.",
       text2: "Click 'See All' to view the full list of assets available.",
-      text3: "Click on an asset to view the results of the stack data analysis.",
-      text4: "To buy an asset, click the 'Buy' button. To sell an asset, click the 'Sell' button.",
+      text3:
+        "Click on an asset to view the results of the stack data analysis.",
+      text4:
+        "To buy an asset, click the 'Buy' button. To sell an asset, click the 'Sell' button.",
       text5: "You can make transactions within the specified time frame.",
       text6:
         "View your position on the leaderboard to see how you are competing against other players.",
@@ -168,7 +171,8 @@ export default {
       "Still not sure about how to play in Play Arena? Check out the video tutorial here and follow the steps! Learn more about play arenas and get rewards!",
     text2:
       "Have good news in the play arena? Share it with your friends and find experts for more insights.",
-    text3: "Don't forget to read Play Arena's terms and conditions before you start playing.",
+    text3:
+      "Don't forget to read Play Arena's terms and conditions before you start playing.",
   },
   watchlist: {
     myWatchlist: "My Watchlist",
@@ -200,10 +204,12 @@ export default {
     cancelAddAsset: "Cancel adding assets to watchlist?",
     yes: "Yes",
     no: "No",
-    alreadyExist: "The asset you added is already in the watchlist that has been created.",
+    alreadyExist:
+      "The asset you added is already in the watchlist that has been created.",
     ok: "Ok",
     createNewWatchlist: "New Watchlist",
-    descNewWatchlist: "Create a watchlist to help you collect your favorite assets",
+    descNewWatchlist:
+      "Create a watchlist to help you collect your favorite assets",
     watchlistName: "Watchlist Name",
     groupName: "Desired Group Name",
     btnNewWatchlist: "Create New Watchlist",

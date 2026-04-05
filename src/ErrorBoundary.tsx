@@ -33,10 +33,24 @@ export default class ErrorBoundary extends Component<Props, State> {
           <pre style={{ whiteSpace: "pre-wrap", marginTop: 16, color: "#333" }}>
             {this.state.error?.message}
           </pre>
-          <pre style={{ whiteSpace: "pre-wrap", marginTop: 8, color: "#888", fontSize: 12 }}>
+          <pre
+            style={{
+              whiteSpace: "pre-wrap",
+              marginTop: 8,
+              color: "#888",
+              fontSize: 12,
+            }}
+          >
             {this.state.error?.stack}
           </pre>
-          <pre style={{ whiteSpace: "pre-wrap", marginTop: 8, color: "#888", fontSize: 12 }}>
+          <pre
+            style={{
+              whiteSpace: "pre-wrap",
+              marginTop: 8,
+              color: "#888",
+              fontSize: 12,
+            }}
+          >
             {this.state.errorInfo?.componentStack}
           </pre>
           <button

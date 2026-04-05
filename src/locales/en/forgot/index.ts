@@ -1,5 +1,6 @@
 export default {
-  phoneNumber: "Please enter your phone number. We will send you a message via WhatsApp",
+  phoneNumber:
+    "Please enter your phone number. We will send you a message via WhatsApp",
   email: "Please enter your email. We will send you a message via Email",
   method: {
     email: "Forgot password via email",

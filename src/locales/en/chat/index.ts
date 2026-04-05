@@ -5,7 +5,8 @@ export default {
   startChat: "Start a chat!",
   communityEmptyState: "No Community Chat",
   requestEmptyState: "No Chat Request",
-  selectUsername: "You didn’t made any conversation yet, please select username.",
+  selectUsername:
+    "You didn’t made any conversation yet, please select username.",
   chatPeople: "Chat People",
   createCommunity: "Create Community",
   popUpLeave: {
@@ -55,7 +56,8 @@ export default {
   notes: "Notes",
   seen: "Seen",
   muteNotificationTitle: "Are you sure to mute notifications?",
-  muteNotificationSubtitle: "Other participants will not see that you muted this chat",
+  muteNotificationSubtitle:
+    "Other participants will not see that you muted this chat",
   muted: {
     text1: "Notifications Muted for 8 hours",
     text2: "Notifications Muted for one week",

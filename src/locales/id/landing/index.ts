@@ -15,7 +15,8 @@ export default {
     text3c: "Learn",
     text3d:
       "Belajar apa pun tentang dunia Finansial bersama Seeds. Bareng teman dan banyak profesional lainnya.",
-    text4: "Dapatkan berita dan pengetahuan terkini tentang investasi dan keuangan.",
+    text4:
+      "Dapatkan berita dan pengetahuan terkini tentang investasi dan keuangan.",
     text5: "Sorotan Acara",
     text6: "Ikuti terus kegiatan seru kami!",
   },

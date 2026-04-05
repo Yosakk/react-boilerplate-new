@@ -24,7 +24,11 @@ export default function AuthLeftSection({ className }: Props): JSX.Element {
         className="absolute top-0 right-0 max-w-full h-auto pointer-events-none select-none"
       />
       <div className="w-full px-[15%] z-10">
-        <img src={LeftBanner} alt="Left banner" className="w-[300px] md:w-[375px] h-auto mb-16" />
+        <img
+          src={LeftBanner}
+          alt="Left banner"
+          className="w-[300px] md:w-[375px] h-auto mb-16"
+        />
         <h1 className="font-semibold font-poppins text-white text-2xl xl:text-4xl leading-tight">
           {t("onboarding.leftBanner.text1")}
         </h1>

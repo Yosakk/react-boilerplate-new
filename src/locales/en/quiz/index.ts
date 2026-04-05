@@ -35,13 +35,17 @@ export default {
   yourCurrentlyRank: "Your Currently Rank",
   cancel: "Cancel",
   notification: "Notification",
-  extraCash: "Oops, if you want an extra assist, you'll need an extra IDR {{amount}} cash",
+  extraCash:
+    "Oops, if you want an extra assist, you'll need an extra IDR {{amount}} cash",
   select: "Select",
   quizCompanion: "Pick your power-up!",
-  chooseOptions: "Choose your assistance options, and of course you can even choose more than one!",
-  freeOptions: "1 Free Power-Up! Choose wisely, using more comes at a additional cost",
+  chooseOptions:
+    "Choose your assistance options, and of course you can even choose more than one!",
+  freeOptions:
+    "1 Free Power-Up! Choose wisely, using more comes at a additional cost",
   fiftyfifty: "This option will eliminate two wrong answers.",
-  phone: "It's like calling a friend for help, and they are always ready to help you.",
+  phone:
+    "It's like calling a friend for help, and they are always ready to help you.",
   vote: "Display a bar chart that shows the highest percentage of correct answers.",
   questionLevel: "Question Level",
   easy: "Easy",
@@ -65,7 +69,8 @@ export default {
   yes: "Yes",
   theQuestion: "The Question",
   understand: "Understand",
-  payAttention: "Pay attention to Seedy's response, you can't revisit it after tapping Understand.",
+  payAttention:
+    "Pay attention to Seedy's response, you can't revisit it after tapping Understand.",
   beMindful:
     "Be mindful of the vote from Seedy's friends, you won't be able to view it again after clicking OK.",
   sureNeedHelp: "Are you sure you need this help?",
@@ -118,7 +123,8 @@ export default {
   },
   free: "Free",
   lifeline: "Extra Lifeline",
-  tryInfo: "Free quiz is only available for one attempt, try another challenges!",
+  tryInfo:
+    "Free quiz is only available for one attempt, try another challenges!",
   day: "{{days}} days",
   players: "Players",
   entryFee: "Entry Fee",
@@ -129,7 +135,8 @@ export default {
   ended: "Ended",
   canceled: "Cancelled",
   quizDone1: "let's join another interesting quiz!",
-  quizDone2: "Ooops... you only get one chance to play a free quiz! Explore more quizzes!",
+  quizDone2:
+    "Ooops... you only get one chance to play a free quiz! Explore more quizzes!",
   testInvestment: "Test your financial knowledge and win rewards!",
   welcome: "Welcome to Seeds Quiz",
   areYouReady: "Are You Ready?",
@@ -152,7 +159,8 @@ export default {
   bankList: "Bank List",
   eWalletList: "E-Wallet List",
   thankyou: "Thank You!",
-  withdrawalRequest: "Your withdrawal request is being processed. Please wait max 1x24 hours.",
+  withdrawalRequest:
+    "Your withdrawal request is being processed. Please wait max 1x24 hours.",
   transactionDetails: "Transaction Details",
   date: "Date",
   refNum: "Reference Number",
@@ -202,6 +210,7 @@ export default {
   winnerAlertMessage5:
     "Click the claim button or close this pop up and click the image in your winning position to be redirected to the prize.",
   winnerAlertMessage6: "Claim Prize",
-  winnerAlertMessage7: "Click the image or Claim Button to be redirected to the prize.",
+  winnerAlertMessage7:
+    "Click the image or Claim Button to be redirected to the prize.",
   winnerAlertMessage8: "Claim Prize Here",
 } as const;

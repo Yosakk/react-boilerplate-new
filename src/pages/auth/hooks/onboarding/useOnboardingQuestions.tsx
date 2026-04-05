@@ -1,7 +1,10 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useForm, useWatch } from "react-hook-form";
-import { useOnboardingQuery, useSubmitOnboardingMutation } from "@/_services/onboarding";
+import {
+  useOnboardingQuery,
+  useSubmitOnboardingMutation,
+} from "@/_services/onboarding";
 import type {
   AnswerOption,
   OnboardingI,
@@ -21,7 +24,11 @@ type Args = {
 type AnswersMap = Record<number, AnswerOption[]>;
 type FormValues = { answers: AnswersMap };
 
-export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: Args) {
+export function useOnboardingQuestionsForm({
+  params,
+  setStep,
+  submitId = "",
+}: Args) {
   const { t } = useTranslation();
 
   const { data, isLoading, isError } = useOnboardingQuery(params);
@@ -54,8 +61,13 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
     [question]
   );
 
-  const replacerNo1 = Array.isArray(answers?.[1]) ? (answers[1][0]?.header ?? "") : "";
-  const questionText = (question?.question ?? "").replace(/\[no_1_answer\]/g, replacerNo1);
+  const replacerNo1 = Array.isArray(answers?.[1])
+    ? (answers[1][0]?.header ?? "")
+    : "";
+  const questionText = (question?.question ?? "").replace(
+    /\[no_1_answer\]/g,
+    replacerNo1
+  );
 
   const helpNoteText =
     currentQuestionIndex === 3 || currentQuestionIndex === 4
@@ -65,9 +77,15 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
   const isMultiSelect = qNum === 4 || qNum === 5;
 
   const answeredResponse = (): MessageSpan[] => {
-    const answer1 = Array.isArray(answers?.[1]) ? (answers[1][0]?.header ?? "") : "";
-    const answer2 = Array.isArray(answers?.[2]) ? (answers[2][0]?.header ?? "") : "";
-    const answer3 = Array.isArray(answers?.[3]) ? (answers[3][0]?.header ?? "") : "";
+    const answer1 = Array.isArray(answers?.[1])
+      ? (answers[1][0]?.header ?? "")
+      : "";
+    const answer2 = Array.isArray(answers?.[2])
+      ? (answers[2][0]?.header ?? "")
+      : "";
+    const answer3 = Array.isArray(answers?.[3])
+      ? (answers[3][0]?.header ?? "")
+      : "";
 
     if (qNum === 1) {
       return [
@@ -102,7 +120,11 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
     if (next.length) newMap[questionNumber] = next;
     else delete newMap[questionNumber];
 
-    setValue("answers", newMap, { shouldDirty: true, shouldTouch: true, shouldValidate: true });
+    setValue("answers", newMap, {
+      shouldDirty: true,
+      shouldTouch: true,
+      shouldValidate: true,
+    });
     clearErrors("answers");
   };
 
@@ -112,7 +134,9 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
 
     let next: AnswerOption[];
     if (isMultiSelect) {
-      next = exists ? prev.filter((a) => a.header !== opt.header) : [...prev, opt];
+      next = exists
+        ? prev.filter((a) => a.header !== opt.header)
+        : [...prev, opt];
     } else {
       next = exists ? [] : [opt];
     }
@@ -133,7 +157,9 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
     if (!curr || curr.length === 0) {
       setError(`answers.${qNum}` as any, {
         type: "min",
-        message: t("onboarding.validation.required") ?? "Please select at least one option",
+        message:
+          t("onboarding.validation.required") ??
+          "Please select at least one option",
       });
       return false;
     }
@@ -170,7 +196,8 @@ export function useOnboardingQuestionsForm({ params, setStep, submitId = "" }: A
 
   const onNext = () => {
     if (!validateCurrent()) return;
-    if (currentQuestionIndex < totalQuestions - 1) setCurrentQuestionIndex((i) => i + 1);
+    if (currentQuestionIndex < totalQuestions - 1)
+      setCurrentQuestionIndex((i) => i + 1);
   };
 
   const onFinish = async () => {

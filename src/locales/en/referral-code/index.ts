@@ -5,7 +5,8 @@ export default {
   referal: "Refer your friends & Earn more XP",
   referralHistory: "Your Referral History",
   option1: "Invite your friend",
-  option1desc: "Encourage your friend to install the app using your referral link.",
+  option1desc:
+    "Encourage your friend to install the app using your referral link.",
   option2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
   option3: "Earn Your XP",
   option3desc: "Earn more XP when your friend registers Seeds.",

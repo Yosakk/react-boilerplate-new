@@ -17,41 +17,53 @@ type NotifyOptions = {
  * notify.error({ title: "Error", message: "Something went wrong" });
  */
 export function useNotification() {
-  const success = useCallback(({ title = "Success", message, autoClose = 4000 }: NotifyOptions) => {
-    notifications.show({
-      title,
-      message,
-      color: "green",
-      autoClose,
-    });
-  }, []);
+  const success = useCallback(
+    ({ title = "Success", message, autoClose = 4000 }: NotifyOptions) => {
+      notifications.show({
+        title,
+        message,
+        color: "green",
+        autoClose,
+      });
+    },
+    []
+  );
 
-  const error = useCallback(({ title = "Error", message, autoClose = 5000 }: NotifyOptions) => {
-    notifications.show({
-      title,
-      message,
-      color: "red",
-      autoClose,
-    });
-  }, []);
+  const error = useCallback(
+    ({ title = "Error", message, autoClose = 5000 }: NotifyOptions) => {
+      notifications.show({
+        title,
+        message,
+        color: "red",
+        autoClose,
+      });
+    },
+    []
+  );
 
-  const info = useCallback(({ title = "Info", message, autoClose = 4000 }: NotifyOptions) => {
-    notifications.show({
-      title,
-      message,
-      color: "blue",
-      autoClose,
-    });
-  }, []);
+  const info = useCallback(
+    ({ title = "Info", message, autoClose = 4000 }: NotifyOptions) => {
+      notifications.show({
+        title,
+        message,
+        color: "blue",
+        autoClose,
+      });
+    },
+    []
+  );
 
-  const warning = useCallback(({ title = "Warning", message, autoClose = 4000 }: NotifyOptions) => {
-    notifications.show({
-      title,
-      message,
-      color: "yellow",
-      autoClose,
-    });
-  }, []);
+  const warning = useCallback(
+    ({ title = "Warning", message, autoClose = 4000 }: NotifyOptions) => {
+      notifications.show({
+        title,
+        message,
+        color: "yellow",
+        autoClose,
+      });
+    },
+    []
+  );
 
   return { success, error, info, warning };
 }

@@ -1,165 +1,170 @@
-import common from "./common";
-import header from "./header";
-import footer from "./footer";
-import landing from "./landing";
-import followButton from "./follow-button";
-import successPopup from "./success-popup";
-import generalError from "./general-error";
-import errorMessage from "./error-message";
-import forgot from "./forgot";
+// AUTO-GENERATED — do not edit manually.
+// Run `make i18n` to regenerate.
+
+import aboutUs from "./about-us";
+import aboutUsV3 from "./about-us-v3";
+import academy from "./academy";
+import appAds from "./app-ads";
+import articleList from "./article-list";
+import authBoarding from "./auth-boarding";
+import authCarousel from "./auth-carousel";
+import authForgotPass from "./auth-forgot-pass";
+import authLogin from "./auth-login";
+import authPage from "./auth-page";
+import authRegister from "./auth-register";
+import authRegisterAccount from "./auth-register-account";
+import bnc from "./bnc";
+import button from "./button";
+import buyAsset from "./buy-asset";
 import changeEmailAddress from "./change-email-address";
 import changeTelephoneNumber from "./change-telephone-number";
-import inputPin from "./input-pin";
-import sendOTP from "./send-otp";
-import editProfile from "./edit-profile";
-import input from "./input";
-import button from "./button";
-import playerAchievementPopup from "./player-achievement-popup";
-import faq from "./faq";
-import termAndCondition from "./term-and-condition";
-import register from "./register";
-import authPage from "./auth-page";
-import authCarousel from "./auth-carousel";
-import authBoarding from "./auth-boarding";
-import authLogin from "./auth-login";
-import authRegister from "./auth-register";
-import authForgotPass from "./auth-forgot-pass";
-import onboarding from "./onboarding";
-import authRegisterAccount from "./auth-register-account";
-import validation from "./validation";
-import registerPage from "./register-page";
-import ProfilePage from "./profile-page";
-import DeleteReasonAccountPopUp from "./delete-reason-account-pop-up";
-import ChooseBadge from "./choose-badge";
-import RemoveLinkedAccount from "./remove-linked-account";
-import setting from "./setting";
-import AppAds from "./app-ads";
-import DeleteAccount from "./delete-account";
-import LogoutAccount from "./logout-account";
-import ReferralCode from "./referral-code";
-import PlayPayment from "./play-payment";
-import promo from "./promo";
-import temporary from "./temporary";
-import errorPage from "./error-page";
-import Deactive from "./deactive";
-import aboutUs from "./about-us";
-import circle from "./circle";
-import articleList from "./article-list";
-import validationErrors from "./validation-errors";
-import landingPageV2 from "./landing-page-v2";
-import circleSetting from "./circle-setting";
-import circleDetail from "./circle-detail";
-import partner from "./partner";
-import aboutUsV3 from "./about-us-v3";
-import social from "./social";
-import landingV2 from "./landing-v2";
-import playSimulation from "./play-simulation";
-import homepage from "./homepage";
-import chooseCurrency from "./choose-currency";
-import quiz from "./quiz";
-import bnc from "./bnc";
-import micrositeQuiz from "./microsite-quiz";
-import tournament from "./tournament";
-import academy from "./academy";
-import seedsEvent from "./seeds-event";
-import earning from "./earning";
-import buyAsset from "./buy-asset";
-import discover from "./discover";
 import chat from "./chat";
-import play from "./play";
-import openAccount from "./open-account";
-import playCenter from "./play-center";
-import teamBattle from "./team-battle";
+import chooseBadge from "./choose-badge";
+import chooseCurrency from "./choose-currency";
+import circle from "./circle";
+import circleDetail from "./circle-detail";
+import circleSetting from "./circle-setting";
+import common from "./common";
 import danamart from "./danamart";
-import seedsPlan from "./seeds-plan";
-import homepageSubcription from "./homepage-subcription";
+import deactive from "./deactive";
+import deleteAccount from "./delete-account";
+import deleteReasonAccountPopUp from "./delete-reason-account-pop-up";
 import demo from "./demo";
+import discover from "./discover";
+import earning from "./earning";
+import editProfile from "./edit-profile";
+import errorMessage from "./error-message";
+import errorPage from "./error-page";
+import faq from "./faq";
+import followButton from "./follow-button";
+import footer from "./footer";
+import forgot from "./forgot";
+import generalError from "./general-error";
+import header from "./header";
+import homepage from "./homepage";
+import homepageSubcription from "./homepage-subcription";
+import input from "./input";
+import inputPin from "./input-pin";
 import insight from "./insight";
-import loginRevamp from "./login-revamp";
+import landing from "./landing";
+import landingPageV2 from "./landing-page-v2";
 import landingRevamp from "./landing-revamp";
+import landingV2 from "./landing-v2";
+import legal from "./legal";
+import loginRevamp from "./login-revamp";
+import logoutAccount from "./logout-account";
+import micrositeQuiz from "./microsite-quiz";
+import onboarding from "./onboarding";
+import openAccount from "./open-account";
+import partner from "./partner";
+import play from "./play";
+import playCenter from "./play-center";
+import playPayment from "./play-payment";
+import playSimulation from "./play-simulation";
+import playerAchievementPopup from "./player-achievement-popup";
+import profilePage from "./profile-page";
+import promo from "./promo";
+import quiz from "./quiz";
+import referralCode from "./referral-code";
+import register from "./register";
+import registerPage from "./register-page";
+import removeLinkedAccount from "./remove-linked-account";
+import seedsEvent from "./seeds-event";
+import seedsPlan from "./seeds-plan";
+import sendOtp from "./send-otp";
+import setting from "./setting";
+import social from "./social";
 import subscription from "./subscription";
+import successPopup from "./success-popup";
+import teamBattle from "./team-battle";
+import temporary from "./temporary";
+import termAndCondition from "./term-and-condition";
+import tournament from "./tournament";
+import validation from "./validation";
+import validationErrors from "./validation-errors";
 
 const id = {
+  aboutUs,
+  aboutUsV3,
+  academy,
+  appAds,
+  articleList,
+  authBoarding,
+  authCarousel,
+  authForgotPass,
+  authLogin,
+  authPage,
+  authRegister,
+  authRegisterAccount,
+  bnc,
+  button,
+  buyAsset,
+  changeEmailAddress,
+  changeTelephoneNumber,
+  chat,
+  chooseBadge,
+  chooseCurrency,
+  circle,
+  circleDetail,
+  circleSetting,
   ...common,
-  header: header,
-  footer: footer,
-  landing: landing,
-  followButton: followButton,
-  successPopup: successPopup,
-  generalError: generalError,
-  errorMessage: errorMessage,
-  forgot: forgot,
-  changeEmailAddress: changeEmailAddress,
-  changeTelephoneNumber: changeTelephoneNumber,
-  inputPin: inputPin,
-  sendOTP: sendOTP,
-  editProfile: editProfile,
-  input: input,
-  button: button,
-  playerAchievementPopup: playerAchievementPopup,
-  faq: faq,
-  termAndCondition: termAndCondition,
-  register: register,
-  authPage: authPage,
-  authCarousel: authCarousel,
-  authBoarding: authBoarding,
-  authLogin: authLogin,
-  authRegister: authRegister,
-  authForgotPass: authForgotPass,
-  onboarding: onboarding,
-  authRegisterAccount: authRegisterAccount,
-  validation: validation,
-  registerPage: registerPage,
-  ProfilePage: ProfilePage,
-  DeleteReasonAccountPopUp: DeleteReasonAccountPopUp,
-  ChooseBadge: ChooseBadge,
-  RemoveLinkedAccount: RemoveLinkedAccount,
-  setting: setting,
-  AppAds: AppAds,
-  DeleteAccount: DeleteAccount,
-  LogoutAccount: LogoutAccount,
-  ReferralCode: ReferralCode,
-  PlayPayment: PlayPayment,
-  promo: promo,
-  temporary: temporary,
-  errorPage: errorPage,
-  Deactive: Deactive,
-  aboutUs: aboutUs,
-  circle: circle,
-  articleList: articleList,
-  validationErrors: validationErrors,
-  landingPageV2: landingPageV2,
-  circleSetting: circleSetting,
-  circleDetail: circleDetail,
-  partner: partner,
-  aboutUsV3: aboutUsV3,
-  social: social,
-  landingV2: landingV2,
-  playSimulation: playSimulation,
-  homepage: homepage,
-  chooseCurrency: chooseCurrency,
-  quiz: quiz,
-  bnc: bnc,
-  micrositeQuiz: micrositeQuiz,
-  tournament: tournament,
-  academy: academy,
-  seedsEvent: seedsEvent,
-  earning: earning,
-  buyAsset: buyAsset,
-  discover: discover,
-  chat: chat,
-  play: play,
-  openAccount: openAccount,
-  playCenter: playCenter,
-  teamBattle: teamBattle,
-  danamart: danamart,
-  seedsPlan: seedsPlan,
-  homepageSubcription: homepageSubcription,
-  demo: demo,
-  insight: insight,
-  loginRevamp: loginRevamp,
-  landingRevamp: landingRevamp,
-  subscription: subscription,
+  danamart,
+  deactive,
+  deleteAccount,
+  deleteReasonAccountPopUp,
+  demo,
+  discover,
+  earning,
+  editProfile,
+  errorMessage,
+  errorPage,
+  faq,
+  followButton,
+  footer,
+  forgot,
+  generalError,
+  header,
+  homepage,
+  homepageSubcription,
+  input,
+  inputPin,
+  insight,
+  landing,
+  landingPageV2,
+  landingRevamp,
+  landingV2,
+  legal,
+  loginRevamp,
+  logoutAccount,
+  micrositeQuiz,
+  onboarding,
+  openAccount,
+  partner,
+  play,
+  playCenter,
+  playPayment,
+  playSimulation,
+  playerAchievementPopup,
+  profilePage,
+  promo,
+  quiz,
+  referralCode,
+  register,
+  registerPage,
+  removeLinkedAccount,
+  seedsEvent,
+  seedsPlan,
+  sendOtp,
+  setting,
+  social,
+  subscription,
+  successPopup,
+  teamBattle,
+  temporary,
+  termAndCondition,
+  tournament,
+  validation,
+  validationErrors,
 } as const;
 
 export default id;

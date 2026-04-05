@@ -12,13 +12,19 @@ type Props = {
   onSkip?: () => void;
 };
 
-export default function AuthAgeStep({ onSubmit, loading = false, onBack, onSkip }: Props) {
+export default function AuthAgeStep({
+  onSubmit,
+  loading = false,
+  onBack,
+  onSkip,
+}: Props) {
   const { t } = useTranslation();
   const [age, setAge] = useState<string>("");
 
   const numericAge = Number(age);
   const hasValue = age !== "";
-  const isMinimumAge = hasValue && Number.isFinite(numericAge) && numericAge < 12;
+  const isMinimumAge =
+    hasValue && Number.isFinite(numericAge) && numericAge < 12;
   const isValid = hasValue && Number.isFinite(numericAge) && numericAge >= 12;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -51,9 +57,15 @@ export default function AuthAgeStep({ onSubmit, loading = false, onBack, onSkip 
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4 md:mt-0">
         <div className="w-full md:w-[60%] flex justify-center items-center bg-[#7EFFA8] relative rounded-2xl p-2 gap-2 mb-12">
-          <img src={SeedyChat} alt="SeedyChat" className="w-[40px] h-auto shrink-0" />
+          <img
+            src={SeedyChat}
+            alt="SeedyChat"
+            className="w-[40px] h-auto shrink-0"
+          />
           <div className="w-full flex flex-col justify-start items-start">
-            <TypingBubble message={[{ text: `${t("authRegisterAccount.page7.text1")}` }]} />
+            <TypingBubble
+              message={[{ text: `${t("authRegisterAccount.page7.text1")}` }]}
+            />
             <img
               src={Polygon}
               alt="Polygon"
@@ -63,7 +75,11 @@ export default function AuthAgeStep({ onSubmit, loading = false, onBack, onSkip 
         </div>
 
         <div>
-          <img src={SeedyBirthdate} alt="SeedyBirthDate" className="w-[200px] h-auto shrink-0" />
+          <img
+            src={SeedyBirthdate}
+            alt="SeedyBirthDate"
+            className="w-[200px] h-auto shrink-0"
+          />
         </div>
 
         <div className="w-full md:w-[80%] flex flex-col gap-2 justify-center items-center mt-8">

@@ -82,11 +82,19 @@ export default function AuthOTP({
   const otherMethodLabel = method === "whatsapp" ? "SMS" : "Whatsapp";
 
   return (
-    <section className={`w-full flex items-center justify-center py-10 ${className}`}>
-      <form onSubmit={submit} className="w-full text-center px-6 sm:px-8" noValidate>
+    <section
+      className={`w-full flex items-center justify-center py-10 ${className}`}
+    >
+      <form
+        onSubmit={submit}
+        className="w-full text-center px-6 sm:px-8"
+        noValidate
+      >
         <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
-          {t("authRegisterAccount.page4.text1")} {t("authRegisterAccount.page4.text2")}{" "}
-          {method === "whatsapp" ? "Whatsapp" : "SMS"} {t("authRegisterAccount.page4.text11")}
+          {t("authRegisterAccount.page4.text1")}{" "}
+          {t("authRegisterAccount.page4.text2")}{" "}
+          {method === "whatsapp" ? "Whatsapp" : "SMS"}{" "}
+          {t("authRegisterAccount.page4.text11")}
         </h1>
 
         <p className="mt-2 text-neutral-500">
@@ -143,7 +151,9 @@ export default function AuthOTP({
             }`}
           >
             {t("authRegisterAccount.page4.text8")}
-            <span className="lowercase mr-1">{t("authRegisterAccount.page4.text9")}</span>
+            <span className="lowercase mr-1">
+              {t("authRegisterAccount.page4.text9")}
+            </span>
             {otherMethodLabel}
           </button>
         </p>
@@ -159,7 +169,9 @@ export default function AuthOTP({
               "shadow-[0_6px_18px_rgba(23,124,98,0.25)]",
             ].join(" ")}
           >
-            {loading ? t("common.loading") : t("authRegisterAccount.page4.text10")}
+            {loading
+              ? t("common.loading")
+              : t("authRegisterAccount.page4.text10")}
           </button>
         </div>
       </form>

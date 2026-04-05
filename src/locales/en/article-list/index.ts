@@ -18,7 +18,8 @@ export default {
   text17: "Contributor",
   text18: "Categories",
   text19: "Sorry, this category isn’t available",
-  text20: "Check out other related articles — you might find some fresh insights!",
+  text20:
+    "Check out other related articles — you might find some fresh insights!",
   text21: "Latest Post",
   text22: "by",
   text23: "Search category...",

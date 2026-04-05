@@ -54,7 +54,8 @@ export default {
   notes: "Catatan",
   seen: "Dilihat",
   muteNotificationTitle: "Yakin mau membisukan notifikasi ini?",
-  muteNotificationSubtitle: "Peserta lain tidak akan tau jika kamu membisukan chat ini",
+  muteNotificationSubtitle:
+    "Peserta lain tidak akan tau jika kamu membisukan chat ini",
   muted: {
     text1: "Notifikasi dibisukan selama 8 jam",
     text2: "Notifikasi dibisukan selama satu minggu",

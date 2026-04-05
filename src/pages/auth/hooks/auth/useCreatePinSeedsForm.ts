@@ -31,7 +31,9 @@ export function useCreateSeedsPin({
   const [error, setError] = useState<string | null>(null);
 
   const canContinue =
-    (step === "create" ? pin.length : confirmPin.length) === max && !loading && !disabled;
+    (step === "create" ? pin.length : confirmPin.length) === max &&
+    !loading &&
+    !disabled;
 
   const currentTitle = useMemo(
     () =>
@@ -49,7 +51,10 @@ export function useCreateSeedsPin({
   );
   const ctaLabel = useMemo(() => t("authRegisterAccount.page6.text7"), [t]);
 
-  const focus = useCallback(() => requestAnimationFrame(() => pinRef.current?.focus()), []);
+  const focus = useCallback(
+    () => requestAnimationFrame(() => pinRef.current?.focus()),
+    []
+  );
 
   const resetAndFocus = useCallback(() => {
     if (step === "create") {
@@ -85,7 +90,18 @@ export function useCreateSeedsPin({
       methods.setValue("pin", pin, { shouldDirty: true });
       onSubmit?.(pin);
     },
-    [canContinue, withConfirm, methods, onSubmit, pin, step, confirmPin, t, focus, resetAndFocus]
+    [
+      canContinue,
+      withConfirm,
+      methods,
+      onSubmit,
+      pin,
+      step,
+      confirmPin,
+      t,
+      focus,
+      resetAndFocus,
+    ]
   );
 
   const goEdit = useCallback(() => {

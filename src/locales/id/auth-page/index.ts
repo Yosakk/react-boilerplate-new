@@ -1,6 +1,7 @@
 export default {
   welcoming: "Selamat datang di Seeds",
-  description: "Mulai dan perluas perjalanan investasi Anda bersama teman-teman!",
+  description:
+    "Mulai dan perluas perjalanan investasi Anda bersama teman-teman!",
   agreement: "Dengan mengklik Daftar, Anda setuju dengan ",
   tnC: "Syarat & Ketentuan Seeds",
   guest: "Masuk sebagai Tamu",

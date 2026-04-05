@@ -8,10 +8,11 @@ export const authLoginExistingPageRouteName = "/auth/login/existing";
 
 const LoginExisting: React.FC = () => {
   const { t } = useTranslation();
-  const { userNameExisting, openPin, setOpenPin, dialogBindings } = useExistingLoginForm({
-    autoNavigate: true,
-    onSuccess: undefined,
-  });
+  const { userNameExisting, openPin, setOpenPin, dialogBindings } =
+    useExistingLoginForm({
+      autoNavigate: true,
+      onSuccess: undefined,
+    });
 
   return (
     <div className="flex flex-col items-center px-4 md:px-0 max-w-[640px] w-full mx-auto">

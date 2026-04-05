@@ -1,6 +1,6 @@
 import { useForm, type SubmitHandler } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { useCallback, useMemo, useState } from "react";
 import type { LoginReqI } from "@/_interfaces/auth.interfaces";
@@ -10,7 +10,7 @@ import { saveTokenAuth } from "@/store/auth";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch } from "@/store";
 import { getDeviceMeta } from "@/_helper/auth-device";
-import { parsePhoneNumberFromString, isValidPhoneNumber } from "libphonenumber-js";
+import { parsePhoneNumberFromString } from "libphonenumber-js";
 
 type FormValues = {
   identity: string;
@@ -34,59 +34,55 @@ const useLoginForm = (opts: UseLoginFormOpts = {}) => {
   const { t } = useTranslation();
   const { os_name, platform } = getDeviceMeta();
 
-  const schema: yup.ObjectSchema<FormValues> = useMemo(() => {
-    const basePassword = yup
+  const schema = useMemo(() => {
+    const basePassword = z
       .string()
-      .required(t("authLogin.validation.blank"))
+      .min(1, t("authLogin.validation.blank"))
       .min(8, t("authLogin.validation.password"))
-      .matches(/[A-Z]/, t("authLogin.validation.password"))
-      .matches(/[a-z]/, t("authLogin.validation.password"));
+      .regex(/[A-Z]/, t("authLogin.validation.password"))
+      .regex(/[a-z]/, t("authLogin.validation.password"));
 
     if (isEmail) {
-      return yup
-        .object({
-          identity: yup
-            .string()
-            .transform((v) => (v ?? "").trim())
-            .required(t("authLogin.validation.blank"))
-            .email(t("authLogin.validation.identityEmailInvalid")),
-          password: basePassword,
-          country: yup.string().optional(),
-        })
-        .required();
+      return z.object({
+        identity: z
+          .string()
+          .transform((v) => v.trim())
+          .pipe(
+            z
+              .string()
+              .min(1, t("authLogin.validation.blank"))
+              .email(t("authLogin.validation.identityEmailInvalid"))
+          ),
+        password: basePassword,
+        country: z.string().optional(),
+      });
     }
 
-    return yup
-      .object({
-        identity: yup
-          .string()
-          .transform((v) => (v ?? "").trim())
-          .required(t("authLogin.validation.blank"))
-          .test(
-            "phone-country-aware",
-            t("authLogin.validation.identityPhoneNumberValid"),
-            function (val) {
+    return z.object({
+      identity: z
+        .string()
+        .transform((v) => v.trim())
+        .pipe(
+          z
+            .string()
+            .min(1, t("authLogin.validation.blank"))
+            .refine((val) => {
               if (!val) return false;
               const phone = `+${val}`;
-              const country = (this.parent?.country || "").toUpperCase();
               try {
-                if (country) {
-                  return isValidPhoneNumber(phone, country as any);
-                }
                 const p = parsePhoneNumberFromString(phone);
                 return p?.isValid() ?? false;
               } catch {
                 return false;
               }
-            }
-          ),
-        password: basePassword,
-        country: yup.string().optional(),
-      })
-      .required();
+            }, t("authLogin.validation.identityPhoneNumberValid"))
+        ),
+      password: basePassword,
+      country: z.string().optional(),
+    });
   }, [t, isEmail]);
 
-  const resolver = useMemo(() => yupResolver(schema), [schema]);
+  const resolver = useMemo(() => zodResolver(schema), [schema]);
 
   const {
     handleSubmit,
@@ -102,7 +98,11 @@ const useLoginForm = (opts: UseLoginFormOpts = {}) => {
     mode: "onChange",
     reValidateMode: "onChange",
     resolver,
-    defaultValues: { identity: "", password: "", country: "" },
+    defaultValues: {
+      identity: "",
+      password: "",
+      country: "",
+    },
   });
 
   const identityVal = watch("identity") ?? "";
@@ -111,13 +111,15 @@ const useLoginForm = (opts: UseLoginFormOpts = {}) => {
   const selectMethod = useCallback(
     (m: "email" | "phone") => {
       setMethod(m);
-      setValue("identity", "", { shouldDirty: true, shouldValidate: false });
+      setValue("identity", "", {
+        shouldDirty: true,
+        shouldValidate: false,
+      });
       clearErrors("identity");
     },
     [setValue, clearErrors]
   );
 
-  /** Password strength: 0–4 */
   const passwordStrength = useMemo((): number => {
     if (!passwordVal) return 0;
     let score = 0;

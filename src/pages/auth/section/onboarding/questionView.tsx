@@ -1,4 +1,7 @@
-import type { AnswerOption, OnboardingI } from "@/_interfaces/onboarding.interfaces";
+import type {
+  AnswerOption,
+  OnboardingI,
+} from "@/_interfaces/onboarding.interfaces";
 import Polygon from "@/assets/onboarding/polygon.png";
 
 import TypingBubble from "./typingBubble";
@@ -81,7 +84,11 @@ export default function OnboardingQuestionsView({
       </div>
 
       <div className="flex gap-2 justify-center items-center mt-2">
-        <img src={SeedyLens} alt="SeedyLens" className="w-[80px] md:w-[150px] shrink-0" />
+        <img
+          src={SeedyLens}
+          alt="SeedyLens"
+          className="w-[80px] md:w-[150px] shrink-0"
+        />
         <div>
           <div className="w-fit h-fit relative bg-[#7EFFA8] rounded-md">
             <div className="w-full md:w-[350px] font-poppins text-neutral-medium font-medium text-sm md:text-md p-4">
@@ -96,7 +103,9 @@ export default function OnboardingQuestionsView({
 
           <div className="hidden md:flex justify-start items-center gap-2 mt-2">
             <img src={BlueWarning} alt="info" className="w-[20px]" />
-            <p className="font-poppins text-sm text-[#2B4CCD]">{helpNoteText}</p>
+            <p className="font-poppins text-sm text-[#2B4CCD]">
+              {helpNoteText}
+            </p>
           </div>
         </div>
       </div>
@@ -121,7 +130,9 @@ export default function OnboardingQuestionsView({
           .join(" ")}
       >
         {options.map((opt) => {
-          const selected = selectedForThisQuestion.some((a) => a.header === opt.header);
+          const selected = selectedForThisQuestion.some(
+            (a) => a.header === opt.header
+          );
           return (
             <div
               key={opt.header}
@@ -139,11 +150,17 @@ export default function OnboardingQuestionsView({
                 onClick={() => onToggleOption(opt)}
                 className={[
                   "flex flex-col gap-0 p-3 md:p-4 cursor-pointer rounded-md text-left bg-[#F9F9F9] hover:bg-white duration-200 w-full h-full",
-                  qNum === 3 ? "justify-start items-start" : "justify-center items-center",
+                  qNum === 3
+                    ? "justify-start items-start"
+                    : "justify-center items-center",
                 ].join(" ")}
               >
                 {!!opt.image && (
-                  <img src={opt.image} alt="option" className="w-[48px] md:w-[70px] h-auto" />
+                  <img
+                    src={opt.image}
+                    alt="option"
+                    className="w-[48px] md:w-[70px] h-auto"
+                  />
                 )}
 
                 {qNum !== 5 ? (
@@ -156,7 +173,8 @@ export default function OnboardingQuestionsView({
                   >
                     {opt.header}
                   </p>
-                ) : opt.header === "Friends/ Family" || opt.header === "Teman/ Keluarga" ? (
+                ) : opt.header === "Friends/ Family" ||
+                  opt.header === "Teman/ Keluarga" ? (
                   <p className="text-xs md:text-sm text-center font-medium bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
                     {opt.header}
                   </p>

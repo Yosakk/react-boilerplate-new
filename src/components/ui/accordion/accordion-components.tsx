@@ -1,5 +1,10 @@
 import React from "react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "./accordion";
 
 export interface AccordionItemData {
   value: string;
@@ -27,7 +32,10 @@ const AccordionComponent: React.FC<AccordionComponentProps> = ({
   const accordionProps =
     type === "single"
       ? { type: "single" as const, collapsible, defaultValue }
-      : { type: "multiple" as const, defaultValue: defaultValue ? [defaultValue] : undefined };
+      : {
+          type: "multiple" as const,
+          defaultValue: defaultValue ? [defaultValue] : undefined,
+        };
 
   return (
     <Accordion {...accordionProps} className={className}>

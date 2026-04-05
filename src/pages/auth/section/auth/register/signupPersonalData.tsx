@@ -4,7 +4,10 @@ import CreateSeedsPinSection from "./authPin";
 import AuthAgeStep from "./authAge";
 import AuthAvatar from "./authAvatar";
 import ReferralDialog from "./authReferal";
-import { SignupFormProvider, useSignupForm } from "@/pages/auth/hooks/auth/useSignUpForm";
+import {
+  SignupFormProvider,
+  useSignupForm,
+} from "@/pages/auth/hooks/auth/useSignUpForm";
 import { useAppSelector, type RootState } from "@/store";
 import AuthOTPSection from "./phone/authOTP";
 import AuthChooseOTP from "./phone/authChooseOTP";
@@ -140,13 +143,19 @@ export default function SignupPersonalPage() {
   const { method } = useParams<{ method: string }>();
   const signupType = method === "phone" ? "phone" : "email";
 
-  const submissionId = useAppSelector((s: RootState) => s.onboarding.submissionId);
+  const submissionId = useAppSelector(
+    (s: RootState) => s.onboarding.submissionId
+  );
   const location = useLocation();
   const navState = location.state || null;
   const mode = navState?.mode === "sso" ? "sso" : "normal";
 
   return (
-    <SignupFormProvider signupType={signupType} onboardingId={submissionId || ""} mode={mode}>
+    <SignupFormProvider
+      signupType={signupType}
+      onboardingId={submissionId || ""}
+      mode={mode}
+    >
       <SignupWrapper />
     </SignupFormProvider>
   );

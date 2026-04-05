@@ -28,7 +28,8 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
   const { t } = useTranslation();
 
   const [internalMethod, setInternalMethod] = React.useState<OTPMethod>("");
-  const isControlled = typeof method !== "undefined" && typeof setMethod === "function";
+  const isControlled =
+    typeof method !== "undefined" && typeof setMethod === "function";
   const selected = isControlled ? (method as OTPMethod) : internalMethod;
 
   const choose = (m: Exclude<OTPMethod, "">) => {
@@ -43,9 +44,15 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
   };
 
   return (
-    <div className={`${className ?? ""} flex flex-col items-center mt-8 mb-16 md:mb-0`}>
+    <div
+      className={`${className ?? ""} flex flex-col items-center mt-8 mb-16 md:mb-0`}
+    >
       <div className="w-full flex justify-start">
-        <img src={Backward} alt="Backward" onClick={() => !disabled && onBack?.()} />
+        <img
+          src={Backward}
+          alt="Backward"
+          onClick={() => !disabled && onBack?.()}
+        />
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4 md:mt-0">
@@ -68,7 +75,11 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
           >
             <div className="flex justify-start items-center gap-4 bg-[#F9F9F9] p-4 md:p-6 rounded-md">
               <div className="flex justify-center items-center w-[50px] h-auto">
-                <img src={Whatsapp} alt="WhatsApp" className="w-full h-auto shrink-0" />
+                <img
+                  src={Whatsapp}
+                  alt="WhatsApp"
+                  className="w-full h-auto shrink-0"
+                />
               </div>
               <div className="flex flex-col justify-start items-start">
                 <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md text-left">
@@ -96,7 +107,11 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
           >
             <div className="flex justify-start items-center gap-4 bg-[#F9F9F9] p-4 md:p-6 rounded-md">
               <div className="flex justify-center items-center w-[50px] h-auto">
-                <img src={Messenger} alt="SMS" className="w-full h-auto shrink-0" />
+                <img
+                  src={Messenger}
+                  alt="SMS"
+                  className="w-full h-auto shrink-0"
+                />
               </div>
               <div className="flex flex-col justify-start items-start">
                 <p className="font-poppins text-neutral-medium font-semibold text-sm md:text-md text-left">

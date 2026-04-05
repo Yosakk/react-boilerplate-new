@@ -21,5 +21,6 @@ const onboarding = createSlice({
   },
 });
 
-export const { setOnboardingSubmissionId, resetOnboarding } = onboarding.actions;
+export const { setOnboardingSubmissionId, resetOnboarding } =
+  onboarding.actions;
 export default onboarding.reducer;

@@ -23,7 +23,8 @@ export default {
     friendsTitle: "Hanya Teman",
     friendsDesc: "Pengikut yang kamu ikuti balik",
     premiumTitle: "Premium",
-    premiumDesc: "Hanya pembeli konten premium yang bisa melihat detail postingan",
+    premiumDesc:
+      "Hanya pembeli konten premium yang bisa melihat detail postingan",
   },
   pieSection: {
     title: "Judul",
@@ -38,14 +39,17 @@ export default {
   },
   errorState: {
     image1: "Gambar kamu melebihi batas ukuran 5MB.",
-    image2: "Kamu hanya bisa memasukan gambar dalam format JPG, JPEG, PNG, .HEIC, .HEIF",
+    image2:
+      "Kamu hanya bisa memasukan gambar dalam format JPG, JPEG, PNG, .HEIC, .HEIF",
     video1: "Kamu hanya bisa memasukan video dalam format .MOV dan .MP4.",
     video2: "Kamu hanya bisa memasukan video dengan durasi maksimum 60 detik.",
     video3: "Video kamu melebihi batas ukuran 20MB.",
     thread1: "Teks melebihi 500 karakter.",
-    thread2: "Maaf, kami tidak bisa menemukan URL kamu. Silakan masukkan URL yang benar.",
+    thread2:
+      "Maaf, kami tidak bisa menemukan URL kamu. Silakan masukkan URL yang benar.",
     thread3: "Thread kamu melebihi batas karakter maksimum.",
-    poll1: "Pertanyaan kamu melebihi batas karakter maksimum. Mohon ketik ulang pertanyaan kamu.",
+    poll1:
+      "Pertanyaan kamu melebihi batas karakter maksimum. Mohon ketik ulang pertanyaan kamu.",
     poll2: "Tanggal akhir tidak boleh kurang dari tanggal hari ini.",
   },
   reportUser: {
@@ -135,8 +139,10 @@ export default {
     cancel: "Batal",
     shareWin:
       "Kesuksesan kamu telah dibagikan! Teruslah menginspirasi orang lain dengan pengetahuan finansialmu!",
-    shareLose: "Usaha kamu telah dibagikan! Teruslah belajar dan tumbuh setiap hari! ",
-    postWin: "Saya berhasil menjawab daily quiz hari ini dengan benar! Senang sekali!",
+    shareLose:
+      "Usaha kamu telah dibagikan! Teruslah belajar dan tumbuh setiap hari! ",
+    postWin:
+      "Saya berhasil menjawab daily quiz hari ini dengan benar! Senang sekali!",
     postLose: "Saya salah menjawab daily hari ini. tapi saya belajar!",
   },
 } as const;
