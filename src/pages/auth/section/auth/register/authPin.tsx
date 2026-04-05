@@ -49,7 +49,7 @@ export default function CreateSeedsPinSection({
           loading="lazy"
         />
 
-        <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
+        <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent">
           {currentTitle}
         </h1>
         <p className="mt-2 text-neutral-500">{currentSubtitle}</p>
@@ -99,10 +99,10 @@ export default function CreateSeedsPinSection({
             disabled={!canContinue}
             className={[
               "w-full py-3 rounded-2xl font-medium cursor-pointer",
-              "bg-gradient-to-b from-[#3AC4A0] to-[#177C62] text-white",
+              "bg-gradient-to-b from-seeds-green-light to-seeds-green text-white",
               "disabled:opacity-50 disabled:cursor-not-allowed",
               "shadow-[0_6px_18px_rgba(23,124,98,0.25)]",
-              "transition-colors duration-200 hover:from-[#2ea884] hover:to-[#0f5b47]",
+              "transition-colors duration-200 hover:from-seeds-green-accent hover:to-seeds-green-dark",
             ].join(" ")}
           >
             {loading ? "Processing..." : ctaLabel}

@@ -8,6 +8,7 @@ import {
 } from "@reduxjs/toolkit/query/react";
 import { deleteTokenAuth, saveTokenAuth } from "@/store/auth";
 import { Mutex } from "async-mutex";
+import { IS_MOCK, mockBaseQuery } from "./mock/handler";
 
 // ── Types ─────────────────────────────────────────────────────────────
 export interface ApiResponseI<T> {
@@ -110,7 +111,7 @@ const baseQueryWithInterceptor: BaseQueryFn<
 
 // ── API slice ─────────────────────────────────────────────────────────
 export const Api = createApi({
-  baseQuery: baseQueryWithInterceptor,
+  baseQuery: IS_MOCK ? mockBaseQuery : baseQueryWithInterceptor,
   reducerPath: "api",
   tagTypes: ["User"],
   endpoints: () => ({}),

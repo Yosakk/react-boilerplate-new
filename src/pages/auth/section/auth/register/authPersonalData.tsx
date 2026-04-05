@@ -58,7 +58,7 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
       )}
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%]">
-        <p className="font-poppins font-semibold bg-gradient-to-b text-center from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-2xl md:text-3xl mt-4">
+        <p className="font-poppins font-semibold bg-gradient-to-b text-center from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-2xl md:text-3xl mt-4">
           {t("authRegisterAccount.page2.text1")}
         </p>
         <p className="font-poppins text-neutral-medium font-medium text-sm md:text-md text-center mt-2">
@@ -166,7 +166,7 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
             alt="BlueWarning"
             className="w-[20px] mt-[1px]"
           />
-          <p className="font-poppins text-sm text-[#2B4CCD]">
+          <p className="font-poppins text-sm text-seeds-blue">
             {t("authRegisterAccount.page2.text6")}
           </p>
         </div>
@@ -228,7 +228,7 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
             </span>
             <span
               className="font-semibold font-poppins cursor-pointer"
-              style={{ color: "#2B4CCD" }}
+              style={{ color: "var(--seeds-blue)" }}
               onClick={openTncFromSignup}
             >
               {t("authRegisterAccount.page2.text8")}{" "}
@@ -244,17 +244,17 @@ export default function AuthPersonalData({ onPrepared }: SignupProps) {
           </div>
         )}
 
-        <div className="w-full md:w-[80%] p-[2px] rounded-xl bg-gradient-to-b from-[#5EFF95] to-[#70FFA0] mt-8">
+        <div className="w-full md:w-[80%] p-[2px] rounded-xl bg-gradient-to-b from-seeds-glow to-seeds-glow-mid mt-8">
           <button
             type="submit"
             disabled={submitting}
             className="
                             font-poppins text-sm w-full
-                            bg-gradient-to-b from-[#3AC4A0] to-[#177C62]
+                            bg-gradient-to-b from-seeds-green-light to-seeds-green
                             text-white rounded-xl capitalize
                             disabled:opacity-60 p-3 cursor-pointer
                             transition-colors duration-200
-                            hover:from-[#2ea884] hover:to-[#0f5b47]
+                            hover:from-seeds-green-accent hover:to-seeds-green-dark
                         "
           >
             {submitting

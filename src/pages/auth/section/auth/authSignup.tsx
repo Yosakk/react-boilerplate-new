@@ -65,7 +65,7 @@ const AuthSignUp = () => {
           />
         </div>
       </div>
-      <p className="font-poppins font-semibold bg-gradient-to-b text-center from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-2xl md:text-3xl">
+      <p className="font-poppins font-semibold bg-gradient-to-b text-center from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-2xl md:text-3xl">
         {t("authRegisterAccount.page1.text1")}
       </p>
       <p className="font-poppins text-neutral-medium font-medium text-sm md:text-md text-center mt-3">
@@ -102,7 +102,7 @@ const AuthSignUp = () => {
         </p>
         <Link
           to="login/existing"
-          className="font-medium font-poppins bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent my-2 cursor-pointer break-words"
+          className="font-medium font-poppins bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent my-2 cursor-pointer break-words"
         >
           {t("authRegisterAccount.page1.text6")}
         </Link>
@@ -128,7 +128,7 @@ const AuthSignUp = () => {
             <button
               type="button"
               onClick={handleGoOnboarding}
-              className="px-4 py-2 rounded-lg text-white cursor-pointer text-sm bg-gradient-to-b from-[#3AC4A0] to-[#177C62]"
+              className="px-4 py-2 rounded-lg text-white cursor-pointer text-sm bg-gradient-to-b from-seeds-green-light to-seeds-green"
             >
               {t("authRegister.authGuard.modal.goOnboarding")}
             </button>

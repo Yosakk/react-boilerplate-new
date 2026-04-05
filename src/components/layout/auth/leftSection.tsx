@@ -13,7 +13,7 @@ export default function AuthLeftSection({ className }: Props): JSX.Element {
   return (
     <section
       className={cn(
-        "relative hidden md:grid place-items-center bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
+        "relative hidden md:grid place-items-center bg-gradient-to-b from-seeds-green-light to-seeds-green",
         className
       )}
     >

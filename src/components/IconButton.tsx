@@ -31,7 +31,7 @@ export default function IconButton({
 
   const variantCls =
     variant === "filled"
-      ? "bg-[#EFEFEF] hover:bg-[#c9c9c9] border-[#FFFFFFC2]"
+      ? "bg-seeds-neutral-150 hover:bg-seeds-neutral-250 border-seeds-overlay-white"
       : "bg-transparent border-gray-300 hover:border-gray-700";
 
   return (
@@ -44,7 +44,7 @@ export default function IconButton({
         "flex justify-center items-center gap-2 px-4 border-2 transition-colors duration-200 select-none cursor-pointer",
         "text-sm md:text-md font-poppins font-medium text-center",
         "min-h-[44px] md:min-h-0",
-        "focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3AC4A0] focus-visible:ring-offset-2",
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-seeds-green-light focus-visible:ring-offset-2",
         "disabled:opacity-60 disabled:cursor-not-allowed",
         shape,
         sizing,

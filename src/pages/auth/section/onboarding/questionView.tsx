@@ -65,14 +65,14 @@ export default function OnboardingQuestionsView({
       <div className="flex gap-2 justify-center items-center">
         {totalQuestions > 0 && (
           <div
-            className="w-full h-1.5 md:h-2 bg-[#E9E9E9]/30 rounded-full overflow-hidden"
+            className="w-full h-1.5 md:h-2 bg-seeds-neutral-200/30 rounded-full overflow-hidden"
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={totalQuestions}
             aria-valuenow={currentQuestionIndex + 1}
           >
             <div
-              className="h-full rounded-full bg-gradient-to-r from-[#3AC4A0] to-[#177C62] transition-[width] duration-500 ease-out relative"
+              className="h-full rounded-full bg-gradient-to-r from-seeds-green-light to-seeds-green transition-[width] duration-500 ease-out relative"
               style={{
                 width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%`,
               }}
@@ -90,7 +90,7 @@ export default function OnboardingQuestionsView({
           className="w-[80px] md:w-[150px] shrink-0"
         />
         <div>
-          <div className="w-fit h-fit relative bg-[#7EFFA8] rounded-md">
+          <div className="w-fit h-fit relative bg-seeds-glow-soft rounded-md">
             <div className="w-full md:w-[350px] font-poppins text-neutral-medium font-medium text-sm md:text-md p-4">
               <TypingBubble key={typingKey} message={bubbleMessage} />
             </div>
@@ -103,7 +103,7 @@ export default function OnboardingQuestionsView({
 
           <div className="hidden md:flex justify-start items-center gap-2 mt-2">
             <img src={BlueWarning} alt="info" className="w-[20px]" />
-            <p className="font-poppins text-sm text-[#2B4CCD]">
+            <p className="font-poppins text-sm text-seeds-blue">
               {helpNoteText}
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function OnboardingQuestionsView({
       {/* mobile-only info row size tweaks */}
       <div className="flex md:hidden justify-start items-center gap-2 mt-2">
         <img src={BlueWarning} alt="info" className="w-[18px]" />
-        <p className="font-poppins text-xs text-[#2B4CCD]">{helpNoteText}</p>
+        <p className="font-poppins text-xs text-seeds-blue">{helpNoteText}</p>
       </div>
 
       <div
@@ -139,8 +139,8 @@ export default function OnboardingQuestionsView({
               className={[
                 "p-[3px] rounded-lg",
                 selected
-                  ? "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]"
-                  : "bg-[#E7E7E7A6] hover:bg-gradient-to-b hover:from-[#3AC4A0] hover:to-[#177C62] duration-500",
+                  ? "bg-gradient-to-b from-seeds-green-light to-seeds-green"
+                  : "bg-seeds-overlay-light hover:bg-gradient-to-b hover:from-seeds-green-light hover:to-seeds-green duration-500",
                 qNum === 5 && "aspect-square",
               ]
                 .filter(Boolean)
@@ -149,7 +149,7 @@ export default function OnboardingQuestionsView({
               <button
                 onClick={() => onToggleOption(opt)}
                 className={[
-                  "flex flex-col gap-0 p-3 md:p-4 cursor-pointer rounded-md text-left bg-[#F9F9F9] hover:bg-white duration-200 w-full h-full",
+                  "flex flex-col gap-0 p-3 md:p-4 cursor-pointer rounded-md text-left bg-seeds-neutral-50 hover:bg-white duration-200 w-full h-full",
                   qNum === 3
                     ? "justify-start items-start"
                     : "justify-center items-center",
@@ -166,7 +166,7 @@ export default function OnboardingQuestionsView({
                 {qNum !== 5 ? (
                   <p
                     className={[
-                      "font-medium bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent",
+                      "font-medium bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent",
                       qNum === 3 ? "text-left" : "text-center mt-1",
                       "text-sm md:text-base",
                     ].join(" ")}
@@ -175,7 +175,7 @@ export default function OnboardingQuestionsView({
                   </p>
                 ) : opt.header === "Friends/ Family" ||
                   opt.header === "Teman/ Keluarga" ? (
-                  <p className="text-xs md:text-sm text-center font-medium bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
+                  <p className="text-xs md:text-sm text-center font-medium bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent">
                     {opt.header}
                   </p>
                 ) : null}
@@ -200,12 +200,12 @@ export default function OnboardingQuestionsView({
       <div className="flex justify-between items-center mt-6">
         <p
           onClick={onPrev}
-          className="font-poppins font-semibold bg-gradient-to-b text-center from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent cursor-pointer hidden md:flex"
+          className="font-poppins font-semibold bg-gradient-to-b text-center from-seeds-green-light to-seeds-green bg-clip-text text-transparent cursor-pointer hidden md:flex"
         >
           {t("onboarding.question.text3")}
         </p>
 
-        <div className="w-full md:w-fit p-[2px] rounded-xl bg-gradient-to-b from-[#5EFF95] to-[#70FFA0]">
+        <div className="w-full md:w-fit p-[2px] rounded-xl bg-gradient-to-b from-seeds-glow to-seeds-glow-mid">
           {!isLast ? (
             <button
               type="button"
@@ -213,7 +213,7 @@ export default function OnboardingQuestionsView({
               disabled={!canGoNext}
               className={[
                 "font-poppins text-sm w-full p-2 rounded-xl capitalize text-white",
-                "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
+                "bg-gradient-to-b from-seeds-green-light to-seeds-green",
                 "disabled:opacity-60 disabled:cursor-not-allowed",
                 "transition-all duration-200 hover:shadow-lg active:scale-[0.98] cursor-pointer",
               ].join(" ")}
@@ -228,7 +228,7 @@ export default function OnboardingQuestionsView({
               aria-busy={submitting}
               className={[
                 "font-poppins text-sm w-full p-2 rounded-xl capitalize text-white",
-                "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
+                "bg-gradient-to-b from-seeds-green-light to-seeds-green",
                 "disabled:opacity-60 disabled:cursor-not-allowed",
                 "transition-all duration-200 hover:shadow-lg active:scale-[0.98]",
                 submitting ? "cursor-wait" : "cursor-pointer",

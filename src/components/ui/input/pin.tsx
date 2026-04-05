@@ -157,7 +157,7 @@ const PinInput = forwardRef<PinInputRef, Props>(function PinInput(
               ? "border-red-400 bg-red-500 text-white"
               : "border-red-300 bg-red-50 text-red-600"
             : filled
-              ? "border-[#3AC4A0]/60 bg-[#3AC4A0] text-white"
+              ? "border-seeds-green-light/60 bg-seeds-green-light text-white"
               : "border-neutral-300 bg-neutral-100 text-neutral-700";
 
           return (

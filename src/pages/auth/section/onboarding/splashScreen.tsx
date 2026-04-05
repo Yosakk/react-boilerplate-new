@@ -9,7 +9,7 @@ const SplashScreen: React.FC<ISplashScreen> = ({ isFading }: ISplashScreen) => {
   const { t } = useTranslation();
   return (
     <div
-      className={`fixed inset-0 z-[9999] bg-gradient-to-b from-[#3AC4A0] to-[#177C62] flex md:hidden flex-col justify-center items-center ${
+      className={`fixed inset-0 z-[9999] bg-gradient-to-b from-seeds-green-light to-seeds-green flex md:hidden flex-col justify-center items-center ${
         isFading ? "fade-out" : ""
       }`}
     >
@@ -39,7 +39,7 @@ const SplashScreen: React.FC<ISplashScreen> = ({ isFading }: ISplashScreen) => {
               width: "0%",
               animation: "loadingBar 2.5s ease-in-out forwards",
               backgroundImage:
-                "repeating-linear-gradient(315deg, #5DEF8F 0 15px, white 5px 20px)",
+                "repeating-linear-gradient(315deg, var(--seeds-green-bright) 0 15px, white 5px 20px)",
               backgroundSize: "auto",
               backgroundRepeat: "repeat",
             }}

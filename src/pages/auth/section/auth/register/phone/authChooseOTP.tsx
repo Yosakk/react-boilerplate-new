@@ -56,7 +56,7 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4 md:mt-0">
-        <p className="font-poppins font-semibold bg-gradient-to-b text-center from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-lg md:text-2xl mt-4">
+        <p className="font-poppins font-semibold bg-gradient-to-b text-center from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-lg md:text-2xl mt-4">
           {t("authRegisterAccount.page3.text1")}
         </p>
         <p className="font-poppins text-neutral-medium font-medium text-sm md:text-[16px] text-center mt-2">
@@ -70,10 +70,10 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
             onClick={() => choose("whatsapp")}
             className={`
               text-left p-[2px] rounded-lg
-              ${selected === "whatsapp" ? "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]" : "bg-[#BDBDBD] hover:bg-[#9E9E9E] duration-300"}
+              ${selected === "whatsapp" ? "bg-gradient-to-b from-seeds-green-light to-seeds-green" : "bg-seeds-neutral-300 hover:bg-seeds-neutral-400 duration-300"}
             `}
           >
-            <div className="flex justify-start items-center gap-4 bg-[#F9F9F9] p-4 md:p-6 rounded-md">
+            <div className="flex justify-start items-center gap-4 bg-seeds-neutral-50 p-4 md:p-6 rounded-md">
               <div className="flex justify-center items-center w-[50px] h-auto">
                 <img
                   src={Whatsapp}
@@ -102,10 +102,10 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
             onClick={() => choose("sms")}
             className={`
               text-left p-[2px] rounded-lg
-              ${selected === "sms" ? "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]" : "bg-[#BDBDBD] hover:bg-[#9E9E9E]"}
+              ${selected === "sms" ? "bg-gradient-to-b from-seeds-green-light to-seeds-green" : "bg-seeds-neutral-300 hover:bg-seeds-neutral-400"}
             `}
           >
-            <div className="flex justify-start items-center gap-4 bg-[#F9F9F9] p-4 md:p-6 rounded-md">
+            <div className="flex justify-start items-center gap-4 bg-seeds-neutral-50 p-4 md:p-6 rounded-md">
               <div className="flex justify-center items-center w-[50px] h-auto">
                 <img
                   src={Messenger}
@@ -129,12 +129,12 @@ const AuthChooseOTP: React.FC<AuthChooseOTPProps> = ({
           </button>
         </div>
 
-        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-[#5EFF95] to-[#70FFA0] mt-8">
+        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-seeds-glow to-seeds-glow-mid mt-8">
           <button
             type="button"
             onClick={handleContinue}
             disabled={!selected || disabled || loading}
-            className="font-poppins text-sm w-full bg-gradient-to-b from-[#3AC4A0] p-3 to-[#177C62] text-white rounded-xl capitalize disabled:opacity-60"
+            className="font-poppins text-sm w-full bg-gradient-to-b from-seeds-green-light p-3 to-seeds-green text-white rounded-xl capitalize disabled:opacity-60"
           >
             {loading ? "Processing..." : t("authRegisterAccount.page3.text8")}
           </button>

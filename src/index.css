@@ -39,9 +39,93 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ── Seeds brand tokens ── */
+  --color-seeds-green-light: var(--seeds-green-light);
+  --color-seeds-green: var(--seeds-green);
+  --color-seeds-green-dark: var(--seeds-green-dark);
+  --color-seeds-green-accent: var(--seeds-green-accent);
+  --color-seeds-green-surface: var(--seeds-green-surface);
+  --color-seeds-green-surface-alt: var(--seeds-green-surface-alt);
+  --color-seeds-glow: var(--seeds-glow);
+  --color-seeds-glow-mid: var(--seeds-glow-mid);
+  --color-seeds-glow-soft: var(--seeds-glow-soft);
+  --color-seeds-glow-border: var(--seeds-glow-border);
+  --color-seeds-bubble-bg: var(--seeds-bubble-bg);
+  --color-seeds-bubble-chat: var(--seeds-bubble-chat);
+  --color-seeds-blue: var(--seeds-blue);
+  --color-seeds-purple: var(--seeds-purple);
+  --color-seeds-purple-soft: var(--seeds-purple-soft);
+  --color-seeds-error: var(--seeds-error);
+  --color-seeds-strength-weak: var(--seeds-strength-weak);
+  --color-seeds-strength-fair: var(--seeds-strength-fair);
+  --color-seeds-strength-good: var(--seeds-strength-good);
+  --color-seeds-strength-strong: var(--seeds-strength-strong);
+  --color-seeds-strength-empty: var(--seeds-strength-empty);
+  --color-seeds-neutral-900: var(--seeds-neutral-900);
+  --color-seeds-neutral-700: var(--seeds-neutral-700);
+  --color-seeds-neutral-500: var(--seeds-neutral-500);
+  --color-seeds-neutral-400: var(--seeds-neutral-400);
+  --color-seeds-neutral-300: var(--seeds-neutral-300);
+  --color-seeds-neutral-250: var(--seeds-neutral-250);
+  --color-seeds-neutral-200: var(--seeds-neutral-200);
+  --color-seeds-neutral-150: var(--seeds-neutral-150);
+  --color-seeds-neutral-100: var(--seeds-neutral-100);
+  --color-seeds-neutral-50: var(--seeds-neutral-50);
+  --color-seeds-overlay-light: var(--seeds-overlay-light);
+  --color-seeds-overlay-white: var(--seeds-overlay-white);
+  --color-seeds-green-bright: var(--seeds-green-bright);
 }
 
 :root {
+  /* ── Seeds brand colors (change here to retheme) ── */
+  --seeds-green-light: #3AC4A0;
+  --seeds-green: #177C62;
+  --seeds-green-dark: #0f5b47;
+  --seeds-green-accent: #2ea884;
+  --seeds-green-surface: #E8F7F2;
+  --seeds-green-surface-alt: #d7f7e9;
+
+  /* Glow / neon green */
+  --seeds-glow: #5EFF95;
+  --seeds-glow-mid: #70FFA0;
+  --seeds-glow-soft: #7EFFA8;
+  --seeds-glow-border: #88FFA69E;
+
+  /* Chat / onboarding bubble */
+  --seeds-bubble-bg: #48C0ABB2;
+  --seeds-bubble-chat: #66B5C2B2;
+
+  /* Accent / purple-blue */
+  --seeds-blue: #2B4CCD;
+  --seeds-purple: #9A76FE;
+  --seeds-purple-soft: #B798FFB2;
+
+  /* Status */
+  --seeds-error: #DD2525;
+  --seeds-strength-weak: #ef4444;
+  --seeds-strength-fair: #f59e0b;
+  --seeds-strength-good: #3b82f6;
+  --seeds-strength-strong: #22c55e;
+  --seeds-strength-empty: #e5e7eb;
+
+  /* Neutrals */
+  --seeds-neutral-900: #262626;
+  --seeds-neutral-700: #333333;
+  --seeds-neutral-500: #888888;
+  --seeds-neutral-400: #9E9E9E;
+  --seeds-neutral-300: #BDBDBD;
+  --seeds-neutral-250: #c9c9c9;
+  --seeds-neutral-200: #E9E9E9;
+  --seeds-neutral-150: #EFEFEF;
+  --seeds-neutral-100: #F7F7FB;
+  --seeds-neutral-50: #F9F9F9;
+  --seeds-overlay-light: #E7E7E7A6;
+  --seeds-overlay-white: #FFFFFFC2;
+
+  /* Special gradient for #5DEF8F */
+  --seeds-green-bright: #5DEF8F;
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

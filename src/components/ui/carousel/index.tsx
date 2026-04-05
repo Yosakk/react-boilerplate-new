@@ -313,7 +313,7 @@ const CarouselDots = React.forwardRef<
               "transition-all duration-300 rounded-full",
               !isActive && "h-2.5 w-2.5 bg-neutral-200 hover:bg-neutral-300",
               isActive &&
-                "h-2.5 w-10 bg-gradient-to-b from-[#177C62] to-[#3AC4A0] shadow-sm"
+                "h-2.5 w-10 bg-gradient-to-b from-seeds-green to-seeds-green-light shadow-sm"
             )}
           />
         );

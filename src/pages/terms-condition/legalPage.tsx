@@ -11,12 +11,12 @@ const baseTab =
   "relative font-poppins text-md text-center w-fit " +
   "py-2 px-4 cursor-pointer font-medium transition-colors";
 const activeTab = "text-seeds-button-green";
-const inactiveTab = "text-[#BDBDBD] hover:text-seeds-button-green";
+const inactiveTab = "text-seeds-neutral-300 hover:text-seeds-button-green";
 
 const underline =
   "pointer-events-none absolute left-1/2 " +
   "-translate-x-1/2 -bottom-[6px] h-[2px] rounded-full " +
-  "bg-gradient-to-r from-[#5EFF95] via-[#3AC4A0] to-[#177C62] " +
+  "bg-gradient-to-r from-seeds-glow via-seeds-green-light to-seeds-green " +
   "transition-all duration-300 ease-out";
 
 const LegalPage: React.FC = () => {
@@ -38,7 +38,7 @@ const LegalPage: React.FC = () => {
         <div
           className={
             "w-full max-w-4xl rounded-2xl text-white text-center " +
-            "bg-gradient-to-r from-[#3AC4A0] to-[#177C62] " +
+            "bg-gradient-to-r from-seeds-green-light to-seeds-green " +
             "px-6 md:px-10 py-6 md:py-8 " +
             "shadow-[0_10px_28px_rgba(23,124,98,0.22)]"
           }
@@ -95,7 +95,7 @@ const LegalPage: React.FC = () => {
         <div
           className={
             "w-full md:w-[50%] p-[2px] rounded-xl " +
-            "bg-gradient-to-b from-[#5EFF95] to-[#70FFA0] " +
+            "bg-gradient-to-b from-seeds-glow to-seeds-glow-mid " +
             "mt-8 mb-16 md:mb-8"
           }
         >
@@ -104,7 +104,7 @@ const LegalPage: React.FC = () => {
             className={
               "flex items-center justify-center gap-2 " +
               "font-poppins text-sm w-full text-white " +
-              "bg-gradient-to-b from-[#3AC4A0] to-[#177C62] " +
+              "bg-gradient-to-b from-seeds-green-light to-seeds-green " +
               "rounded-xl capitalize py-3"
             }
           >

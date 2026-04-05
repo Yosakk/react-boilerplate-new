@@ -10,7 +10,7 @@ const TermsCondition: React.FC = () => {
   const { t } = useTranslation();
 
   const renderParagraphs = (key: string) => (
-    <div className="flex flex-col self-stretch text-sm font-poppins leading-6 text-[#262626]">
+    <div className="flex flex-col self-stretch text-sm font-poppins leading-6 text-seeds-neutral-900">
       {t(key)
         .split("\n")
         .map((paragraph: string, idx: number) => (
@@ -46,7 +46,7 @@ const TermsCondition: React.FC = () => {
       value: "tnc-5",
       trigger: t("termAndCondition.tnc.title.5"),
       content: (
-        <div className="flex flex-col self-stretch text-sm font-poppins leading-6 text-[#262626]">
+        <div className="flex flex-col self-stretch text-sm font-poppins leading-6 text-seeds-neutral-900">
           {t("termAndCondition.tnc.desc.5")
             .split("\n")
             .map((p: string, i: number) => (

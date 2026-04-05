@@ -66,7 +66,7 @@ const OnboardingCarousel: React.FC = () => {
                 </div>
 
                 <div className="text-center mb-6 min-h-[96px] md:min-h-[112px] flex flex-col justify-center">
-                  <p className="pb-2 font-semibold font-poppins xl:text-2xl text-xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-left md:text-center">
+                  <p className="pb-2 font-semibold font-poppins xl:text-2xl text-xl bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-left md:text-center">
                     {t(`onboarding.welcomeCarousel.title.${i + 1}`)}
                   </p>
                   <p className="font-normal font-poppins xl:text-xl text-md text-neutral-medium text-left md:text-center">

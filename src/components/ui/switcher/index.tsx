@@ -22,7 +22,7 @@ export default function LanguageSwitcher({ className }: Props) {
     <div
       className={[
         "relative inline-flex items-center gap-1 rounded-full",
-        "bg-[#9A76FE] p-1",
+        "bg-seeds-purple p-1",
         "shadow-sm",
         className || "",
       ].join(" ")}

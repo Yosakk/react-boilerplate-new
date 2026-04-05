@@ -57,7 +57,7 @@ export default function ReferralDialog({
       >
         <div className="relative bg-white">
           <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,black,transparent_92%)]">
-            <div className="h-[160px] w-full bg-[radial-gradient(#d7f7e9_1.5px,transparent_1.5px)] [background-size:20px_20px]" />
+            <div className="h-[160px] w-full bg-[radial-gradient(var(--seeds-green-surface-alt)_1.5px,transparent_1.5px)] [background-size:20px_20px]" />
           </div>
 
           <div className="relative flex items-start gap-3 p-6 pt-8">
@@ -111,7 +111,7 @@ export default function ReferralDialog({
               disabled={loading}
               className={cn(
                 "inline-flex items-center justify-center rounded-xl px-6 h-11 text-white font-semibold",
-                "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]",
+                "bg-gradient-to-b from-seeds-green-light to-seeds-green",
                 "disabled:opacity-60"
               )}
             >

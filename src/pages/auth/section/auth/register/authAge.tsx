@@ -56,7 +56,7 @@ export default function AuthAgeStep({
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4 md:mt-0">
-        <div className="w-full md:w-[60%] flex justify-center items-center bg-[#7EFFA8] relative rounded-2xl p-2 gap-2 mb-12">
+        <div className="w-full md:w-[60%] flex justify-center items-center bg-seeds-glow-soft relative rounded-2xl p-2 gap-2 mb-12">
           <img
             src={SeedyChat}
             alt="SeedyChat"
@@ -96,23 +96,23 @@ export default function AuthAgeStep({
               className="rounded-md"
             />
             {isMinimumAge ? (
-              <p className="font-poppins font-normal italic text-sm text-[#DD2525] self-start">
+              <p className="font-poppins font-normal italic text-sm text-seeds-error self-start">
                 {t("authRegisterAccount.page7.text5")}
               </p>
             ) : (
-              <p className="font-poppins font-normal italic text-sm text-[#2B4CCD] self-start">
+              <p className="font-poppins font-normal italic text-sm text-seeds-blue self-start">
                 {t("authRegisterAccount.page7.text4")}
               </p>
             )}
           </div>
         </div>
 
-        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-[#5EFF95] to-[#70FFA0] mt-8">
+        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-seeds-glow to-seeds-glow-mid mt-8">
           <button
             type="button"
             onClick={handleNext}
             disabled={!isValid || loading}
-            className="font-poppins text-sm w-full bg-gradient-to-b from-[#3AC4A0] to-[#177C62] text-white rounded-xl capitalize disabled:opacity-50 p-3 cursor-pointer transition-colors duration-200 hover:from-[#2ea884] hover:to-[#0f5b47]"
+            className="font-poppins text-sm w-full bg-gradient-to-b from-seeds-green-light to-seeds-green text-white rounded-xl capitalize disabled:opacity-50 p-3 cursor-pointer transition-colors duration-200 hover:from-seeds-green-accent hover:to-seeds-green-dark"
           >
             {loading
               ? (t("common.loading") ?? "Processing...")
@@ -120,11 +120,11 @@ export default function AuthAgeStep({
           </button>
         </div>
 
-        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] mt-2">
+        <div className="w-full md:w-[80%] max-w-[400px] p-[2px] rounded-xl bg-gradient-to-b from-seeds-green-light to-seeds-green mt-2">
           <button
             type="button"
             onClick={onSkip}
-            className="w-full bg-white text-[#177C62] font-poppins text-sm rounded-xl capitalize p-2 cursor-pointer transition-colors duration-200"
+            className="w-full bg-white text-seeds-green font-poppins text-sm rounded-xl capitalize p-2 cursor-pointer transition-colors duration-200"
           >
             {t("authRegisterAccount.page7.text7")}
           </button>

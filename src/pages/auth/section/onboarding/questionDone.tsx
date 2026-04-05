@@ -37,7 +37,7 @@ export default function QuestionDoneView({
         loading="lazy"
       />
 
-      <div className="w-[75%] md:w-[60%] md:max-w-[374px] relative rounded-lg bg-[#7EFFA8]">
+      <div className="w-[75%] md:w-[60%] md:max-w-[374px] relative rounded-lg bg-seeds-glow-soft">
         <div className="font-poppins text-neutral-medium font-medium text-sm md:text-md p-4">
           <TypingBubble message={message1} />
         </div>
@@ -49,7 +49,7 @@ export default function QuestionDoneView({
         />
       </div>
 
-      <div className="w-[75%] md:w-[60%] md:max-w-[374px] relative rounded-lg bg-[#7EFFA8]">
+      <div className="w-[75%] md:w-[60%] md:max-w-[374px] relative rounded-lg bg-seeds-glow-soft">
         <div className="font-poppins text-neutral-medium font-medium text-sm md:text-md p-4">
           <TypingBubble message={message2} />
         </div>
@@ -65,7 +65,7 @@ export default function QuestionDoneView({
         <button
           type="button"
           onClick={onPrimary}
-          className="font-semibold font-poppins text-base text-white bg-gradient-to-b from-[#3AC4A0] to-[#177C62] border-2 border-[#88FFA69E] rounded-xl normal-case w-full md:w-[60%] md:max-w-[400px] py-3"
+          className="font-semibold font-poppins text-base text-white bg-gradient-to-b from-seeds-green-light to-seeds-green border-2 border-seeds-glow-border rounded-xl normal-case w-full md:w-[60%] md:max-w-[400px] py-3"
         >
           {primaryLabel}
         </button>
@@ -73,7 +73,7 @@ export default function QuestionDoneView({
         <button
           type="button"
           onClick={onSecondary}
-          className="font-semibold font-poppins text-base bg-gradient-to-b from-[#3AC4A0] to-[#177C62] border-2 border-[#3AC4A0] bg-clip-text text-transparent rounded-xl normal-case w-full md:w-[60%] md:max-w-[400px] py-3"
+          className="font-semibold font-poppins text-base bg-gradient-to-b from-seeds-green-light to-seeds-green border-2 border-seeds-green-light bg-clip-text text-transparent rounded-xl normal-case w-full md:w-[60%] md:max-w-[400px] py-3"
         >
           {secondaryLabel}
         </button>

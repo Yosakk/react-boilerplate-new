@@ -63,7 +63,7 @@ export default function LoginPinDialog({
             />
           )}
 
-          <h1 className="font-poppins font-semibold bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-xl sm:text-2xl text-center mt-1">
+          <h1 className="font-poppins font-semibold bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-xl sm:text-2xl text-center mt-1">
             {headerTitle}
           </h1>
           <p className="font-poppins text-neutral-medium font-normal text-sm sm:text-md text-center mt-2">
@@ -96,8 +96,8 @@ export default function LoginPinDialog({
             disabled={pin.length !== max || loading}
             className={cn(
               "flex justify-center items-center capitalize font-semibold font-poppins text-sm sm:text-sm leading-[14px] text-white w-full sm:w-[400px]",
-              "border-2 hover:border-[#70FFA0] border-[#5EFF95] mt-4",
-              "bg-gradient-to-r from-[#3AC4A0] to-[#177C62] transition duration-200 hover:opacity-90 rounded-xl",
+              "border-2 hover:border-seeds-glow-mid border-seeds-glow mt-4",
+              "bg-gradient-to-r from-seeds-green-light to-seeds-green transition duration-200 hover:opacity-90 rounded-xl",
               "min-h-[44px]",
               loading && "opacity-70 cursor-wait",
               !(pin.length === max) &&

@@ -42,7 +42,7 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({
     <div className="w-full flex flex-col items-center gap-4">
       {!isShown ? (
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
+          <div className="flex justify-center items-center bg-seeds-glow-soft relative rounded-md p-2 gap-2 mb-12">
             <img
               src={SeedyChat}
               alt="SeedyChat"
@@ -73,7 +73,7 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({
       ) : (
         <div className="w-full flex flex-col justify-center items-center">
           <div className="w-full flex flex-col justify-center items-center my-7 ">
-            <div className="flex justify-center items-center bg-[#7EFFA8] relative rounded-md p-2 gap-2 mb-12">
+            <div className="flex justify-center items-center bg-seeds-glow-soft relative rounded-md p-2 gap-2 mb-12">
               <img
                 src={SeedyChat}
                 alt="SeedyChat"
@@ -107,7 +107,7 @@ const QuestionPreparation: React.FC<QuestionPreparationI> = ({
             aria-busy={loading}
             className={[
               "font-semibold font-poppins text-base text-white",
-              "bg-gradient-to-b from-[#3AC4A0] to-[#177C62] border-2 border-[#88FFA69E]",
+              "bg-gradient-to-b from-seeds-green-light to-seeds-green border-2 border-seeds-glow-border",
               "rounded-xl normal-case w-full md:w-[400px] p-2",
               "transition-all duration-200 hover:shadow-lg active:scale-[0.98]",
               "disabled:opacity-60 disabled:cursor-not-allowed",

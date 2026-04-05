@@ -78,7 +78,7 @@ const AuthLogin = () => {
       {/* Heading */}
       <Text
         fw={600}
-        className="font-poppins bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent w-full"
+        className="font-poppins bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent w-full"
         ta={{ base: "left", lg: "center" }}
         size="xl"
         mt="xs"
@@ -176,13 +176,13 @@ const AuthLogin = () => {
                     backgroundColor:
                       passwordStrength >= level
                         ? passwordStrength <= 1
-                          ? "#ef4444"
+                          ? "var(--seeds-strength-weak)"
                           : passwordStrength <= 2
-                            ? "#f59e0b"
+                            ? "var(--seeds-strength-fair)"
                             : passwordStrength <= 3
-                              ? "#3b82f6"
-                              : "#22c55e"
-                        : "#e5e7eb",
+                              ? "var(--seeds-strength-good)"
+                              : "var(--seeds-strength-strong)"
+                        : "var(--seeds-strength-empty)",
                   }}
                 />
               ))}
@@ -215,7 +215,7 @@ const AuthLogin = () => {
         <Anchor
           size="sm"
           fw={500}
-          className="bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent"
+          className="bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent"
           onClick={handleBack}
         >
           {t("loginRevamp.text14")}

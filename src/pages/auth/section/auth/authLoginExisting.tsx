@@ -21,7 +21,7 @@ const LoginExisting: React.FC = () => {
           type="button"
           onClick={() => history.back()}
           aria-label="Kembali"
-          className="inline-flex items-center justify-center h-10 w-10 md:h-auto md:w-auto rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3AC4A0] focus-visible:ring-offset-2"
+          className="inline-flex items-center justify-center h-10 w-10 md:h-auto md:w-auto rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-seeds-green-light focus-visible:ring-offset-2"
         >
           <img
             src={Backward}
@@ -31,7 +31,7 @@ const LoginExisting: React.FC = () => {
         </button>
       </div>
 
-      <p className="font-poppins font-semibold bg-gradient-to-b text-center w-full from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent text-2xl md:text-3xl mt-4">
+      <p className="font-poppins font-semibold bg-gradient-to-b text-center w-full from-seeds-green-light to-seeds-green bg-clip-text text-transparent text-2xl md:text-3xl mt-4">
         {t("loginRevamp.text1") + " " + userNameExisting + "!"}{" "}
         <span className="text-white">👋</span>
       </p>
@@ -48,7 +48,7 @@ const LoginExisting: React.FC = () => {
 
       <button
         onClick={() => setOpenPin(true)}
-        className="capitalize font-semibold font-poppins text-sm md:text-sm leading-[14px] text-white w-full lg:w-[40%] border-2 py-3 min-h-[44px] hover:border-[#70FFA0] border-[#5EFF95] bg-gradient-to-r from-[#3AC4A0] to-[#177C62] transition duration-200 hover:opacity-90 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3AC4A0] focus-visible:ring-offset-2"
+        className="capitalize font-semibold font-poppins text-sm md:text-sm leading-[14px] text-white w-full lg:w-[40%] border-2 py-3 min-h-[44px] hover:border-seeds-glow-mid border-seeds-glow bg-gradient-to-r from-seeds-green-light to-seeds-green transition duration-200 hover:opacity-90 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-seeds-green-light focus-visible:ring-offset-2"
       >
         {t("loginRevamp.text22") + " " + userNameExisting}
       </button>
@@ -59,7 +59,7 @@ const LoginExisting: React.FC = () => {
         </p>
         <Link
           to={"/auth/login"}
-          className="font-medium text-sm md:text-lg font-poppins bg-gradient-to-b text-center from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent my-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#3AC4A0] focus-visible:ring-offset-2 rounded"
+          className="font-medium text-sm md:text-lg font-poppins bg-gradient-to-b text-center from-seeds-green-light to-seeds-green bg-clip-text text-transparent my-2 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-seeds-green-light focus-visible:ring-offset-2 rounded"
         >
           {t("loginRevamp.text21")}
         </Link>

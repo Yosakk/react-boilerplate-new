@@ -90,7 +90,7 @@ export default function AuthOTP({
         className="w-full text-center px-6 sm:px-8"
         noValidate
       >
-        <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-[#3AC4A0] to-[#177C62] bg-clip-text text-transparent">
+        <h1 className="font-poppins font-semibold text-2xl md:text-3xl bg-gradient-to-b from-seeds-green-light to-seeds-green bg-clip-text text-transparent">
           {t("authRegisterAccount.page4.text1")}{" "}
           {t("authRegisterAccount.page4.text2")}{" "}
           {method === "whatsapp" ? "Whatsapp" : "SMS"}{" "}
@@ -102,7 +102,7 @@ export default function AuthOTP({
             ? t("authRegisterAccount.page4.text3")
             : t("authRegisterAccount.page4.text4")}
           <br />
-          <span className="font-semibold text-[#2B4CCD]">+{phoneLabel}</span>
+          <span className="font-semibold text-seeds-blue">+{phoneLabel}</span>
         </p>
 
         <div className="mt-8">
@@ -164,7 +164,7 @@ export default function AuthOTP({
             disabled={!canContinue}
             className={[
               "w-full py-3 rounded-2xl font-medium",
-              "bg-gradient-to-b from-[#3AC4A0] to-[#177C62] text-white",
+              "bg-gradient-to-b from-seeds-green-light to-seeds-green text-white",
               "disabled:opacity-50 disabled:cursor-not-allowed",
               "shadow-[0_6px_18px_rgba(23,124,98,0.25)]",
             ].join(" ")}

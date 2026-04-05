@@ -18,7 +18,7 @@ export default function AuthCard({
     <div
       className={
         "relative rounded-[30px] p-[2px] bg-gradient-to-r " +
-        "from-[#48C0ABB2] via-[#66B5C2B2] to-[#B798FFB2] " +
+        "from-seeds-bubble-bg via-seeds-bubble-chat to-seeds-purple-soft " +
         "shadow-[0_8px_30px_rgba(0,0,0,0.06)] " +
         containerClassName
       }
@@ -35,7 +35,7 @@ export default function AuthCard({
 
   if (fullscreen) {
     return (
-      <main className="min-h-screen grid place-items-center bg-[#F7F7FB] p-4">
+      <main className="min-h-screen grid place-items-center bg-seeds-neutral-100 p-4">
         {Card}
       </main>
     );

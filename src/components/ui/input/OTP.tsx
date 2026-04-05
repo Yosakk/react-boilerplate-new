@@ -105,7 +105,7 @@ const InputOTP = forwardRef<HTMLInputElement, Props>(function InputOTP(
               className={[
                 "h-14 w-14 rounded-xl border transition-all duration-200 shadow-sm",
                 filled
-                  ? "border-[#3AC4A0]/60 bg-[#E8F7F2] text-neutral-900"
+                  ? "border-seeds-green-light/60 bg-seeds-green-surface text-neutral-900"
                   : "border-neutral-300 bg-neutral-100 text-neutral-400",
                 "flex items-center justify-center text-xl font-semibold tracking-widest",
                 boxClassName,

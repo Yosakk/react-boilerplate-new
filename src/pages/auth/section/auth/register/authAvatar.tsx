@@ -72,7 +72,7 @@ export default function AuthAvatar({
       </div>
 
       <div className="flex flex-col gap-2 justify-center items-center w-full md:w-[80%] mt-4">
-        <div className="w-full md:w-[60%] flex justify-center items-center bg-[#7EFFA8] relative rounded-2xl p-2 gap-2 mb-12">
+        <div className="w-full md:w-[60%] flex justify-center items-center bg-seeds-glow-soft relative rounded-2xl p-2 gap-2 mb-12">
           <img
             src={SeedyChat}
             alt="SeedyChat"
@@ -111,13 +111,13 @@ export default function AuthAvatar({
                 className={[
                   "group p-[3px] rounded-lg transition-all cursor-pointer",
                   active
-                    ? "bg-gradient-to-b from-[#3AC4A0] to-[#177C62]"
-                    : "bg-[#E7E7E7A6] hover:bg-gradient-to-b hover:from-[#3AC4A0] hover:to-[#177C62]",
+                    ? "bg-gradient-to-b from-seeds-green-light to-seeds-green"
+                    : "bg-seeds-overlay-light hover:bg-gradient-to-b hover:from-seeds-green-light hover:to-seeds-green",
                 ].join(" ")}
                 aria-pressed={active}
                 aria-label={av.alt ?? av.id}
               >
-                <div className="bg-[#F9F9F9] rounded-md px-6 py-4 flex justify-center items-center">
+                <div className="bg-seeds-neutral-50 rounded-md px-6 py-4 flex justify-center items-center">
                   <img
                     src={av.img}
                     alt={av.alt ?? av.id}
@@ -129,12 +129,12 @@ export default function AuthAvatar({
           })}
         </div>
 
-        <div className="w-full md:w-[80%] p-[2px] rounded-xl bg-gradient-to-b from-[#5EFF95] to-[#70FFA0] mt-8 mb-16">
+        <div className="w-full md:w-[80%] p-[2px] rounded-xl bg-gradient-to-b from-seeds-glow to-seeds-glow-mid mt-8 mb-16">
           <button
             type="button"
             disabled={!canContinue}
             onClick={handleContinue}
-            className="font-poppins text-sm w-full bg-gradient-to-b from-[#3AC4A0] to-[#177C62] text-white rounded-xl capitalize disabled:opacity-50 p-3 cursor-pointer transition-colors duration-200 hover:from-[#2ea884] hover:to-[#0f5b47]"
+            className="font-poppins text-sm w-full bg-gradient-to-b from-seeds-green-light to-seeds-green text-white rounded-xl capitalize disabled:opacity-50 p-3 cursor-pointer transition-colors duration-200 hover:from-seeds-green-accent hover:to-seeds-green-dark"
           >
             {t("authRegisterAccount.page8.text2")}
           </button>
